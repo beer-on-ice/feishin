@@ -538,19 +538,19 @@ export const AlbumListHeaderFilters = ({
                     </DropdownMenu.Target>
                     <DropdownMenu.Dropdown>
                         <DropdownMenu.Item
-                            icon={<RiPlayFill />}
+                            leftSection={<RiPlayFill />}
                             onClick={() => handlePlay?.({ playType: Play.NOW })}
                         >
                             {t('player.play', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Item
-                            icon={<RiAddBoxFill />}
+                            leftSection={<RiAddBoxFill />}
                             onClick={() => handlePlay?.({ playType: Play.LAST })}
                         >
                             {t('player.addLast', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Item
-                            icon={<RiAddCircleFill />}
+                            leftSection={<RiAddCircleFill />}
                             onClick={() => handlePlay?.({ playType: Play.NEXT })}
                         >
                             {t('player.addNext', { postProcess: 'sentenceCase' })}

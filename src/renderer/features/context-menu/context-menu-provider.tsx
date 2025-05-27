@@ -962,7 +962,7 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                                                         >
                                                             <HoverCard.Target>
                                                                 <ContextMenuButton
-                                                                    leftIcon={
+                                                                    leftSection={
                                                                         contextMenuItems[item.id]
                                                                             .leftIcon
                                                                     }
@@ -970,7 +970,7 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                                                                         contextMenuItems[item.id]
                                                                             .onClick
                                                                     }
-                                                                    rightIcon={
+                                                                    rightSection={
                                                                         contextMenuItems[item.id]
                                                                             .rightIcon
                                                                     }
@@ -988,11 +988,11 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                                                                     ].children?.map((child) => (
                                                                         <ContextMenuButton
                                                                             key={`sub-${child.id}`}
-                                                                            leftIcon={
+                                                                            leftSection={
                                                                                 child.leftIcon
                                                                             }
                                                                             onClick={child.onClick}
-                                                                            rightIcon={
+                                                                            rightSection={
                                                                                 child.rightIcon
                                                                             }
                                                                         >
@@ -1004,13 +1004,13 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                                                         </HoverCard>
                                                     ) : (
                                                         <ContextMenuButton
-                                                            leftIcon={
+                                                            leftSection={
                                                                 contextMenuItems[item.id].leftIcon
                                                             }
                                                             onClick={
                                                                 contextMenuItems[item.id].onClick
                                                             }
-                                                            rightIcon={
+                                                            rightSection={
                                                                 contextMenuItems[item.id].rightIcon
                                                             }
                                                         >

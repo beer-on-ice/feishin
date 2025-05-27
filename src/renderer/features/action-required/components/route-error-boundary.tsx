@@ -48,7 +48,7 @@ const RouteErrorBoundary = () => {
                         gap="sm"
                     >
                         <Button
-                            leftIcon={<RiHome4Line />}
+                            leftSection={<RiHome4Line />}
                             onClick={handleHome}
                             size="md"
                             style={{ flex: 0.5 }}
@@ -59,7 +59,7 @@ const RouteErrorBoundary = () => {
                         <DropdownMenu position="bottom-start">
                             <DropdownMenu.Target>
                                 <Button
-                                    leftIcon={<RiMenuFill />}
+                                    leftSection={<RiMenuFill />}
                                     size="md"
                                     style={{ flex: 0.5 }}
                                     variant="default"

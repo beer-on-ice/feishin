@@ -33,7 +33,7 @@ export function IsUpdatedDialog() {
                         component="a"
                         href={`https://github.com/jeffvli/feishin/releases/tag/v${version}`}
                         onClick={handleDismiss}
-                        rightIcon={<RiExternalLinkLine />}
+                        rightSection={<RiExternalLinkLine />}
                         target="_blank"
                         variant="filled"
                     >

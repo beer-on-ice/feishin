@@ -246,10 +246,10 @@ const HomeRoute = () => {
                 ref={scrollAreaRef}
             >
                 <Stack
+                    gap="lg"
                     mb="5rem"
                     pt={windowBarStyle === Platform.WEB ? '5rem' : '3rem'}
                     px="2rem"
-                    gap="lg"
                 >
                     {homeFeature && <FeatureCarousel data={featureItemsWithImage} />}
                     {sortedCarousel.map((carousel) => (
@@ -305,14 +305,16 @@ const HomeRoute = () => {
                                 label: (
                                     <Group>
                                         <TextTitle
-                                            order={2}
                                             fw={700}
+                                            order={2}
                                         >
                                             {carousel.title}
                                         </TextTitle>
 
                                         <ActionIcon
                                             onClick={() => invalidateCarouselQuery(carousel)}
+                                            size="compact-sm"
+                                            variant="transparent"
                                         >
                                             <RiRefreshLine />
                                         </ActionIcon>

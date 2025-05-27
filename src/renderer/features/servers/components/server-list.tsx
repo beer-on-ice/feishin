@@ -71,7 +71,7 @@ export const ServerList = () => {
             >
                 <Button
                     autoFocus
-                    leftIcon={<RiAddFill size={15} />}
+                    leftSection={<RiAddFill size={15} />}
                     onClick={handleAddServerModal}
                     size="compact-sm"
                     variant="filled"

@@ -93,7 +93,7 @@ export const ServerListItem = ({ server }: ServerListItemProps) => {
                         </Group>
                         <Group grow>
                             <Button
-                                leftIcon={<RiEdit2Fill />}
+                                leftSection={<RiEdit2Fill />}
                                 onClick={() => handleEdit()}
                                 tooltip={{
                                     label: t('page.manageServers.editServerDetailsTooltip', {
@@ -110,7 +110,7 @@ export const ServerListItem = ({ server }: ServerListItemProps) => {
             </ServerSection>
             <Divider my="sm" />
             <TimeoutButton
-                leftIcon={<RiDeleteBin2Line />}
+                leftSection={<RiDeleteBin2Line />}
                 timeoutProps={{ callback: handleDeleteServer, duration: 1000 }}
                 variant="subtle"
             >

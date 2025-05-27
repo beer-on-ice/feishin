@@ -73,7 +73,7 @@ const ActionRequiredRoute = () => {
                                 <Button
                                     component={Link}
                                     disabled={!canReturnHome}
-                                    leftIcon={<RiHome4Line />}
+                                    leftSection={<RiHome4Line />}
                                     to={AppRoute.HOME}
                                     variant="filled"
                                 >
@@ -88,7 +88,7 @@ const ActionRequiredRoute = () => {
                             >
                                 <Button
                                     fullWidth
-                                    leftIcon={<RiEdit2Line />}
+                                    leftSection={<RiEdit2Line />}
                                     onClick={handleManageServersModal}
                                     variant="filled"
                                 >

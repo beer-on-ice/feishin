@@ -37,7 +37,7 @@ export const FullWidthDiscCell = ({ api, data, node }: ICellRendererParams) => {
                 w="100%"
             >
                 <Button
-                    leftIcon={isSelected ? <RiCheckboxLine /> : <RiCheckboxBlankLine />}
+                    leftSection={isSelected ? <RiCheckboxLine /> : <RiCheckboxBlankLine />}
                     onClick={handleToggleDiscNodes}
                     size="compact-md"
                     variant="subtle"

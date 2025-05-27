@@ -210,7 +210,7 @@ export const ShuffleAllModal = ({
             <Group grow>
                 <Button
                     disabled={!limit}
-                    leftIcon={<RiAddBoxFill size="1rem" />}
+                    leftSection={<RiAddBoxFill size="1rem" />}
                     onClick={() => handlePlay(Play.LAST)}
                     type="submit"
                     variant="default"
@@ -219,7 +219,7 @@ export const ShuffleAllModal = ({
                 </Button>
                 <Button
                     disabled={!limit}
-                    leftIcon={<RiAddCircleFill size="1rem" />}
+                    leftSection={<RiAddCircleFill size="1rem" />}
                     onClick={() => handlePlay(Play.NEXT)}
                     type="submit"
                     variant="default"
@@ -229,7 +229,7 @@ export const ShuffleAllModal = ({
             </Group>
             <Button
                 disabled={!limit}
-                leftIcon={<RiPlayFill size="1rem" />}
+                leftSection={<RiPlayFill size="1rem" />}
                 onClick={() => handlePlay(Play.NOW)}
                 type="submit"
                 variant="filled"
