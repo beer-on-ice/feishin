@@ -165,8 +165,8 @@ export const MpvSettings = () => {
                         rightSection={
                             mpvPath && (
                                 <Button
-                                    compact
                                     onClick={() => handleSetMpvPath(null)}
+                                    size="compact-md"
                                     tooltip={{
                                         label: t('common.clear', { postProcess: 'titleCase' }),
                                         openDelay: 0,

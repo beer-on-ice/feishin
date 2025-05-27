@@ -1,15 +1,15 @@
 import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
 import { ModuleRegistry } from '@ag-grid-community/core';
 import { InfiniteRowModelModule } from '@ag-grid-community/infinite-row-model';
-import { MantineProvider } from '@mantine/core';
+import { MantineColorScheme, MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 import isElectron from 'is-electron';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { initSimpleImg } from 'react-simple-img';
+import '@mantine/core/styles.css';
 
 import './styles/global.scss';
 
-import '@mantine/core/styles.css';
 import '@ag-grid-community/styles/ag-grid.css';
 import 'overlayscrollbars/overlayscrollbars.css';
 
@@ -237,10 +237,12 @@ export const App = () => {
         }
     }, [language]);
 
+    console.log('theme :>> ', theme);
+
     return (
         <MantineProvider
+            defaultColorScheme={theme as MantineColorScheme}
             theme={{
-                colorScheme: theme as 'dark' | 'light',
                 components: {
                     Modal: {
                         styles: {
@@ -289,6 +291,7 @@ export const App = () => {
                     xs: '0rem',
                 },
             }}
+            withCssVariables={false}
             withGlobalStyles
             withNormalizeCSS
         >

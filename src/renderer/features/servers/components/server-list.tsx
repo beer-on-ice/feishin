@@ -71,10 +71,9 @@ export const ServerList = () => {
             >
                 <Button
                     autoFocus
-                    compact
                     leftIcon={<RiAddFill size={15} />}
                     onClick={handleAddServerModal}
-                    size="sm"
+                    size="compact-sm"
                     variant="filled"
                 >
                     {t('form.addServer.title', { postProcess: 'titleCase' })}

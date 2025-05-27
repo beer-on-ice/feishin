@@ -59,8 +59,8 @@ export const SettingsHeader = ({ setSearch }: SettingsHeaderProps) => {
                                 openedWidth={cq.isMd ? 250 : cq.isSm ? 200 : 150}
                             />
                             <Button
-                                compact
                                 onClick={openResetConfirmModal}
+                                size="compact-sm"
                                 variant="default"
                             >
                                 {t('common.resetToDefault', { postProcess: 'sentenceCase' })}

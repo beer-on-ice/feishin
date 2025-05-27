@@ -51,9 +51,9 @@ export const ActionBar = () => {
                     </Grid.Col>
                     <Grid.Col span={6}>
                         <Group
+                            gap="sm"
                             grow
                             noWrap
-                            gap="sm"
                         >
                             <DropdownMenu position="bottom-start">
                                 <DropdownMenu.Target>
@@ -90,9 +90,9 @@ export const ActionBar = () => {
                 </Grid>
             ) : (
                 <Group
+                    gap="sm"
                     grow
                     px="1rem"
-                    gap="sm"
                     w="100%"
                 >
                     <Button

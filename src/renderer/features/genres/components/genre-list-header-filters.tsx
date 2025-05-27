@@ -249,16 +249,15 @@ export const GenreListHeaderFilters = ({
     return (
         <Flex justify="space-between">
             <Group
-                ref={cq.ref}
                 gap="sm"
+                ref={cq.ref}
                 w="100%"
             >
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw={600}
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             {sortByLabel}
@@ -288,9 +287,8 @@ export const GenreListHeaderFilters = ({
                         <DropdownMenu position="bottom-start">
                             <DropdownMenu.Target>
                                 <Button
-                                    compact
                                     fw={600}
-                                    size="md"
+                                    size="compact-md"
                                     style={{
                                         svg: {
                                             fill: isFolderFilterApplied
@@ -320,9 +318,8 @@ export const GenreListHeaderFilters = ({
                 )}
                 <Divider orientation="vertical" />
                 <Button
-                    compact
                     onClick={handleRefresh}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('common.refresh', { postProcess: 'titleCase' }) }}
                     variant="subtle"
                 >
@@ -332,8 +329,7 @@ export const GenreListHeaderFilters = ({
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiMoreFill size={15} />
@@ -349,9 +345,8 @@ export const GenreListHeaderFilters = ({
                     </DropdownMenu.Dropdown>
                     <Divider orientation="vertical" />
                     <Button
-                        compact
                         onClick={handleGenreToggle}
-                        size="md"
+                        size="compact-md"
                         tooltip={{
                             label: t(
                                 genreTarget === GenreTarget.ALBUM
@@ -367,8 +362,8 @@ export const GenreListHeaderFilters = ({
                 </DropdownMenu>
             </Group>
             <Group
-                noWrap
                 gap="sm"
+                noWrap
             >
                 <DropdownMenu
                     position="bottom-end"
@@ -376,8 +371,7 @@ export const GenreListHeaderFilters = ({
                 >
                     <DropdownMenu.Target>
                         <Button
-                            compact
-                            size="md"
+                            size="compact-md"
                             tooltip={{
                                 label: t('common.configure', { postProcess: 'titleCase' }),
                             }}

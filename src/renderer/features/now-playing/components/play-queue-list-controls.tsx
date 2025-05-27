@@ -137,45 +137,40 @@ export const PlayQueueListControls = ({ tableRef, type }: PlayQueueListOptionsPr
         >
             <Group gap="sm">
                 <Button
-                    compact
                     onClick={handleShuffleQueue}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('player.shuffle', { postProcess: 'sentenceCase' }) }}
                     variant="default"
                 >
                     <RiShuffleLine size="1.1rem" />
                 </Button>
                 <Button
-                    compact
                     onClick={handleMoveToNext}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('action.moveToNext', { postProcess: 'sentenceCase' }) }}
                     variant="default"
                 >
                     <RiArrowGoForwardLine size="1.1rem" />
                 </Button>
                 <Button
-                    compact
                     onClick={handleMoveToBottom}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('action.moveToBottom', { postProcess: 'sentenceCase' }) }}
                     variant="default"
                 >
                     <RiArrowDownLine size="1.1rem" />
                 </Button>
                 <Button
-                    compact
                     onClick={handleMoveToTop}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('action.moveToTop', { postProcess: 'sentenceCase' }) }}
                     variant="default"
                 >
                     <RiArrowUpLine size="1.1rem" />
                 </Button>
                 <Button
-                    compact
                     onClick={handleRemoveSelected}
-                    size="md"
+                    size="compact-md"
                     tooltip={{
                         label: t('action.removeFromQueue', { postProcess: 'sentenceCase' }),
                     }}
@@ -184,9 +179,8 @@ export const PlayQueueListControls = ({ tableRef, type }: PlayQueueListOptionsPr
                     <RiEraserLine size="1.1rem" />
                 </Button>
                 <Button
-                    compact
                     onClick={handleClearQueue}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('action.clearQueue', { postProcess: 'sentenceCase' }) }}
                     variant="default"
                 >
@@ -200,8 +194,7 @@ export const PlayQueueListControls = ({ tableRef, type }: PlayQueueListOptionsPr
                 >
                     <Popover.Target>
                         <Button
-                            compact
-                            size="md"
+                            size="compact-md"
                             tooltip={{
                                 label: t('common.configure', { postProcess: 'sentenceCase' }),
                             }}

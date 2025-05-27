@@ -85,17 +85,17 @@ export const DraggableItems = <K extends string, T extends SortableItem<K>>({
                     <>
                         {open && (
                             <Button
-                                compact
                                 disabled={isSaveButtonDisabled}
                                 onClick={handleSave}
+                                size="compact-md"
                                 variant="filled"
                             >
                                 {t('common.save', { postProcess: 'titleCase' })}
                             </Button>
                         )}
                         <Button
-                            compact
                             onClick={() => setOpen(!open)}
+                            size="compact-md"
                             variant="filled"
                         >
                             {t(open ? 'common.close' : 'common.edit', { postProcess: 'titleCase' })}

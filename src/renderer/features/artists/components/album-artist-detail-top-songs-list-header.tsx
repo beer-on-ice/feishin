@@ -48,8 +48,8 @@ export const AlbumArtistDetailTopSongsListHeader = ({
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw="600"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiMoreFill size={15} />

@@ -179,8 +179,8 @@ const PlaylistDetailSongListRoute = () => {
                     >
                         <Group p="1rem">
                             <Button
-                                compact
                                 onClick={handleToggleExpand}
+                                size="compact-md"
                                 variant="default"
                             >
                                 {isQueryBuilderExpanded ? (

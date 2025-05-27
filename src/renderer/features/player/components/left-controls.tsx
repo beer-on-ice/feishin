@@ -180,11 +180,10 @@ export const LeftControls = () => {
 
                                 {!collapsed && (
                                     <Button
-                                        compact
                                         onClick={handleToggleSidebarImage}
                                         opacity={0.8}
                                         radius={50}
-                                        size="md"
+                                        size="compact-md"
                                         style={{
                                             cursor: 'default',
                                             position: 'absolute',
@@ -213,23 +212,23 @@ export const LeftControls = () => {
                     <LineItem onClick={stopPropagation}>
                         <Group
                             align="flex-start"
-                            noWrap
                             gap="xs"
+                            noWrap
                         >
                             <Text
                                 $link
                                 component={Link}
+                                fw={500}
                                 overflow="hidden"
                                 size="md"
                                 to={AppRoute.NOW_PLAYING}
-                                fw={500}
                             >
                                 {title || '—'}
                             </Text>
                             {isSongDefined && (
                                 <Button
-                                    compact
                                     onClick={(e) => handleGeneralContextMenu(e, [currentSong!])}
+                                    size="compact-md"
                                     variant="subtle"
                                 >
                                     <RiMore2Fill size="1.2rem" />
@@ -247,6 +246,7 @@ export const LeftControls = () => {
                                 <Text
                                     $link={artist.id !== ''}
                                     component={artist.id ? Link : undefined}
+                                    fw={500}
                                     overflow="hidden"
                                     size="md"
                                     to={
@@ -256,7 +256,6 @@ export const LeftControls = () => {
                                               })
                                             : undefined
                                     }
-                                    fw={500}
                                 >
                                     {artist.name || '—'}
                                 </Text>
@@ -270,6 +269,7 @@ export const LeftControls = () => {
                         <Text
                             $link
                             component={Link}
+                            fw={500}
                             overflow="hidden"
                             size="md"
                             to={
@@ -279,7 +279,6 @@ export const LeftControls = () => {
                                       })
                                     : ''
                             }
-                            fw={500}
                         >
                             {currentSong?.album || '—'}
                         </Text>

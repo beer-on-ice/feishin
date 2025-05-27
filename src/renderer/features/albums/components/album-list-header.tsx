@@ -59,8 +59,8 @@ export const AlbumListHeader = ({
 
     return (
         <Stack
-            ref={cq.ref}
             gap={0}
+            ref={cq.ref}
         >
             <PageHeader backgroundColor="var(--titlebar-bg)">
                 <Flex

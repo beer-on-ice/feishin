@@ -46,8 +46,8 @@ export const SearchHeader = ({ navigationId, tableRef }: SearchHeaderProps) => {
 
     return (
         <Stack
-            ref={cq.ref}
             gap={0}
+            ref={cq.ref}
         >
             <PageHeader>
                 <Flex
@@ -69,11 +69,10 @@ export const SearchHeader = ({ navigationId, tableRef }: SearchHeaderProps) => {
             <FilterBar>
                 <Group>
                     <Button
-                        compact
                         component={Link}
                         fw={600}
                         replace
-                        size="md"
+                        size="compact-md"
                         state={{ navigationId }}
                         to={{
                             pathname: generatePath(AppRoute.SEARCH, { itemType: LibraryItem.SONG }),
@@ -84,11 +83,10 @@ export const SearchHeader = ({ navigationId, tableRef }: SearchHeaderProps) => {
                         {t('entity.track_other', { postProcess: 'sentenceCase' })}
                     </Button>
                     <Button
-                        compact
                         component={Link}
                         fw={600}
                         replace
-                        size="md"
+                        size="compact-md"
                         state={{ navigationId }}
                         to={{
                             pathname: generatePath(AppRoute.SEARCH, {
@@ -101,11 +99,10 @@ export const SearchHeader = ({ navigationId, tableRef }: SearchHeaderProps) => {
                         {t('entity.album_other', { postProcess: 'sentenceCase' })}
                     </Button>
                     <Button
-                        compact
                         component={Link}
                         fw={600}
                         replace
-                        size="md"
+                        size="compact-md"
                         state={{ navigationId }}
                         to={{
                             pathname: generatePath(AppRoute.SEARCH, {

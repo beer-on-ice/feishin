@@ -150,8 +150,8 @@ const DummyAlbumDetailRoute = () => {
                             ))}
                         </Group>
                         <Group
-                            mah="4rem"
                             gap="md"
+                            mah="4rem"
                             style={{
                                 overflow: 'hidden',
                                 WebkitBoxOrient: 'vertical',
@@ -180,18 +180,18 @@ const DummyAlbumDetailRoute = () => {
             <DetailContainer>
                 <Box component="section">
                     <Group
-                        justify="space-between"
                         gap="sm"
+                        justify="space-between"
                     >
                         <Group>
                             <PlayButton onClick={() => handlePlay()} />
                             <Button
-                                compact
                                 loading={
                                     createFavoriteMutation.isLoading ||
                                     deleteFavoriteMutation.isLoading
                                 }
                                 onClick={handleFavorite}
+                                size="compact-md"
                                 variant="subtle"
                             >
                                 {detailQuery?.data?.userFavorite ? (
@@ -204,11 +204,11 @@ const DummyAlbumDetailRoute = () => {
                                 )}
                             </Button>
                             <Button
-                                compact
                                 onClick={(e) => {
                                     if (!detailQuery?.data) return;
                                     handleGeneralContextMenu(e, [detailQuery.data!]);
                                 }}
+                                size="compact-md"
                                 variant="subtle"
                             >
                                 <RiMoreFill size={20} />
@@ -221,11 +221,10 @@ const DummyAlbumDetailRoute = () => {
                         <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
-                                    compact
                                     component={Link}
                                     key={`genre-${genre.id}`}
                                     radius={0}
-                                    size="md"
+                                    size="compact-md"
                                     to={generatePath(AppRoute.LIBRARY_GENRES_SONGS, {
                                         genreId: genre.id,
                                     })}

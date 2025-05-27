@@ -109,9 +109,9 @@ const Controls = () => {
 
     return (
         <Group
+            gap="sm"
             p="1rem"
             pos="absolute"
-            gap="sm"
             style={{
                 background: `rgb(var(--main-bg-transparent), ${opacity}%)`,
                 left: 0,
@@ -119,9 +119,8 @@ const Controls = () => {
             }}
         >
             <Button
-                compact
                 onClick={handleToggleFullScreenPlayer}
-                size="sm"
+                size="compact-sm"
                 tooltip={{ label: t('common.minimize', { postProcess: 'titleCase' }) }}
                 variant="subtle"
             >
@@ -130,8 +129,7 @@ const Controls = () => {
             <Popover position="bottom-start">
                 <Popover.Target>
                     <Button
-                        compact
-                        size="sm"
+                        size="compact-sm"
                         tooltip={{ label: t('common.configure', { postProcess: 'titleCase' }) }}
                         variant="subtle"
                     >

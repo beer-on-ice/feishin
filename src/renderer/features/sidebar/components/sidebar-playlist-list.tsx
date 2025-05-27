@@ -40,8 +40,8 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                     <Group>
                         <Text>{t('page.sidebar.shared', { postProcess: 'titleCase' })}</Text>
                         <Button
-                            compact
                             onClick={() => setCollapse()}
+                            size="compact-md"
                             tooltip={{
                                 label: t(collapse ? 'common.expand' : 'common.collapse', {
                                     postProcess: 'titleCase',
@@ -87,9 +87,9 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
         >
             <Group
                 className="sidebar-playlist-item"
+                justify="space-between"
                 noWrap
                 pos="relative"
-                justify="space-between"
                 style={{
                     '&:hover': {
                         '.sidebar-playlist-controls': {
@@ -118,18 +118,17 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                 <Group
                     className="sidebar-playlist-controls"
                     display="none"
+                    gap="sm"
                     noWrap
                     pos="absolute"
                     right="0"
-                    gap="sm"
                 >
                     <Button
-                        compact
                         onClick={() => {
                             if (!data?.items?.[index].id) return;
                             data.handlePlay(data?.items[index].id, Play.NOW);
                         }}
-                        size="md"
+                        size="compact-md"
                         tooltip={{
                             label: t('player.play', { postProcess: 'sentenceCase' }),
                             openDelay: 500,
@@ -139,12 +138,11 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                         <RiPlayFill />
                     </Button>
                     <Button
-                        compact
                         onClick={() => {
                             if (!data?.items?.[index].id) return;
                             data.handlePlay(data?.items[index].id, Play.LAST);
                         }}
-                        size="md"
+                        size="compact-md"
                         tooltip={{
                             label: t('player.addLast', { postProcess: 'sentenceCase' }),
                             openDelay: 500,
@@ -154,12 +152,11 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                         <RiAddBoxFill />
                     </Button>
                     <Button
-                        compact
                         onClick={() => {
                             if (!data?.items?.[index].id) return;
                             data.handlePlay(data?.items[index].id, Play.NEXT);
                         }}
-                        size="md"
+                        size="compact-md"
                         tooltip={{
                             label: t('player.addNext', { postProcess: 'sentenceCase' }),
                             openDelay: 500,

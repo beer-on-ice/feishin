@@ -82,8 +82,8 @@ export const StylesSettings = () => {
                             <>
                                 {open && (
                                     <Button
-                                        compact
                                         onClick={handleSave}
+                                        size="compact-md"
                                         // disabled={isSaveButtonDisabled}
                                         variant="filled"
                                     >
@@ -91,8 +91,8 @@ export const StylesSettings = () => {
                                     </Button>
                                 )}
                                 <Button
-                                    compact
                                     onClick={() => setOpen(!open)}
+                                    size="compact-md"
                                     variant="filled"
                                 >
                                     {t(open ? 'common.close' : 'common.edit', {

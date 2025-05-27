@@ -9,12 +9,12 @@ export const ActionsCell = ({ api, context }: ICellRendererParams) => {
     return (
         <CellContainer $position="center">
             <Button
-                compact
                 onClick={(e) => {
                     e.stopPropagation();
                     e.preventDefault();
                     context.onCellContextMenu(undefined, api, e);
                 }}
+                size="compact-md"
                 variant="subtle"
             >
                 <RiMoreFill />

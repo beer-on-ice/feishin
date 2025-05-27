@@ -326,16 +326,15 @@ export const PlaylistListHeaderFilters = ({
     return (
         <Flex justify="space-between">
             <Group
-                ref={cq.ref}
                 gap="sm"
+                ref={cq.ref}
                 w="100%"
             >
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw="600"
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             {sortByLabel}
@@ -361,9 +360,8 @@ export const PlaylistListHeaderFilters = ({
                 />
                 <Divider orientation="vertical" />
                 <Button
-                    compact
                     onClick={handleRefresh}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('common.refresh', { postProcess: 'titleCase' }) }}
                     variant="subtle"
                 >
@@ -373,9 +371,8 @@ export const PlaylistListHeaderFilters = ({
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw="600"
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiMoreFill size="1.3rem" />
@@ -398,8 +395,7 @@ export const PlaylistListHeaderFilters = ({
                 >
                     <DropdownMenu.Target>
                         <Button
-                            compact
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiSettings3Fill size="1.3rem" />

@@ -477,16 +477,15 @@ export const SongListHeaderFilters = ({
     return (
         <Flex justify="space-between">
             <Group
-                ref={cq.ref}
                 gap="sm"
+                ref={cq.ref}
                 w="100%"
             >
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw="600"
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             {sortByLabel}
@@ -520,9 +519,8 @@ export const SongListHeaderFilters = ({
                         <DropdownMenu position="bottom-start">
                             <DropdownMenu.Target>
                                 <Button
-                                    compact
                                     fw="600"
-                                    size="md"
+                                    size="compact-md"
                                     style={{
                                         svg: {
                                             fill: isFolderFilterApplied
@@ -552,9 +550,8 @@ export const SongListHeaderFilters = ({
                 )}
                 <Divider orientation="vertical" />
                 <Button
-                    compact
                     onClick={handleOpenFiltersModal}
-                    size="md"
+                    size="compact-md"
                     style={{
                         svg: {
                             fill: isFilterApplied ? 'var(--primary-color) !important' : undefined,
@@ -567,9 +564,8 @@ export const SongListHeaderFilters = ({
                 </Button>
                 <Divider orientation="vertical" />
                 <Button
-                    compact
                     onClick={handleRefresh}
-                    size="md"
+                    size="compact-md"
                     tooltip={{ label: t('common.refresh', { postProcess: 'titleCase' }) }}
                     variant="subtle"
                 >
@@ -579,9 +575,8 @@ export const SongListHeaderFilters = ({
                 <DropdownMenu position="bottom-start">
                     <DropdownMenu.Target>
                         <Button
-                            compact
                             fw="600"
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiMoreFill size="1.3rem" />
@@ -617,8 +612,8 @@ export const SongListHeaderFilters = ({
                 </DropdownMenu>
             </Group>
             <Group
-                noWrap
                 gap="sm"
+                noWrap
             >
                 <DropdownMenu
                     position="bottom-end"
@@ -626,8 +621,7 @@ export const SongListHeaderFilters = ({
                 >
                     <DropdownMenu.Target>
                         <Button
-                            compact
-                            size="md"
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiSettings3Fill size="1.3rem" />

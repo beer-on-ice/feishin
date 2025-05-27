@@ -216,21 +216,20 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 title: (
                     <Group align="flex-end">
                         <TextTitle
-                            order={2}
                             fw={700}
+                            order={2}
                         >
                             {t('page.albumArtistDetail.recentReleases', {
                                 postProcess: 'sentenceCase',
                             })}
                         </TextTitle>
                         <Button
-                            compact
                             component={Link}
+                            size="compact-md"
                             to={artistDiscographyLink}
-                            uppercase
                             variant="subtle"
                         >
-                            {t('page.albumArtistDetail.viewDiscography')}
+                            {String(t('page.albumArtistDetail.viewDiscography')).toUpperCase()}
                         </Button>
                     </Group>
                 ),
@@ -247,8 +246,8 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 order: itemOrder.compilations,
                 title: (
                     <TextTitle
-                        order={2}
                         fw={700}
+                        order={2}
                     >
                         {t('page.albumArtistDetail.appearsOn', { postProcess: 'sentenceCase' })}
                     </TextTitle>
@@ -262,8 +261,8 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 order: itemOrder.similarArtists,
                 title: (
                     <TextTitle
-                        order={2}
                         fw={700}
+                        order={2}
                     >
                         {t('page.albumArtistDetail.relatedArtists', {
                             postProcess: 'sentenceCase',
@@ -382,11 +381,11 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                     />
                     <Group gap="xs">
                         <Button
-                            compact
                             loading={
                                 createFavoriteMutation.isLoading || deleteFavoriteMutation.isLoading
                             }
                             onClick={handleFavorite}
+                            size="compact-md"
                             variant="subtle"
                         >
                             {detailQuery?.data?.userFavorite ? (
@@ -399,11 +398,11 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                             )}
                         </Button>
                         <Button
-                            compact
                             onClick={(e) => {
                                 if (!detailQuery?.data) return;
                                 handleGeneralContextMenu(e, [detailQuery.data!]);
                             }}
+                            size="compact-md"
                             variant="subtle"
                         >
                             <RiMoreFill size={20} />
@@ -412,22 +411,20 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 </Group>
                 <Group gap="md">
                     <Button
-                        compact
                         component={Link}
+                        size="compact-md"
                         to={artistDiscographyLink}
-                        uppercase
                         variant="subtle"
                     >
-                        {t('page.albumArtistDetail.viewDiscography')}
+                        {String(t('page.albumArtistDetail.viewDiscography')).toUpperCase()}
                     </Button>
                     <Button
-                        compact
                         component={Link}
+                        size="compact-md"
                         to={artistSongsLink}
-                        uppercase
                         variant="subtle"
                     >
-                        {t('page.albumArtistDetail.viewAllTracks')}
+                        {String(t('page.albumArtistDetail.viewAllTracks')).toUpperCase()}
                     </Button>
                 </Group>
                 {showGenres ? (
@@ -435,11 +432,10 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                         <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
-                                    compact
                                     component={Link}
                                     key={`genre-${genre.id}`}
                                     radius="md"
-                                    size="md"
+                                    size="compact-md"
                                     to={generatePath(genrePath, {
                                         genreId: genre.id,
                                     })}
@@ -455,14 +451,13 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                     <Box component="section">
                         <Group gap="sm">
                             <Button
-                                compact
                                 component="a"
                                 href={`https://www.last.fm/music/${encodeURIComponent(
                                     detailQuery?.data?.name || '',
                                 )}`}
                                 radius="md"
                                 rel="noopener noreferrer"
-                                size="md"
+                                size="compact-md"
                                 target="_blank"
                                 tooltip={{
                                     label: t('action.openIn.lastfm'),
@@ -473,12 +468,11 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                             </Button>
                             {mbzId ? (
                                 <Button
-                                    compact
                                     component="a"
                                     href={`https://musicbrainz.org/artist/${mbzId}`}
                                     radius="md"
                                     rel="noopener noreferrer"
-                                    size="md"
+                                    size="compact-md"
                                     target="_blank"
                                     tooltip={{
                                         label: t('action.openIn.musicbrainz'),
@@ -502,8 +496,8 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                                 maw="1280px"
                             >
                                 <TextTitle
-                                    order={2}
                                     fw={700}
+                                    order={2}
                                 >
                                     {t('page.albumArtistDetail.about', {
                                         artist: detailQuery?.data?.name,
@@ -520,16 +514,16 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                         >
                             <Box component="section">
                                 <Group
-                                    noWrap
                                     justify="space-between"
+                                    noWrap
                                 >
                                     <Group
                                         align="flex-end"
                                         noWrap
                                     >
                                         <TextTitle
-                                            order={2}
                                             fw={700}
+                                            order={2}
                                         >
                                             {t('page.albumArtistDetail.topSongs', {
                                                 postProcess: 'sentenceCase',

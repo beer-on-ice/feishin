@@ -49,8 +49,8 @@ export const FavoriteCell = ({ data, node, value }: ICellRendererParams) => {
     return (
         <CellContainer $position="center">
             <Button
-                compact
                 onClick={handleToggleFavorite}
+                size="compact-md"
                 style={{
                     svg: {
                         fill: !value

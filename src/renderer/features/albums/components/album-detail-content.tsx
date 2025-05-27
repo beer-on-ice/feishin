@@ -335,18 +335,18 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
             <DetailContainer>
                 <Box component="section">
                     <Group
-                        justify="space-between"
                         gap="sm"
+                        justify="space-between"
                     >
                         <Group>
                             <PlayButton onClick={() => handlePlay(playButtonBehavior)} />
                             <Button
-                                compact
                                 loading={
                                     createFavoriteMutation.isLoading ||
                                     deleteFavoriteMutation.isLoading
                                 }
                                 onClick={handleFavorite}
+                                size="compact-md"
                                 variant="subtle"
                             >
                                 {detailQuery?.data?.userFavorite ? (
@@ -359,11 +359,11 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                                 )}
                             </Button>
                             <Button
-                                compact
                                 onClick={(e) => {
                                     if (!detailQuery?.data) return;
                                     handleGeneralContextMenu(e, [detailQuery.data!]);
                                 }}
+                                size="compact-md"
                                 variant="subtle"
                             >
                                 <RiMoreFill size={20} />
@@ -373,8 +373,7 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                         <Popover position="bottom-end">
                             <Popover.Target>
                                 <Button
-                                    compact
-                                    size="md"
+                                    size="compact-md"
                                     variant="subtle"
                                 >
                                     <RiSettings2Fill size={20} />
@@ -391,11 +390,10 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                         <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
-                                    compact
                                     component={Link}
                                     key={`genre-${genre.id}`}
                                     radius={0}
-                                    size="md"
+                                    size="compact-md"
                                     to={generatePath(genreRoute, {
                                         genreId: genre.id,
                                     })}
@@ -411,14 +409,13 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                     <Box component="section">
                         <Group gap="sm">
                             <Button
-                                compact
                                 component="a"
                                 href={`https://www.last.fm/music/${encodeURIComponent(
                                     detailQuery?.data?.albumArtist || '',
                                 )}/${encodeURIComponent(detailQuery.data?.name || '')}`}
                                 radius="md"
                                 rel="noopener noreferrer"
-                                size="md"
+                                size="compact-md"
                                 target="_blank"
                                 tooltip={{
                                     label: t('action.openIn.lastfm'),
@@ -429,12 +426,11 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                             </Button>
                             {mbzId ? (
                                 <Button
-                                    compact
                                     component="a"
                                     href={`https://musicbrainz.org/release/${mbzId}`}
                                     radius="md"
                                     rel="noopener noreferrer"
-                                    size="md"
+                                    size="compact-md"
                                     target="_blank"
                                     tooltip={{
                                         label: t('action.openIn.musicbrainz'),
@@ -491,9 +487,9 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                     />
                 </Box>
                 <Stack
+                    gap="lg"
                     mt="3rem"
                     ref={cq.ref}
-                    gap="lg"
                 >
                     {cq.height || cq.width ? (
                         <>

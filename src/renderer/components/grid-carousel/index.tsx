@@ -66,7 +66,7 @@ const Title = ({ handleNext, handlePrev, label, pagination }: TitleProps) => {
             ) : (
                 <TextTitle
                     order={2}
-                    fw={700}
+                    weight={700}
                 >
                     {label}
                 </TextTitle>
@@ -74,19 +74,17 @@ const Title = ({ handleNext, handlePrev, label, pagination }: TitleProps) => {
 
             <Group gap="sm">
                 <Button
-                    compact
                     disabled={!pagination.hasPreviousPage}
                     onClick={handlePrev}
-                    size="lg"
+                    size="compact-lg"
                     variant="default"
                 >
                     <RiArrowLeftSLine />
                 </Button>
                 <Button
-                    compact
                     disabled={!pagination.hasNextPage}
                     onClick={handleNext}
-                    size="lg"
+                    size="compact-lg"
                     variant="default"
                 >
                     <RiArrowRightSLine />
@@ -288,8 +286,8 @@ export const SwiperGridCarousel = ({
     return (
         <CarouselContainer
             className="grid-carousel"
-            ref={containerRef}
             gap="md"
+            ref={containerRef}
         >
             {title ? (
                 <Title

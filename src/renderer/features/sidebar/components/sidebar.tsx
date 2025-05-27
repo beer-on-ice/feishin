@@ -143,14 +143,14 @@ export const Sidebar = () => {
         >
             <ActionBar />
             <Stack
+                gap={0}
                 h="100%"
                 justify="space-between"
-                gap={0}
             >
                 <MotionStack
+                    gap={0}
                     h="100%"
                     layout="position"
-                    gap={0}
                     style={{ maxHeight: showImage ? `calc(100% - ${sidebar.leftWidth})` : '100%' }}
                 >
                     <Stack gap={0}>
@@ -193,9 +193,8 @@ export const Sidebar = () => {
                                 </Group>
                                 <Group gap="sm">
                                     <Button
-                                        compact
                                         onClick={handleCreatePlaylistModal}
-                                        size="md"
+                                        size="compact-md"
                                         tooltip={{
                                             label: t('action.createPlaylist', {
                                                 postProcess: 'sentenceCase',
@@ -207,10 +206,9 @@ export const Sidebar = () => {
                                         <RiAddFill size="1em" />
                                     </Button>
                                     <Button
-                                        compact
                                         component={Link}
                                         onClick={(e) => e.stopPropagation()}
-                                        size="md"
+                                        size="compact-md"
                                         to={AppRoute.PLAYLISTS}
                                         tooltip={{
                                             label: t('action.viewPlaylists', {
@@ -269,14 +267,13 @@ export const Sidebar = () => {
                                 )}
                             </Tooltip>
                             <Button
-                                compact
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     setSideBar({ image: false });
                                 }}
                                 opacity={0.8}
                                 radius={100}
-                                size="md"
+                                size="compact-md"
                                 style={{
                                     cursor: 'default',
                                     position: 'absolute',

@@ -95,15 +95,15 @@ export const CommandPalette = ({ modalProps }: CommandPaletteProps) => {
             size="lg"
         >
             <Group
-                mb="1rem"
                 gap="sm"
+                mb="1rem"
             >
                 {pages.map((page, index) => (
                     <Fragment key={page}>
                         {index > 0 && ' > '}
                         <Button
-                            compact
                             disabled
+                            size="compact-md"
                             variant="default"
                         >
                             {page?.toLocaleUpperCase()}

@@ -58,9 +58,9 @@ export const CacheSettings = () => {
         {
             control: (
                 <Button
-                    compact
                     disabled={isClearing}
                     onClick={() => openResetConfirmModal(false)}
+                    size="compact-md"
                     variant="filled"
                 >
                     {t('common.clear', { postProcess: 'sentenceCase' })}
@@ -75,9 +75,9 @@ export const CacheSettings = () => {
         {
             control: (
                 <Button
-                    compact
                     disabled={isClearing}
                     onClick={() => openResetConfirmModal(true)}
+                    size="compact-md"
                     variant="filled"
                 >
                     {t('common.clear', { postProcess: 'sentenceCase' })}

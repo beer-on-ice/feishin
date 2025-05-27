@@ -156,10 +156,9 @@ export const LibraryCommandItem = ({
                 justify="flex-end"
             >
                 <Button
-                    compact
                     disabled={disabled}
                     onClick={(e) => handlePlay(e, id, Play.NOW)}
-                    size="md"
+                    size="compact-md"
                     tooltip={{
                         label: t('player.play', { postProcess: 'sentenceCase' }),
                         openDelay: 500,
@@ -169,10 +168,9 @@ export const LibraryCommandItem = ({
                     <RiPlayFill />
                 </Button>
                 <Button
-                    compact
                     disabled={disabled}
                     onClick={(e) => handlePlay(e, id, Play.LAST)}
-                    size="md"
+                    size="compact-md"
                     tooltip={{
                         label: t('player.addLast', { postProcess: 'sentenceCase' }),
 
@@ -183,10 +181,9 @@ export const LibraryCommandItem = ({
                     <RiAddBoxFill />
                 </Button>
                 <Button
-                    compact
                     disabled={disabled}
                     onClick={(e) => handlePlay(e, id, Play.NEXT)}
-                    size="md"
+                    size="compact-md"
                     tooltip={{
                         label: t('player.addNext', { postProcess: 'sentenceCase' }),
                         openDelay: 500,
