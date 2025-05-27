@@ -476,7 +476,7 @@ export const AlbumListHeaderFilters = ({
                                     compact
                                     fw={600}
                                     size="md"
-                                    sx={{
+                                    style={{
                                         svg: {
                                             fill: isFolderFilterApplied
                                                 ? 'var(--primary-color) !important'
@@ -508,7 +508,7 @@ export const AlbumListHeaderFilters = ({
                     compact
                     onClick={handleOpenFiltersModal}
                     size="md"
-                    sx={{
+                    style={{
                         svg: {
                             fill: isFilterApplied ? 'var(--primary-color) !important' : undefined,
                         },
@@ -658,7 +658,7 @@ export const AlbumListHeaderFilters = ({
                                 <DropdownMenu.Item
                                     closeMenuOnClick={false}
                                     component="div"
-                                    sx={{ cursor: 'default' }}
+                                    style={{ cursor: 'default' }}
                                 >
                                     <Stack>
                                         <MultiSelect

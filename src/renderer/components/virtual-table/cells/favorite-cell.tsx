@@ -51,7 +51,7 @@ export const FavoriteCell = ({ data, node, value }: ICellRendererParams) => {
             <Button
                 compact
                 onClick={handleToggleFavorite}
-                sx={{
+                style={{
                     svg: {
                         fill: !value
                             ? 'var(--main-fg-secondary) !important'

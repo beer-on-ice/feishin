@@ -1,4 +1,3 @@
-import { Notifications } from '@mantine/notifications';
 import {
     PersistedClient,
     Persister,
@@ -57,11 +56,6 @@ createRoot(document.getElementById('root')!).render(
             persister: indexedDbPersister,
         }}
     >
-        <Notifications
-            containerWidth="300px"
-            position="bottom-center"
-            zIndex={5}
-        />
         <App />
     </PersistQueryClientProvider>,
 );

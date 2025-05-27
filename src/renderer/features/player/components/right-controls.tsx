@@ -276,7 +276,7 @@ export const RightControls = () => {
                         )
                     }
                     onClick={() => handleToggleFavorite(currentSong)}
-                    sx={{
+                    style={{
                         svg: {
                             fill: !currentSong?.userFavorite
                                 ? undefined

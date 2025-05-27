@@ -1,5 +1,5 @@
 import { GridOptions, RowNode } from '@ag-grid-community/core';
-import { createUseExternalEvents } from '@mantine/utils';
+import { createUseExternalEvents } from '@mantine/core';
 
 import { LibraryItem } from '/@/shared/types/domain-types';
 

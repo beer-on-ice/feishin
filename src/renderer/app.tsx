@@ -2,12 +2,14 @@ import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-mod
 import { ModuleRegistry } from '@ag-grid-community/core';
 import { InfiniteRowModelModule } from '@ag-grid-community/infinite-row-model';
 import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 import isElectron from 'is-electron';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { initSimpleImg } from 'react-simple-img';
 
 import './styles/global.scss';
 
+import '@mantine/core/styles.css';
 import '@ag-grid-community/styles/ag-grid.css';
 import 'overlayscrollbars/overlayscrollbars.css';
 
@@ -290,6 +292,11 @@ export const App = () => {
             withGlobalStyles
             withNormalizeCSS
         >
+            <Notifications
+                containerWidth="300px"
+                position="bottom-center"
+                zIndex={5}
+            />
             <PlayQueueHandlerContext.Provider value={providerValue}>
                 <ContextMenuProvider>
                     <WebAudioContext.Provider value={webAudioProvider}>

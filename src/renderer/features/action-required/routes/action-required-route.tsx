@@ -45,10 +45,10 @@ const ActionRequiredRoute = () => {
     return (
         <AnimatedPage>
             <PageHeader />
-            <Center sx={{ height: '100%', width: '100vw' }}>
+            <Center style={{ height: '100%', width: '100vw' }}>
                 <Stack
                     spacing="xl"
-                    sx={{ maxWidth: '50%' }}
+                    style={{ maxWidth: '50%' }}
                 >
                     <Group noWrap>
                         {displayedCheck && (

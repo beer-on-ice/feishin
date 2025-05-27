@@ -35,7 +35,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
             <div style={{ margin: '0.5rem 0', padding: '0 1.5rem', ...style }}>
                 <Box
                     fw="600"
-                    sx={{ fontSize: '1.2rem' }}
+                    style={{ fontSize: '1.2rem' }}
                 >
                     <Group>
                         <Text>{t('page.sidebar.shared', { postProcess: 'titleCase' })}</Text>
@@ -90,7 +90,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                 noWrap
                 pos="relative"
                 position="apart"
-                sx={{
+                style={{
                     '&:hover': {
                         '.sidebar-playlist-controls': {
                             display: 'flex',
@@ -106,7 +106,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                     component={Link}
                     overflow="hidden"
                     size="md"
-                    sx={{
+                    style={{
                         color: 'var(--sidebar-fg) !important',
                         cursor: 'default',
                         width: '100%',

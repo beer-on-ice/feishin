@@ -153,7 +153,7 @@ export const AlbumDetailHeader = forwardRef(
                         <Group
                             mah="4rem"
                             spacing="md"
-                            sx={{
+                            style={{
                                 overflow: 'hidden',
                                 WebkitBoxOrient: 'vertical',
                                 WebkitLineClamp: 2,

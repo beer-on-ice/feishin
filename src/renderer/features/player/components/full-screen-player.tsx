@@ -112,7 +112,7 @@ const Controls = () => {
             p="1rem"
             pos="absolute"
             spacing="sm"
-            sx={{
+            style={{
                 background: `rgb(var(--main-bg-transparent), ${opacity}%)`,
                 left: 0,
                 top: 0,

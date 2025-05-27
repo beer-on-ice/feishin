@@ -68,7 +68,7 @@ export const Select = ({ maxWidth, width, ...props }: SelectProps) => {
                     padding: '.3rem',
                 },
             }}
-            sx={{ maxWidth, width }}
+            style={{ maxWidth, width }}
             transitionProps={{ duration: 100, transition: 'fade' }}
             withinPortal
             {...props}
@@ -129,7 +129,7 @@ export const MultiSelect = ({ maxWidth, width, ...props }: MultiSelectProps) => 
                     paddingTop: '1rem',
                 },
             }}
-            sx={{ maxWidth, width }}
+            style={{ maxWidth, width }}
             transitionProps={{ duration: 100, transition: 'fade' }}
             withinPortal
             {...props}

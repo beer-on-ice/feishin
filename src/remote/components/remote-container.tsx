@@ -146,7 +146,7 @@ export const RemoteContainer = () => {
                             <Rating
                                 onChange={debouncedSetRating}
                                 onDoubleClick={() => debouncedSetRating(0)}
-                                sx={{ margin: 'auto' }}
+                                style={{ margin: 'auto' }}
                                 value={song.userRating ?? 0}
                             />
                         </Tooltip>

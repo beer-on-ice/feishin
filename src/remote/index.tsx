@@ -1,4 +1,4 @@
-import { Notifications } from '@mantine/notifications';
+// import { Notifications } from '@mantine/notifications';
 import { createRoot } from 'react-dom/client';
 
 import { App } from '/@/remote/app';
@@ -8,10 +8,10 @@ const root = createRoot(container);
 
 root.render(
     <>
-        <Notifications
+        {/* <Notifications
             containerWidth="300px"
             position="bottom-center"
-        />
+        /> */}
         <App />
     </>,
 );

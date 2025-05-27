@@ -17,11 +17,11 @@ export const SettingsOptions = ({ control, description, note, title }: SettingsO
             <Group
                 noWrap
                 position="apart"
-                sx={{ alignItems: 'center' }}
+                style={{ alignItems: 'center' }}
             >
                 <Stack
                     spacing="xs"
-                    sx={{
+                    style={{
                         alignSelf: 'flex-start',
                         display: 'flex',
                         maxWidth: '50%',

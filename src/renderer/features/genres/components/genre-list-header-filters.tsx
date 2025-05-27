@@ -291,7 +291,7 @@ export const GenreListHeaderFilters = ({
                                     compact
                                     fw={600}
                                     size="md"
-                                    sx={{
+                                    style={{
                                         svg: {
                                             fill: isFolderFilterApplied
                                                 ? 'var(--primary-color) !important'
@@ -451,7 +451,7 @@ export const GenreListHeaderFilters = ({
                                 <DropdownMenu.Item
                                     closeMenuOnClick={false}
                                     component="div"
-                                    sx={{ cursor: 'default' }}
+                                    style={{ cursor: 'default' }}
                                 >
                                     <Stack>
                                         <MultiSelect

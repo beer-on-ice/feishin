@@ -126,7 +126,7 @@ export const FullScreenPlayerQueue = () => {
                             onClick={item.onClick}
                             pos="relative"
                             size="lg"
-                            sx={{
+                            style={{
                                 alignItems: 'center',
                                 color: item.active
                                     ? 'var(--main-fg) !important'

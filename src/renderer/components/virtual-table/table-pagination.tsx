@@ -80,7 +80,7 @@ export const TablePagination = ({
             layout
             p="1rem"
             ref={containerQuery.ref}
-            sx={{ borderTop: '1px solid var(--generic-border-color)' }}
+            style={{ borderTop: '1px solid var(--generic-border-color)' }}
         >
             <Text
                 $secondary
@@ -119,7 +119,7 @@ export const TablePagination = ({
                             onClick={() => handlers.toggle()}
                             radius="sm"
                             size="sm"
-                            sx={{ height: '26px', padding: '0', width: '26px' }}
+                            style={{ height: '26px', padding: '0', width: '26px' }}
                             tooltip={{
                                 label: t('action.goToPage', { postProcess: 'sentenceCase' }),
                             }}

@@ -171,7 +171,7 @@ export const TimeoutButton = ({ timeoutProps, ...props }: HoldButtonProps) => {
     return (
         <Button
             onClick={startTimeout}
-            sx={{ color: 'var(--danger-color)' }}
+            style={{ color: 'var(--danger-color)' }}
             {...props}
         >
             {isRunning ? 'Cancel' : props.children}

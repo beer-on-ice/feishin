@@ -62,7 +62,7 @@ export const ServerList = () => {
             <Group
                 mb={10}
                 position="right"
-                sx={{
+                style={{
                     position: 'absolute',
                     right: 55,
                     transform: 'translateY(-3.5rem)',

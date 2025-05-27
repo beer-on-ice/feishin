@@ -152,7 +152,7 @@ export const PosterCard = ({
                         />
                     ) : (
                         <Center
-                            sx={{
+                            style={{
                                 background: 'var(--placeholder-bg)',
                                 borderRadius: 'var(--card-default-radius)',
                                 height: '100%',

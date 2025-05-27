@@ -151,7 +151,7 @@ export const Sidebar = () => {
                     h="100%"
                     layout="position"
                     spacing={0}
-                    sx={{ maxHeight: showImage ? `calc(100% - ${sidebar.leftWidth})` : '100%' }}
+                    style={{ maxHeight: showImage ? `calc(100% - ${sidebar.leftWidth})` : '100%' }}
                 >
                     <Stack spacing={0}>
                         {sidebarItemsWithRoute.map((item) => {
@@ -186,7 +186,7 @@ export const Sidebar = () => {
                                 <Group>
                                     <Box
                                         fw="600"
-                                        sx={{ fontSize: '1.2rem' }}
+                                        style={{ fontSize: '1.2rem' }}
                                     >
                                         {t('page.sidebar.playlists', { postProcess: 'titleCase' })}
                                     </Box>
@@ -256,7 +256,10 @@ export const Sidebar = () => {
                                     />
                                 ) : (
                                     <Center
-                                        sx={{ background: 'var(--placeholder-bg)', height: '100%' }}
+                                        style={{
+                                            background: 'var(--placeholder-bg)',
+                                            height: '100%',
+                                        }}
                                     >
                                         <RiDiscLine
                                             color="var(--placeholder-fg)"
@@ -274,7 +277,12 @@ export const Sidebar = () => {
                                 opacity={0.8}
                                 radius={100}
                                 size="md"
-                                sx={{ cursor: 'default', position: 'absolute', right: 5, top: 5 }}
+                                style={{
+                                    cursor: 'default',
+                                    position: 'absolute',
+                                    right: 5,
+                                    top: 5,
+                                }}
                                 tooltip={{
                                     label: t('common.collapse', { postProcess: 'titleCase' }),
                                     openDelay: 500,

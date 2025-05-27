@@ -168,21 +168,21 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                     placeholder="var(--card-default-bg)"
                                     radius="md"
                                     src={data[itemIndex]?.imageUrl}
-                                    sx={{ objectFit: 'cover' }}
+                                    style={{ objectFit: 'cover' }}
                                     width={225}
                                 />
                             </ImageColumn>
                             <InfoColumn>
                                 <Stack
                                     spacing="md"
-                                    sx={{ width: '100%' }}
+                                    style={{ width: '100%' }}
                                 >
                                     <TitleWrapper>
                                         <TextTitle
                                             lh="3.5rem"
                                             order={1}
                                             overflow="hidden"
-                                            sx={{ fontSize: '3.5rem' }}
+                                            style={{ fontSize: '3.5rem' }}
                                             weight={900}
                                         >
                                             {currentItem?.name}

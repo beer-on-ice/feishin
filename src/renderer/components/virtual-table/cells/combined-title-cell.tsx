@@ -109,7 +109,7 @@ export const CombinedTitleCell = ({
                     />
                 ) : (
                     <Center
-                        sx={{
+                        style={{
                             background: 'var(--placeholder-bg)',
                             borderRadius: 'var(--card-default-radius)',
                             height: `${(node.rowHeight || 40) - 10}px`,
@@ -153,7 +153,7 @@ export const CombinedTitleCell = ({
                                         component={Link}
                                         overflow="hidden"
                                         size="md"
-                                        sx={{ width: 'fit-content' }}
+                                        style={{ width: 'fit-content' }}
                                         to={generatePath(AppRoute.LIBRARY_ALBUM_ARTISTS_DETAIL, {
                                             albumArtistId: artist.id,
                                         })}
@@ -165,7 +165,7 @@ export const CombinedTitleCell = ({
                                         $secondary
                                         overflow="hidden"
                                         size="md"
-                                        sx={{ width: 'fit-content' }}
+                                        style={{ width: 'fit-content' }}
                                     >
                                         {artist.name}
                                     </Text>

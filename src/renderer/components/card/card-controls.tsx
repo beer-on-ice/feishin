@@ -143,7 +143,7 @@ export const CardControls = ({
                     <SecondaryButton
                         disabled
                         p={5}
-                        sx={{ svg: { fill: 'white !important' } }}
+                        style={{ svg: { fill: 'white !important' } }}
                         variant="subtle"
                     >
                         <FavoriteWrapper isFavorite={itemData?.isFavorite}>
@@ -164,7 +164,7 @@ export const CardControls = ({
                             handleContextMenu(e, [itemData]);
                         }}
                         p={5}
-                        sx={{ svg: { fill: 'white !important' } }}
+                        style={{ svg: { fill: 'white !important' } }}
                         variant="subtle"
                     >
                         <RiMore2Fill

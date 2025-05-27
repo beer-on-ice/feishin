@@ -586,7 +586,7 @@ export const ArtistListHeaderFilters = ({ gridRef, tableRef }: ArtistListHeaderF
                                 <DropdownMenu.Item
                                     closeMenuOnClick={false}
                                     component="div"
-                                    sx={{ cursor: 'default' }}
+                                    style={{ cursor: 'default' }}
                                 >
                                     <Stack>
                                         <MultiSelect

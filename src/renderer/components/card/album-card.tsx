@@ -160,7 +160,7 @@ export const AlbumCard = ({
                             />
                         ) : (
                             <Center
-                                sx={{
+                                style={{
                                     background: 'var(--placeholder-bg)',
                                     borderRadius: 'var(--card-default-radius)',
                                     height: `${size}px`,
