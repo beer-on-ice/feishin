@@ -57,7 +57,7 @@ const SearchResult = ({ data, onClick }: SearchResultProps) => {
                 >
                     <Text
                         size="md"
-                        weight={600}
+                        fw={600}
                     >
                         {name}
                     </Text>

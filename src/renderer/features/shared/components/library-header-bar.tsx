@@ -32,7 +32,7 @@ const Title = ({ children }: TitleProps) => {
         <TextTitle
             order={1}
             overflow="hidden"
-            weight={700}
+            fw={700}
         >
             {children}
         </TextTitle>

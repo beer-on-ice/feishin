@@ -217,7 +217,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                     <Group align="flex-end">
                         <TextTitle
                             order={2}
-                            weight={700}
+                            fw={700}
                         >
                             {t('page.albumArtistDetail.recentReleases', {
                                 postProcess: 'sentenceCase',
@@ -248,7 +248,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 title: (
                     <TextTitle
                         order={2}
-                        weight={700}
+                        fw={700}
                     >
                         {t('page.albumArtistDetail.appearsOn', { postProcess: 'sentenceCase' })}
                     </TextTitle>
@@ -263,7 +263,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 title: (
                     <TextTitle
                         order={2}
-                        weight={700}
+                        fw={700}
                     >
                         {t('page.albumArtistDetail.relatedArtists', {
                             postProcess: 'sentenceCase',
@@ -503,7 +503,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                             >
                                 <TextTitle
                                     order={2}
-                                    weight={700}
+                                    fw={700}
                                 >
                                     {t('page.albumArtistDetail.about', {
                                         artist: detailQuery?.data?.name,
@@ -529,7 +529,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                                     >
                                         <TextTitle
                                             order={2}
-                                            weight={700}
+                                            fw={700}
                                         >
                                             {t('page.albumArtistDetail.topSongs', {
                                                 postProcess: 'sentenceCase',

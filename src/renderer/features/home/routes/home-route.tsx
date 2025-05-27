@@ -306,7 +306,7 @@ const HomeRoute = () => {
                                     <Group>
                                         <TextTitle
                                             order={2}
-                                            weight={700}
+                                            fw={700}
                                         >
                                             {carousel.title}
                                         </TextTitle>

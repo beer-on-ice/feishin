@@ -222,7 +222,7 @@ export const LeftControls = () => {
                                 overflow="hidden"
                                 size="md"
                                 to={AppRoute.NOW_PLAYING}
-                                weight={500}
+                                fw={500}
                             >
                                 {title || '—'}
                             </Text>
@@ -256,7 +256,7 @@ export const LeftControls = () => {
                                               })
                                             : undefined
                                     }
-                                    weight={500}
+                                    fw={500}
                                 >
                                     {artist.name || '—'}
                                 </Text>
@@ -279,7 +279,7 @@ export const LeftControls = () => {
                                       })
                                     : ''
                             }
-                            weight={500}
+                            fw={500}
                         >
                             {currentSong?.album || '—'}
                         </Text>

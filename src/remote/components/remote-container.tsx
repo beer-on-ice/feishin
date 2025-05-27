@@ -169,8 +169,8 @@ export const RemoteContainer = () => {
                 onChangeEnd={(e) => send({ event: 'volume', volume: e })}
                 rightLabel={
                     <Text
+                        fw={600}
                         size="xs"
-                        weight={600}
                     >
                         {volume ?? 0}
                     </Text>

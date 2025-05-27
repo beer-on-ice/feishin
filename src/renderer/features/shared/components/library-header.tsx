@@ -127,7 +127,7 @@ export const LibraryHeader = forwardRef(
                                 component={Link}
                                 to={item.route}
                                 tt="uppercase"
-                                weight={600}
+                                fw={600}
                             >
                                 {itemTypeString()}
                             </Text>

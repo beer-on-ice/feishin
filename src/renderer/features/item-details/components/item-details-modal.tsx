@@ -72,7 +72,7 @@ const formatArtists = (artists: null | RelatedArtist[] | undefined) =>
                               })
                             : ''
                     }
-                    weight={500}
+                    fw={500}
                 >
                     {artist.name || '—'}
                 </Text>
@@ -102,7 +102,7 @@ const FormatGenre = (item: Album | AlbumArtist | Song) => {
                 overflow="visible"
                 size="md"
                 to={genre.id ? generatePath(genreRoute, { genreId: genre.id }) : ''}
-                weight={500}
+                fw={500}
             >
                 {genre.name || '—'}
             </Text>
@@ -227,7 +227,7 @@ const SongPropertyMapping: ItemDetailRow<Song>[] = [
                               })
                             : ''
                     }
-                    weight={500}
+                    fw={500}
                 >
                     {song.album}
                 </Text>

@@ -183,7 +183,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                             order={1}
                                             overflow="hidden"
                                             style={{ fontSize: '3.5rem' }}
-                                            weight={900}
+                                            fw={900}
                                         >
                                             {currentItem?.name}
                                         </TextTitle>
@@ -193,7 +193,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                             <TextTitle
                                                 key={`carousel-artist-${artist.id}`}
                                                 order={2}
-                                                weight={600}
+                                                fw={600}
                                             >
                                                 {artist.name}
                                             </TextTitle>

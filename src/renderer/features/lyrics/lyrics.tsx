@@ -224,7 +224,7 @@ export const Lyrics = () => {
                                     <RiInformationFill size="2rem" />
                                     <TextTitle
                                         order={3}
-                                        weight={700}
+                                        fw={700}
                                     >
                                         {t('page.fullscreenPlayer.noLyrics', {
                                             postProcess: 'sentenceCase',

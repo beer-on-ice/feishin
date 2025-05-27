@@ -90,7 +90,7 @@ export const GenericTableHeader = (
             <HeaderText
                 $position={position}
                 overflow="hidden"
-                weight={500}
+                fw={500}
             >
                 {children || displayName}
             </HeaderText>

@@ -253,7 +253,7 @@ export const FullScreenPlayerImage = () => {
                         textShadow: 'var(--fullscreen-player-text-shadow)',
                     }}
                     w="100%"
-                    weight={900}
+                    fw={900}
                 >
                     {currentSong?.name}
                 </TextTitle>
@@ -270,7 +270,7 @@ export const FullScreenPlayerImage = () => {
                         albumId: currentSong?.albumId || '',
                     })}
                     w="100%"
-                    weight={600}
+                    fw={600}
                 >
                     {currentSong?.album}{' '}
                 </TextTitle>
@@ -305,7 +305,7 @@ export const FullScreenPlayerImage = () => {
                                 to={generatePath(AppRoute.LIBRARY_ALBUM_ARTISTS_DETAIL, {
                                     albumArtistId: artist.id,
                                 })}
-                                weight={600}
+                                fw={600}
                             >
                                 {artist.name}
                             </Text>

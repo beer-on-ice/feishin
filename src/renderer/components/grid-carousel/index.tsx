@@ -66,7 +66,7 @@ const Title = ({ handleNext, handlePrev, label, pagination }: TitleProps) => {
             ) : (
                 <TextTitle
                     order={2}
-                    weight={700}
+                    fw={700}
                 >
                     {label}
                 </TextTitle>
