@@ -63,6 +63,7 @@ const formatArtists = (artists: null | RelatedArtist[] | undefined) =>
                 <Text
                     $link
                     component={Link}
+                    fw={500}
                     overflow="visible"
                     size="md"
                     to={
@@ -72,7 +73,6 @@ const formatArtists = (artists: null | RelatedArtist[] | undefined) =>
                               })
                             : ''
                     }
-                    fw={500}
                 >
                     {artist.name || '—'}
                 </Text>
@@ -99,10 +99,10 @@ const FormatGenre = (item: Album | AlbumArtist | Song) => {
             <Text
                 $link
                 component={Link}
+                fw={500}
                 overflow="visible"
                 size="md"
                 to={genre.id ? generatePath(genreRoute, { genreId: genre.id }) : ''}
-                fw={500}
             >
                 {genre.name || '—'}
             </Text>
@@ -218,6 +218,7 @@ const SongPropertyMapping: ItemDetailRow<Song>[] = [
                 <Text
                     $link
                     component={Link}
+                    fw={500}
                     overflow="visible"
                     size="md"
                     to={
@@ -227,7 +228,6 @@ const SongPropertyMapping: ItemDetailRow<Song>[] = [
                               })
                             : ''
                     }
-                    fw={500}
                 >
                     {song.album}
                 </Text>

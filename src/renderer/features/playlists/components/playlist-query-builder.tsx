@@ -448,14 +448,14 @@ export const PlaylistQueryBuilder = forwardRef(
                 </ScrollArea>
                 <Group
                     align="flex-end"
+                    justify="space-between"
                     m="1rem"
                     wrap="nowrap"
-                    justify="space-between"
                 >
                     <Group
-                        wrap="nowrap"
                         gap="sm"
                         w="100%"
+                        wrap="nowrap"
                     >
                         <Select
                             data={sortOptions}
@@ -490,8 +490,8 @@ export const PlaylistQueryBuilder = forwardRef(
                     </Group>
                     {onSave && onSaveAs && (
                         <Group
-                            wrap="nowrap"
                             gap="sm"
+                            wrap="nowrap"
                         >
                             <Button
                                 loading={isSaving}

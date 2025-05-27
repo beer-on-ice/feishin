@@ -44,8 +44,8 @@ const RouteErrorBoundary = () => {
                     <Divider my={5} />
                     <Text size="sm">{error?.message}</Text>
                     <Group
-                        grow
                         gap="sm"
+                        grow
                     >
                         <Button
                             leftSection={<RiHome4Line />}

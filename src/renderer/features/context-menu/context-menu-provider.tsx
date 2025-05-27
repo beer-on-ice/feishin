@@ -948,8 +948,8 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                         >
                             <Stack gap={0}>
                                 <Stack
-                                    onClick={closeContextMenu}
                                     gap={0}
+                                    onClick={closeContextMenu}
                                 >
                                     {ctx.menuItems?.map((item) => {
                                         return (

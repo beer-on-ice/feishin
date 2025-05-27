@@ -99,8 +99,8 @@ export const QueryBuilder = ({
 
     return (
         <Stack
-            ml={`${level * 10}px`}
             gap="sm"
+            ml={`${level * 10}px`}
         >
             <Group gap="sm">
                 <Select

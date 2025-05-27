@@ -104,9 +104,9 @@ export const TablePagination = ({
                 )}
             </Text>
             <Group
-                wrap="nowrap"
-                ref={containerQuery.ref}
                 gap="sm"
+                ref={containerQuery.ref}
+                wrap="nowrap"
             >
                 <Popover
                     onClose={() => handlers.close()}
@@ -151,12 +151,12 @@ export const TablePagination = ({
                 <Pagination
                     $hideDividers={!containerQuery.isSm}
                     boundaries={1}
-                    wrap="nowrap"
                     onChange={handlePagination}
                     radius="sm"
                     siblings={containerQuery.isMd ? 2 : containerQuery.isSm ? 1 : 0}
                     total={pagination.totalPages - 1}
                     value={pagination.currentPage + 1}
+                    wrap="nowrap"
                 />
             </Group>
         </MotionFlex>

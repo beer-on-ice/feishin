@@ -38,8 +38,8 @@ export const GenreListHeader = ({ gridRef, itemCount, tableRef }: GenreListHeade
 
     return (
         <Stack
-            ref={cq.ref}
             gap={0}
+            ref={cq.ref}
         >
             <PageHeader backgroundColor="var(--titlebar-bg)">
                 <Flex

@@ -189,8 +189,8 @@ export const QueryBuilderOption = ({
 
     return (
         <Group
-            ml={ml}
             gap="sm"
+            ml={ml}
         >
             <Select
                 data={filters}

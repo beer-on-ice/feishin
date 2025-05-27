@@ -327,12 +327,12 @@ export const FileInput = forwardRef<HTMLButtonElement, FileInputProps>(
             <StyledFileInput
                 ref={ref}
                 {...props}
+                style={{ maxWidth, width }}
                 styles={{
                     placeholder: {
                         color: 'var(--input-placeholder-fg)',
                     },
                 }}
-                style={{ maxWidth, width }}
             >
                 {children}
             </StyledFileInput>

@@ -41,6 +41,7 @@ const StyledSelect = styled(MantineSelect)`
 export const Select = ({ maxWidth, width, ...props }: SelectProps) => {
     return (
         <StyledSelect
+            style={{ maxWidth, width }}
             styles={{
                 dropdown: {
                     background: 'var(--dropdown-menu-bg)',
@@ -68,7 +69,6 @@ export const Select = ({ maxWidth, width, ...props }: SelectProps) => {
                     padding: '.3rem',
                 },
             }}
-            style={{ maxWidth, width }}
             transitionProps={{ duration: 100, transition: 'fade' }}
             withinPortal
             {...props}
@@ -96,6 +96,7 @@ const StyledMultiSelect = styled(MantineMultiSelect)`
 export const MultiSelect = ({ maxWidth, width, ...props }: MultiSelectProps) => {
     return (
         <StyledMultiSelect
+            style={{ maxWidth, width }}
             styles={{
                 dropdown: {
                     background: 'var(--dropdown-menu-bg)',
@@ -129,7 +130,6 @@ export const MultiSelect = ({ maxWidth, width, ...props }: MultiSelectProps) => 
                     paddingTop: '1rem',
                 },
             }}
-            style={{ maxWidth, width }}
             transitionProps={{ duration: 100, transition: 'fade' }}
             withinPortal
             {...props}

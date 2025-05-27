@@ -40,8 +40,8 @@ export const ArtistListHeader = ({ gridRef, itemCount, tableRef }: ArtistListHea
 
     return (
         <Stack
-            ref={cq.ref}
             gap={0}
+            ref={cq.ref}
         >
             <PageHeader backgroundColor="var(--titlebar-bg)">
                 <Flex

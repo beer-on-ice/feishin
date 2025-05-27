@@ -217,8 +217,8 @@ export const RightControls = () => {
             </Group>
             <Group
                 align="center"
-                wrap="nowrap"
                 gap="xs"
+                wrap="nowrap"
             >
                 <DropdownMenu
                     arrowOffset={12}
@@ -303,8 +303,8 @@ export const RightControls = () => {
                     />
                 ) : null}
                 <Group
-                    wrap="nowrap"
                     gap="xs"
+                    wrap="nowrap"
                 >
                     <PlayerButton
                         icon={

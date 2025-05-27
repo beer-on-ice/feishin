@@ -179,11 +179,11 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                 >
                                     <TitleWrapper>
                                         <TextTitle
+                                            fw={900}
                                             lh="3.5rem"
                                             order={1}
                                             overflow="hidden"
                                             style={{ fontSize: '3.5rem' }}
-                                            fw={900}
                                         >
                                             {currentItem?.name}
                                         </TextTitle>
@@ -191,9 +191,9 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                     <TitleWrapper>
                                         {currentItem?.albumArtists.slice(0, 1).map((artist) => (
                                             <TextTitle
+                                                fw={600}
                                                 key={`carousel-artist-${artist.id}`}
                                                 order={2}
-                                                fw={600}
                                             >
                                                 {artist.name}
                                             </TextTitle>

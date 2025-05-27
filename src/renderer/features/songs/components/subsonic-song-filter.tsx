@@ -81,8 +81,8 @@ export const SubsonicSongFilters = ({
         <Stack p="0.8rem">
             {toggleFilters.map((filter) => (
                 <Group
-                    key={`ss-filter-${filter.label}`}
                     justify="space-between"
+                    key={`ss-filter-${filter.label}`}
                 >
                     <Text>{filter.label}</Text>
                     <Switch

@@ -242,18 +242,18 @@ export const FullScreenPlayerImage = () => {
             </ImageContainer>
             <MetadataContainer
                 className="full-screen-player-image-metadata"
-                maw="100%"
                 gap="xs"
+                maw="100%"
             >
                 <TextTitle
                     align="center"
+                    fw={900}
                     order={1}
                     overflow="hidden"
                     style={{
                         textShadow: 'var(--fullscreen-player-text-shadow)',
                     }}
                     w="100%"
-                    fw={900}
                 >
                     {currentSong?.name}
                 </TextTitle>
@@ -261,6 +261,7 @@ export const FullScreenPlayerImage = () => {
                     $link
                     align="center"
                     component={Link}
+                    fw={600}
                     order={3}
                     overflow="hidden"
                     style={{
@@ -270,7 +271,6 @@ export const FullScreenPlayerImage = () => {
                         albumId: currentSong?.albumId || '',
                     })}
                     w="100%"
-                    fw={600}
                 >
                     {currentSong?.album}{' '}
                 </TextTitle>
@@ -299,13 +299,13 @@ export const FullScreenPlayerImage = () => {
                                 $link
                                 $secondary
                                 component={Link}
+                                fw={600}
                                 style={{
                                     textShadow: 'var(--fullscreen-player-text-shadow)',
                                 }}
                                 to={generatePath(AppRoute.LIBRARY_ALBUM_ARTISTS_DETAIL, {
                                     albumArtistId: artist.id,
                                 })}
-                                fw={600}
                             >
                                 {artist.name}
                             </Text>

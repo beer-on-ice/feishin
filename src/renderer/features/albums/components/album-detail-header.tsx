@@ -151,8 +151,8 @@ export const AlbumDetailHeader = forwardRef(
                             )}
                         </Group>
                         <Group
-                            mah="4rem"
                             gap="md"
+                            mah="4rem"
                             style={{
                                 overflow: 'hidden',
                                 WebkitBoxOrient: 'vertical',

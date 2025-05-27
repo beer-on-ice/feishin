@@ -30,9 +30,9 @@ interface TitleProps {
 const Title = ({ children }: TitleProps) => {
     return (
         <TextTitle
+            fw={700}
             order={1}
             overflow="hidden"
-            fw={700}
         >
             {children}
         </TextTitle>

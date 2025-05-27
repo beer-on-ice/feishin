@@ -307,8 +307,8 @@ export const CenterControls = ({ playersRef }: CenterControlsProps) => {
                     <Text
                         $noSelect
                         $secondary
-                        size="xs"
                         fw={600}
+                        size="xs"
                     >
                         {formattedTime}
                     </Text>
@@ -340,8 +340,8 @@ export const CenterControls = ({ playersRef }: CenterControlsProps) => {
                     <Text
                         $noSelect
                         $secondary
-                        size="xs"
                         fw={600}
+                        size="xs"
                     >
                         {duration}
                     </Text>

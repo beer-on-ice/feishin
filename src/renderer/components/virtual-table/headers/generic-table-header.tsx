@@ -89,8 +89,8 @@ export const GenericTableHeader = (
         <HeaderWrapper $position={position}>
             <HeaderText
                 $position={position}
-                overflow="hidden"
                 fw={500}
+                overflow="hidden"
             >
                 {children || displayName}
             </HeaderText>

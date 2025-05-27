@@ -61,8 +61,8 @@ const ActionRequiredRoute = () => {
                         {canReturnHome && (
                             <>
                                 <Group
-                                    wrap="nowrap"
                                     position="center"
+                                    wrap="nowrap"
                                 >
                                     <RiCheckFill
                                         color="var(--success-color)"
@@ -83,8 +83,8 @@ const ActionRequiredRoute = () => {
                         )}
                         {!displayedCheck && (
                             <Group
-                                wrap="nowrap"
                                 position="center"
+                                wrap="nowrap"
                             >
                                 <Button
                                     fullWidth
