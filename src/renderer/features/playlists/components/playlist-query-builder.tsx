@@ -450,7 +450,7 @@ export const PlaylistQueryBuilder = forwardRef(
                     align="flex-end"
                     m="1rem"
                     noWrap
-                    position="apart"
+                    justify="space-between"
                 >
                     <Group
                         noWrap

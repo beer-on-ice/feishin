@@ -568,7 +568,7 @@ export const AlbumArtistListHeaderFilters = ({
                                             onChange={handleTableColumns}
                                             width={300}
                                         />
-                                        <Group position="apart">
+                                        <Group justify="space-between">
                                             <Text>
                                                 {t('table.config.general.autoFitColumns', {
                                                     postProcess: 'sentenceCase',

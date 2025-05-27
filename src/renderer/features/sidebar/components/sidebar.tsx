@@ -179,7 +179,7 @@ export const Sidebar = () => {
                     {sidebarPlaylistList && (
                         <>
                             <Group
-                                position="apart"
+                                justify="space-between"
                                 pt="1rem"
                                 px="1.5rem"
                             >

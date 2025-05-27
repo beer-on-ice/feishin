@@ -89,7 +89,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                 className="sidebar-playlist-item"
                 noWrap
                 pos="relative"
-                position="apart"
+                justify="space-between"
                 style={{
                     '&:hover': {
                         '.sidebar-playlist-controls': {

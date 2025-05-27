@@ -647,7 +647,7 @@ export const PlaylistDetailSongListHeaderFilters = ({
                                             onChange={handleTableColumns}
                                             width={300}
                                         />
-                                        <Group position="apart">
+                                        <Group justify="space-between">
                                             <Text>Auto Fit Columns</Text>
                                             <Switch
                                                 defaultChecked={page.table.autoFit}

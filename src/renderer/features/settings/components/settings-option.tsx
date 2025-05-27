@@ -16,7 +16,7 @@ export const SettingsOptions = ({ control, description, note, title }: SettingsO
         <>
             <Group
                 noWrap
-                position="apart"
+                justify="space-between"
                 style={{ alignItems: 'center' }}
             >
                 <Stack

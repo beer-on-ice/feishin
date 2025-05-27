@@ -49,7 +49,7 @@ const SearchResult = ({ data, onClick }: SearchResultProps) => {
         <SearchItem onClick={onClick}>
             <Group
                 noWrap
-                position="apart"
+                justify="space-between"
             >
                 <Stack
                     maw="65%"

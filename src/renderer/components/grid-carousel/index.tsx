@@ -60,7 +60,7 @@ interface TitleProps {
 
 const Title = ({ handleNext, handlePrev, label, pagination }: TitleProps) => {
     return (
-        <Group position="apart">
+        <Group justify="space-between">
             {isValidElement(label) ? (
                 label
             ) : (

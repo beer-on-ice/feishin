@@ -129,7 +129,7 @@ export const PlayQueueListControls = ({ tableRef, type }: PlayQueueListOptionsPr
 
     return (
         <Group
-            position="apart"
+            justify="space-between"
             px="1rem"
             py="1rem"
             style={{ alignItems: 'center' }}

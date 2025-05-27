@@ -218,7 +218,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                                 </Badge>
                                             )}
                                     </Group>
-                                    <Group position="apart">
+                                    <Group justify="space-between">
                                         <Button
                                             onClick={(e) => {
                                                 e.preventDefault();

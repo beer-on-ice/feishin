@@ -90,7 +90,7 @@ export const ServerList = () => {
                                 value={server.name}
                             >
                                 <Accordion.Control icon={<RiServerFill size={15} />}>
-                                    <Group position="apart">
+                                    <Group justify="space-between">
                                         <Text weight={server.id === currentServer?.id ? 800 : 400}>
                                             {titleCase(server?.type)} - {server?.name}
                                         </Text>

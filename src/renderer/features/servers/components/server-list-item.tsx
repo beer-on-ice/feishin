@@ -56,7 +56,7 @@ export const ServerListItem = ({ server }: ServerListItemProps) => {
         <Stack>
             <ServerSection
                 title={
-                    <Group position="apart">
+                    <Group justify="space-between">
                         <Text>
                             {t('page.manageServers.serverDetails', {
                                 postProcess: 'sentenceCase',

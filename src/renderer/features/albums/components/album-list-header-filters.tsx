@@ -670,7 +670,7 @@ export const AlbumListHeaderFilters = ({
                                             onChange={handleTableColumns}
                                             width={300}
                                         />
-                                        <Group position="apart">
+                                        <Group justify="space-between">
                                             <Text>Auto Fit Columns</Text>
                                             <Switch
                                                 defaultChecked={table.autoFit}

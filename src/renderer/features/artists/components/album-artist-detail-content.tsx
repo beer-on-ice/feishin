@@ -521,7 +521,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                             <Box component="section">
                                 <Group
                                     noWrap
-                                    position="apart"
+                                    justify="space-between"
                                 >
                                     <Group
                                         align="flex-end"

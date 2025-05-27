@@ -267,7 +267,7 @@ export const CommandPalette = ({ modalProps }: CommandPaletteProps) => {
                 mt="0.5rem"
                 p="0.5rem"
             >
-                <Group position="apart">
+                <Group justify="space-between">
                     <Command.Loading>
                         {isHome && isLoading && query !== '' && <Spinner />}
                     </Command.Loading>

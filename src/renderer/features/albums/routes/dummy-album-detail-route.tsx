@@ -180,7 +180,7 @@ const DummyAlbumDetailRoute = () => {
             <DetailContainer>
                 <Box component="section">
                     <Group
-                        position="apart"
+                        justify="space-between"
                         gap="sm"
                     >
                         <Group>

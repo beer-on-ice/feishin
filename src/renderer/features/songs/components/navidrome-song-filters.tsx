@@ -130,7 +130,7 @@ export const NavidromeSongFilters = ({
             {toggleFilters.map((filter) => (
                 <Group
                     key={`nd-filter-${filter.label}`}
-                    position="apart"
+                    justify="space-between"
                 >
                     <Text>{filter.label}</Text>
                     <Switch

@@ -44,7 +44,7 @@ export const RemoteContainer = () => {
                         <Title order={2}>Album: {song.album}</Title>
                         <Title order={2}>Artist: {song.artistName}</Title>
                     </Group>
-                    <Group position="apart">
+                    <Group justify="space-between">
                         <Title order={3}>Duration: {formatDuration(song.duration)}</Title>
                         {song.releaseDate && (
                             <Title order={3}>

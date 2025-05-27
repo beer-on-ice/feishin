@@ -33,7 +33,7 @@ export const FullWidthDiscCell = ({ api, data, node }: ICellRendererParams) => {
     return (
         <Container>
             <Group
-                position="apart"
+                justify="space-between"
                 w="100%"
             >
                 <Button

@@ -82,7 +82,7 @@ export const SubsonicSongFilters = ({
             {toggleFilters.map((filter) => (
                 <Group
                     key={`ss-filter-${filter.label}`}
-                    position="apart"
+                    justify="space-between"
                 >
                     <Text>{filter.label}</Text>
                     <Switch
