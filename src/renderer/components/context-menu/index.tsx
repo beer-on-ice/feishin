@@ -81,7 +81,7 @@ export const ContextMenuButton = forwardRef(
                 ref={ref}
             >
                 <Group position="apart">
-                    <Group spacing="md">
+                    <Group gap="md">
                         <Box>{leftIcon}</Box>
                         <Box mr="2rem">{children}</Box>
                     </Group>

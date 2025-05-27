@@ -55,7 +55,7 @@ export const PlaylistListHeader = ({ gridRef, itemCount, tableRef }: PlaylistLis
     return (
         <Stack
             ref={cq.ref}
-            spacing={0}
+            gap={0}
         >
             <PageHeader backgroundColor="var(--titlebar-bg)">
                 <Flex

@@ -4,7 +4,7 @@ import { StylesSettings } from '/@/renderer/features/settings/components/advance
 
 export const AdvancedTab = () => {
     return (
-        <Stack spacing="md">
+        <Stack gap="md">
             <StylesSettings />
         </Stack>
     );

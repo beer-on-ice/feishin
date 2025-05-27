@@ -478,7 +478,7 @@ export const SongListHeaderFilters = ({
         <Flex justify="space-between">
             <Group
                 ref={cq.ref}
-                spacing="sm"
+                gap="sm"
                 w="100%"
             >
                 <DropdownMenu position="bottom-start">
@@ -618,7 +618,7 @@ export const SongListHeaderFilters = ({
             </Group>
             <Group
                 noWrap
-                spacing="sm"
+                gap="sm"
             >
                 <DropdownMenu
                     position="bottom-end"

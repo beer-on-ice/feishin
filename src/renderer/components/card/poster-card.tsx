@@ -191,7 +191,7 @@ export const PosterCard = ({
                 <ImageContainerSkeleton />
             </Skeleton>
             <DetailContainer>
-                <Stack spacing="sm">
+                <Stack gap="sm">
                     {(controls?.cardRows || []).map((row, index) => (
                         <Skeleton
                             height={14}

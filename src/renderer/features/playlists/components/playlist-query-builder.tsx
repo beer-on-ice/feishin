@@ -454,7 +454,7 @@ export const PlaylistQueryBuilder = forwardRef(
                 >
                     <Group
                         noWrap
-                        spacing="sm"
+                        gap="sm"
                         w="100%"
                     >
                         <Select
@@ -491,7 +491,7 @@ export const PlaylistQueryBuilder = forwardRef(
                     {onSave && onSaveAs && (
                         <Group
                             noWrap
-                            spacing="sm"
+                            gap="sm"
                         >
                             <Button
                                 loading={isSaving}

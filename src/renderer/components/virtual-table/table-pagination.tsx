@@ -106,7 +106,7 @@ export const TablePagination = ({
             <Group
                 noWrap
                 ref={containerQuery.ref}
-                spacing="sm"
+                gap="sm"
             >
                 <Popover
                     onClose={() => handlers.close()}

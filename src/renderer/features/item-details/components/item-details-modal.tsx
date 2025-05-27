@@ -371,9 +371,9 @@ export const ItemDetailsModal = ({ item }: ItemDetailsModalProps) => {
         <Group>
             <Table
                 highlightOnHover
-                horizontalSpacing="sm"
+                horizontalgap="sm"
                 style={{ userSelect: 'text' }}
-                verticalSpacing="sm"
+                verticalgap="sm"
             >
                 <tbody>{body}</tbody>
             </Table>

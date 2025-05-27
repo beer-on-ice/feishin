@@ -72,7 +72,7 @@ const Title = ({ handleNext, handlePrev, label, pagination }: TitleProps) => {
                 </TextTitle>
             )}
 
-            <Group spacing="sm">
+            <Group gap="sm">
                 <Button
                     compact
                     disabled={!pagination.hasPreviousPage}
@@ -289,7 +289,7 @@ export const SwiperGridCarousel = ({
         <CarouselContainer
             className="grid-carousel"
             ref={containerRef}
-            spacing="md"
+            gap="md"
         >
             {title ? (
                 <Title

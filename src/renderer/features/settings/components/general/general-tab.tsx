@@ -14,7 +14,7 @@ import { CacheSettings } from '/@/renderer/features/settings/components/window/c
 
 export const GeneralTab = () => {
     return (
-        <Stack spacing="md">
+        <Stack gap="md">
             <ApplicationSettings />
             <ThemeSettings />
             <ControlSettings />

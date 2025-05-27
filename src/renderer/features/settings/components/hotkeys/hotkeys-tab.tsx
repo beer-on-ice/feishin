@@ -6,7 +6,7 @@ import { WindowHotkeySettings } from '/@/renderer/features/settings/components/h
 
 export const HotkeysTab = () => {
     return (
-        <Stack spacing="md">
+        <Stack gap="md">
             {isElectron() && <WindowHotkeySettings />}
             <HotkeyManagerSettings />
         </Stack>

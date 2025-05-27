@@ -56,8 +56,8 @@ export const RemoteContainer = () => {
                 </>
             )}
             <Group
+                gap={0}
                 grow
-                spacing={0}
             >
                 <RemoteButton
                     disabled={!id}
@@ -95,8 +95,8 @@ export const RemoteContainer = () => {
                 </RemoteButton>
             </Group>
             <Group
+                gap={0}
                 grow
-                spacing={0}
             >
                 <RemoteButton
                     $active={shuffle || false}

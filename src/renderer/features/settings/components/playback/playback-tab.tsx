@@ -27,7 +27,7 @@ export const PlaybackTab = () => {
     }, [audioType, useWebAudio]);
 
     return (
-        <Stack spacing="md">
+        <Stack gap="md">
             <AudioSettings hasFancyAudio={hasFancyAudio} />
             <Suspense fallback={<></>}>{hasFancyAudio && <MpvSettings />}</Suspense>
             <TranscodeSettings />

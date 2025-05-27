@@ -243,7 +243,7 @@ export const FullScreenPlayerImage = () => {
             <MetadataContainer
                 className="full-screen-player-image-metadata"
                 maw="100%"
-                spacing="xs"
+                gap="xs"
             >
                 <TextTitle
                     align="center"

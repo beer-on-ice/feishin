@@ -20,7 +20,7 @@ export const SettingsOptions = ({ control, description, note, title }: SettingsO
                 style={{ alignItems: 'center' }}
             >
                 <Stack
-                    spacing="xs"
+                    gap="xs"
                     style={{
                         alignSelf: 'flex-start',
                         display: 'flex',

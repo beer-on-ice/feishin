@@ -47,7 +47,7 @@ const ActionRequiredRoute = () => {
             <PageHeader />
             <Center style={{ height: '100%', width: '100vw' }}>
                 <Stack
-                    spacing="xl"
+                    gap="xl"
                     style={{ maxWidth: '50%' }}
                 >
                     <Group noWrap>

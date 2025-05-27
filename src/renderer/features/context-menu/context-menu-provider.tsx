@@ -946,10 +946,10 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                             xPos={ctx.xPos}
                             yPos={ctx.yPos}
                         >
-                            <Stack spacing={0}>
+                            <Stack gap={0}>
                                 <Stack
                                     onClick={closeContextMenu}
-                                    spacing={0}
+                                    gap={0}
                                 >
                                     {ctx.menuItems?.map((item) => {
                                         return (
@@ -982,7 +982,7 @@ export const ContextMenuProvider = ({ children }: ContextMenuProviderProps) => {
                                                                 </ContextMenuButton>
                                                             </HoverCard.Target>
                                                             <HoverCard.Dropdown>
-                                                                <Stack spacing={0}>
+                                                                <Stack gap={0}>
                                                                     {contextMenuItems[
                                                                         item.id
                                                                     ].children?.map((child) => (

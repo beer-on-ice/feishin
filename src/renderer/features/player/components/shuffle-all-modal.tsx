@@ -139,7 +139,7 @@ export const ShuffleAllModal = ({
     }, [musicFolders]);
 
     return (
-        <Stack spacing="md">
+        <Stack gap="md">
             <NumberInput
                 label="How many tracks?"
                 max={500}

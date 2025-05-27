@@ -145,22 +145,22 @@ export const Sidebar = () => {
             <Stack
                 h="100%"
                 justify="space-between"
-                spacing={0}
+                gap={0}
             >
                 <MotionStack
                     h="100%"
                     layout="position"
-                    spacing={0}
+                    gap={0}
                     style={{ maxHeight: showImage ? `calc(100% - ${sidebar.leftWidth})` : '100%' }}
                 >
-                    <Stack spacing={0}>
+                    <Stack gap={0}>
                         {sidebarItemsWithRoute.map((item) => {
                             return (
                                 <SidebarItem
                                     key={`sidebar-${item.route}`}
                                     to={item.route}
                                 >
-                                    <Group spacing="sm">
+                                    <Group gap="sm">
                                         <SidebarIcon
                                             active={location.pathname === item.route}
                                             route={item.route}
@@ -191,7 +191,7 @@ export const Sidebar = () => {
                                         {t('page.sidebar.playlists', { postProcess: 'titleCase' })}
                                     </Box>
                                 </Group>
-                                <Group spacing="sm">
+                                <Group gap="sm">
                                     <Button
                                         compact
                                         onClick={handleCreatePlaylistModal}

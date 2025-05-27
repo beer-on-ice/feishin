@@ -135,7 +135,7 @@ export const PlayQueueListControls = ({ tableRef, type }: PlayQueueListOptionsPr
             style={{ alignItems: 'center' }}
             w="100%"
         >
-            <Group spacing="sm">
+            <Group gap="sm">
                 <Button
                     compact
                     onClick={handleShuffleQueue}

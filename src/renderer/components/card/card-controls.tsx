@@ -139,7 +139,7 @@ export const CardControls = ({
                 <PlayButton onClick={handlePlay}>
                     <RiPlayFill size={25} />
                 </PlayButton>
-                <Group spacing="xs">
+                <Group gap="xs">
                     <SecondaryButton
                         disabled
                         p={5}

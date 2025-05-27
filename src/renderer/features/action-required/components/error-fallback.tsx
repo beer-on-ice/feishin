@@ -18,7 +18,7 @@ export const ErrorFallback = ({ resetErrorBoundary }: FallbackProps) => {
         <Container>
             <Center style={{ height: '100vh' }}>
                 <Stack style={{ maxWidth: '50%' }}>
-                    <Group spacing="xs">
+                    <Group gap="xs">
                         <RiErrorWarningLine
                             color="var(--danger-color)"
                             size={30}

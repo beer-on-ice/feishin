@@ -241,7 +241,7 @@ export const DefaultCard = ({
                     />
                 </ImageContainer>
                 <DetailContainer>
-                    <Stack spacing="sm">
+                    <Stack gap="sm">
                         {(controls?.cardRows || []).map((row, index) => (
                             <Skeleton
                                 height={14}

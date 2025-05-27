@@ -375,12 +375,12 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
         <ContentContainer ref={cq.ref}>
             <LibraryBackgroundOverlay $backgroundColor={background} />
             <DetailContainer>
-                <Group spacing="md">
+                <Group gap="md">
                     <PlayButton
                         disabled={albumCount === 0}
                         onClick={() => handlePlay(playButtonBehavior)}
                     />
-                    <Group spacing="xs">
+                    <Group gap="xs">
                         <Button
                             compact
                             loading={
@@ -410,7 +410,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                         </Button>
                     </Group>
                 </Group>
-                <Group spacing="md">
+                <Group gap="md">
                     <Button
                         compact
                         component={Link}
@@ -432,7 +432,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 </Group>
                 {showGenres ? (
                     <Box component="section">
-                        <Group spacing="sm">
+                        <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
                                     compact
@@ -453,7 +453,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                 ) : null}
                 {externalLinks ? (
                     <Box component="section">
-                        <Group spacing="sm">
+                        <Group gap="sm">
                             <Button
                                 compact
                                 component="a"
@@ -588,7 +588,7 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                                 span={12}
                             >
                                 <Box component="section">
-                                    <Stack spacing="xl">
+                                    <Stack gap="xl">
                                         <MemoizedSwiperGridCarousel
                                             cardRows={
                                                 cardRows[carousel.itemType as keyof typeof cardRows]

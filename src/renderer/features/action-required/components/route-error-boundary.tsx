@@ -45,7 +45,7 @@ const RouteErrorBoundary = () => {
                     <Text size="sm">{error?.message}</Text>
                     <Group
                         grow
-                        spacing="sm"
+                        gap="sm"
                     >
                         <Button
                             leftIcon={<RiHome4Line />}

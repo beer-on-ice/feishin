@@ -140,8 +140,8 @@ const DummyAlbumDetailRoute = () => {
                     item={{ route: AppRoute.LIBRARY_SONGS, type: LibraryItem.SONG }}
                     title={detailQuery?.data?.name || ''}
                 >
-                    <Stack spacing="sm">
-                        <Group spacing="sm">
+                    <Stack gap="sm">
+                        <Group gap="sm">
                             {metadataItems.map((item, index) => (
                                 <Fragment key={`item-${item.id}-${index}`}>
                                     {index > 0 && <Text $noSelect>•</Text>}
@@ -151,7 +151,7 @@ const DummyAlbumDetailRoute = () => {
                         </Group>
                         <Group
                             mah="4rem"
-                            spacing="md"
+                            gap="md"
                             style={{
                                 overflow: 'hidden',
                                 WebkitBoxOrient: 'vertical',
@@ -181,7 +181,7 @@ const DummyAlbumDetailRoute = () => {
                 <Box component="section">
                     <Group
                         position="apart"
-                        spacing="sm"
+                        gap="sm"
                     >
                         <Group>
                             <PlayButton onClick={() => handlePlay()} />
@@ -218,7 +218,7 @@ const DummyAlbumDetailRoute = () => {
                 </Box>
                 {showGenres && (
                     <Box component="section">
-                        <Group spacing="sm">
+                        <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
                                     compact

@@ -128,8 +128,8 @@ export const AlbumDetailHeader = forwardRef(
                     title={detailQuery?.data?.name || ''}
                     {...background}
                 >
-                    <Stack spacing="sm">
-                        <Group spacing="sm">
+                    <Stack gap="sm">
+                        <Group gap="sm">
                             {metadataItems.map((item, index) => (
                                 <Fragment key={`item-${item.id}-${index}`}>
                                     {index > 0 && <Text $noSelect>•</Text>}
@@ -152,7 +152,7 @@ export const AlbumDetailHeader = forwardRef(
                         </Group>
                         <Group
                             mah="4rem"
-                            spacing="md"
+                            gap="md"
                             style={{
                                 overflow: 'hidden',
                                 WebkitBoxOrient: 'vertical',

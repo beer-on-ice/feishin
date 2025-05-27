@@ -121,7 +121,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                     noWrap
                     pos="absolute"
                     right="0"
-                    spacing="sm"
+                    gap="sm"
                 >
                     <Button
                         compact

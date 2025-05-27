@@ -336,7 +336,7 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                 <Box component="section">
                     <Group
                         position="apart"
-                        spacing="sm"
+                        gap="sm"
                     >
                         <Group>
                             <PlayButton onClick={() => handlePlay(playButtonBehavior)} />
@@ -388,7 +388,7 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                 </Box>
                 {showGenres && (
                     <Box component="section">
-                        <Group spacing="sm">
+                        <Group gap="sm">
                             {detailQuery?.data?.genres?.map((genre) => (
                                 <Button
                                     compact
@@ -409,7 +409,7 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                 )}
                 {externalLinks ? (
                     <Box component="section">
-                        <Group spacing="sm">
+                        <Group gap="sm">
                             <Button
                                 compact
                                 component="a"
@@ -493,7 +493,7 @@ export const AlbumDetailContent = ({ background, tableRef }: AlbumDetailContentP
                 <Stack
                     mt="3rem"
                     ref={cq.ref}
-                    spacing="lg"
+                    gap="lg"
                 >
                     {cq.height || cq.width ? (
                         <>

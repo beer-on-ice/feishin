@@ -111,7 +111,7 @@ const Controls = () => {
         <Group
             p="1rem"
             pos="absolute"
-            spacing="sm"
+            gap="sm"
             style={{
                 background: `rgb(var(--main-bg-transparent), ${opacity}%)`,
                 left: 0,

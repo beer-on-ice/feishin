@@ -174,7 +174,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                             </ImageColumn>
                             <InfoColumn>
                                 <Stack
-                                    spacing="md"
+                                    gap="md"
                                     style={{ width: '100%' }}
                                 >
                                     <TitleWrapper>
@@ -246,7 +246,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                                 { postProcess: 'titleCase' },
                                             )}
                                         </Button>
-                                        <Group spacing="sm">
+                                        <Group gap="sm">
                                             <Button
                                                 onClick={handlePrevious}
                                                 radius="lg"
