@@ -53,7 +53,7 @@ export const ActionBar = () => {
                         <Group
                             gap="sm"
                             grow
-                            noWrap
+                            wrap="nowrap"
                         >
                             <DropdownMenu position="bottom-start">
                                 <DropdownMenu.Target>

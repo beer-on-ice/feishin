@@ -73,7 +73,7 @@ export const ServerListItem = ({ server }: ServerListItemProps) => {
                     />
                 ) : (
                     <Stack>
-                        <Group noWrap>
+                        <Group wrap="nowrap">
                             <Stack>
                                 <Text>
                                     {t('page.manageServers.url', {

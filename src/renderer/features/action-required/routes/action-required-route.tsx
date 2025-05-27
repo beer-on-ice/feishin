@@ -50,7 +50,7 @@ const ActionRequiredRoute = () => {
                     gap="xl"
                     style={{ maxWidth: '50%' }}
                 >
-                    <Group noWrap>
+                    <Group wrap="nowrap">
                         {displayedCheck && (
                             <ActionRequiredContainer title={displayedCheck.title}>
                                 {displayedCheck?.component}
@@ -61,7 +61,7 @@ const ActionRequiredRoute = () => {
                         {canReturnHome && (
                             <>
                                 <Group
-                                    noWrap
+                                    wrap="nowrap"
                                     position="center"
                                 >
                                     <RiCheckFill
@@ -83,7 +83,7 @@ const ActionRequiredRoute = () => {
                         )}
                         {!displayedCheck && (
                             <Group
-                                noWrap
+                                wrap="nowrap"
                                 position="center"
                             >
                                 <Button

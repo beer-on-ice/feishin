@@ -515,11 +515,11 @@ export const AlbumArtistDetailContent = ({ background }: AlbumArtistDetailConten
                             <Box component="section">
                                 <Group
                                     justify="space-between"
-                                    noWrap
+                                    wrap="nowrap"
                                 >
                                     <Group
                                         align="flex-end"
-                                        noWrap
+                                        wrap="nowrap"
                                     >
                                         <TextTitle
                                             fw={700}

@@ -449,11 +449,11 @@ export const PlaylistQueryBuilder = forwardRef(
                 <Group
                     align="flex-end"
                     m="1rem"
-                    noWrap
+                    wrap="nowrap"
                     justify="space-between"
                 >
                     <Group
-                        noWrap
+                        wrap="nowrap"
                         gap="sm"
                         w="100%"
                     >
@@ -490,7 +490,7 @@ export const PlaylistQueryBuilder = forwardRef(
                     </Group>
                     {onSave && onSaveAs && (
                         <Group
-                            noWrap
+                            wrap="nowrap"
                             gap="sm"
                         >
                             <Button

@@ -251,7 +251,7 @@ export const HotkeyManagerSettings = () => {
                 {filteredBindings.map((binding) => (
                     <Group
                         key={`hotkey-${binding}`}
-                        noWrap
+                        wrap="nowrap"
                     >
                         <TextInput
                             readOnly

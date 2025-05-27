@@ -48,7 +48,7 @@ const SearchResult = ({ data, onClick }: SearchResultProps) => {
     return (
         <SearchItem onClick={onClick}>
             <Group
-                noWrap
+                wrap="nowrap"
                 justify="space-between"
             >
                 <Stack
@@ -63,7 +63,7 @@ const SearchResult = ({ data, onClick }: SearchResultProps) => {
                     </Text>
                     <Text $secondary>{artist}</Text>
                     <Group
-                        noWrap
+                        wrap="nowrap"
                         gap="sm"
                     >
                         <Text

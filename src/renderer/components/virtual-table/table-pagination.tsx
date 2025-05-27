@@ -104,7 +104,7 @@ export const TablePagination = ({
                 )}
             </Text>
             <Group
-                noWrap
+                wrap="nowrap"
                 ref={containerQuery.ref}
                 gap="sm"
             >
@@ -151,7 +151,7 @@ export const TablePagination = ({
                 <Pagination
                     $hideDividers={!containerQuery.isSm}
                     boundaries={1}
-                    noWrap
+                    wrap="nowrap"
                     onChange={handlePagination}
                     radius="sm"
                     siblings={containerQuery.isMd ? 2 : containerQuery.isSm ? 1 : 0}

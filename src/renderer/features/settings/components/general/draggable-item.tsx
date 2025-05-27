@@ -37,7 +37,7 @@ export const DraggableItem = ({ handleChangeDisabled, item, value }: DraggableIt
         >
             <Group
                 h="3rem"
-                noWrap
+                wrap="nowrap"
                 style={{ boxShadow: '0 1px 3px rgba(0,0,0,.1)' }}
             >
                 <Checkbox

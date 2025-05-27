@@ -14,7 +14,7 @@ const InvalidRoute = () => {
             <Center style={{ height: '100%', width: '100%' }}>
                 <Stack>
                     <Group
-                        noWrap
+                        wrap="nowrap"
                         position="center"
                     >
                         <RiQuestionLine

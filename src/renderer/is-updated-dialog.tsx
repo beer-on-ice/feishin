@@ -28,7 +28,7 @@ export function IsUpdatedDialog() {
         >
             <Stack>
                 <Text>A new version of Feishin has been installed ({version})</Text>
-                <Group noWrap>
+                <Group wrap="nowrap">
                     <Button
                         component="a"
                         href={`https://github.com/jeffvli/feishin/releases/tag/v${version}`}

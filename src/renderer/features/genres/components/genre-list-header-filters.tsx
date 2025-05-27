@@ -363,7 +363,7 @@ export const GenreListHeaderFilters = ({
             </Group>
             <Group
                 gap="sm"
-                noWrap
+                wrap="nowrap"
             >
                 <DropdownMenu
                     position="bottom-end"

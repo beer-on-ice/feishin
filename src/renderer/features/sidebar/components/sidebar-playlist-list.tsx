@@ -88,7 +88,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
             <Group
                 className="sidebar-playlist-item"
                 justify="space-between"
-                noWrap
+                wrap="nowrap"
                 pos="relative"
                 style={{
                     '&:hover': {
@@ -119,7 +119,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                     className="sidebar-playlist-controls"
                     display="none"
                     gap="sm"
-                    noWrap
+                    wrap="nowrap"
                     pos="absolute"
                     right="0"
                 >

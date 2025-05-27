@@ -213,7 +213,7 @@ export const LeftControls = () => {
                         <Group
                             align="flex-start"
                             gap="xs"
-                            noWrap
+                            wrap="nowrap"
                         >
                             <Text
                                 $link

@@ -567,7 +567,7 @@ export const AlbumListHeaderFilters = ({
             </Group>
             <Group
                 gap="sm"
-                noWrap
+                wrap="nowrap"
             >
                 <DropdownMenu
                     position="bottom-end"

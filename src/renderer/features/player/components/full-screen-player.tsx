@@ -283,8 +283,8 @@ const Controls = () => {
                         </Option.Label>
                         <Option.Control>
                             <Group
-                                noWrap
                                 w="100%"
+                                wrap="nowrap"
                             >
                                 <Slider
                                     defaultValue={lyricConfig.fontSize}
@@ -323,8 +323,8 @@ const Controls = () => {
                         </Option.Label>
                         <Option.Control>
                             <Group
-                                noWrap
                                 w="100%"
+                                wrap="nowrap"
                             >
                                 <Slider
                                     defaultValue={lyricConfig.gap}

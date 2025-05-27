@@ -15,7 +15,7 @@ export const SettingsOptions = ({ control, description, note, title }: SettingsO
     return (
         <>
             <Group
-                noWrap
+                wrap="nowrap"
                 justify="space-between"
                 style={{ alignItems: 'center' }}
             >

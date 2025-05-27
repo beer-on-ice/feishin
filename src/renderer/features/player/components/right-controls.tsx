@@ -217,7 +217,7 @@ export const RightControls = () => {
             </Group>
             <Group
                 align="center"
-                noWrap
+                wrap="nowrap"
                 gap="xs"
             >
                 <DropdownMenu
@@ -303,7 +303,7 @@ export const RightControls = () => {
                     />
                 ) : null}
                 <Group
-                    noWrap
+                    wrap="nowrap"
                     gap="xs"
                 >
                     <PlayerButton
