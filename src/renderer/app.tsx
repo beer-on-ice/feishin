@@ -237,8 +237,6 @@ export const App = () => {
         }
     }, [language]);
 
-    console.log('theme :>> ', theme);
-
     return (
         <MantineProvider
             defaultColorScheme={theme as MantineColorScheme}

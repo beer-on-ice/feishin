@@ -3,7 +3,7 @@ import { RiMoonLine, RiSunLine } from 'react-icons/ri';
 
 import { RemoteButton } from '/@/remote/components/buttons/remote-button';
 import { useIsDark, useToggleDark } from '/@/remote/store';
-import { AppTheme } from '/@/shared/types/domain-types';
+import { AppTheme } from '/@/shared/themes/app-theme-types';
 
 export const ThemeButton = () => {
     const isDark = useIsDark();

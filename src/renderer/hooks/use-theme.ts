@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { useSettingsStore } from '/@/renderer/store/settings.store';
-import { AppTheme } from '/@/shared/types/domain-types';
+import { getAppTheme } from '/@/shared/themes/app-theme';
+import { AppTheme } from '/@/shared/themes/app-theme-types';
 
 export const THEME_DATA = [
     { label: 'Default Dark', type: 'dark', value: AppTheme.DEFAULT_DARK },
@@ -19,7 +20,7 @@ export const useTheme = () => {
         setIsDarkTheme(e.matches);
     };
 
-    const getTheme = () => {
+    const getSelectedTheme = () => {
         if (followSystemTheme) {
             return isDarkTheme ? themeDark : themeLight;
         }
@@ -27,7 +28,7 @@ export const useTheme = () => {
         return theme;
     };
 
-    const appTheme = getTheme();
+    const selectedTheme = getSelectedTheme();
 
     useEffect(() => {
         const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -35,20 +36,16 @@ export const useTheme = () => {
         return () => darkThemeMq.removeListener(mqListener);
     }, []);
 
-    useEffect(() => {
-        document.body.setAttribute('data-theme', appTheme);
-    }, [appTheme]);
-
     const themeVars = useMemo(() => {
-        return Object.entries(appTheme)
+        return Object.entries(getAppTheme(selectedTheme).app)
             .map(([key, value]) => {
                 return [`--theme-${key}`, value];
             })
             .filter(Boolean) as [string, string][];
-    }, [appTheme]);
+    }, [selectedTheme]);
 
     useEffect(() => {
-        document.documentElement.setAttribute('data-app-theme', appTheme);
+        document.documentElement.setAttribute('data-theme', selectedTheme);
 
         if (themeVars.length > 0) {
             let styleElement = document.getElementById('theme-variables');
@@ -68,7 +65,7 @@ export const useTheme = () => {
 
             styleElement.textContent = cssText;
         }
-    }, [appTheme, themeVars]);
+    }, [selectedTheme, themeVars]);
 
-    return THEME_DATA.find((t) => t.value === appTheme)?.type || 'dark';
+    return THEME_DATA.find((t) => t.value === selectedTheme)?.type || 'dark';
 };
