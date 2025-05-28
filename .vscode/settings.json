@@ -50,7 +50,8 @@
     "typescript.tsdk": "node_modules\\typescript\\lib",
     "typescript.preferences.importModuleSpecifier": "non-relative",
     "stylelint.validate": ["css", "scss", "typescript", "typescriptreact"],
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "typescript.preferences.autoImportFileExcludePatterns": ["@mantine/core"],
     "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
     "folderTemplates.structures": [
