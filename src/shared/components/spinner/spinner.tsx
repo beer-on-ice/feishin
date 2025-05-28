@@ -1,9 +1,8 @@
 import { Center } from '@mantine/core';
 import { IconBaseProps } from 'react-icons';
 import { RiLoader5Fill } from 'react-icons/ri';
-import styled from 'styled-components';
 
-import { rotating } from '/@/renderer/styles';
+import styles from './spinner.module.css';
 
 interface SpinnerProps extends IconBaseProps {
     color?: string;
@@ -11,19 +10,14 @@ interface SpinnerProps extends IconBaseProps {
     size?: number;
 }
 
-export const SpinnerIcon = styled(RiLoader5Fill)`
-    ${rotating}
-    animation: rotating 1s ease-in-out infinite;
-`;
+const SpinnerIcon = RiLoader5Fill;
 
 export const Spinner = ({ ...props }: SpinnerProps) => {
     if (props.container) {
         return (
-            <Center
-                h="100%"
-                w="100%"
-            >
+            <Center className={styles.container}>
                 <SpinnerIcon
+                    className={styles.icon}
                     color={props.color}
                     size={props.size}
                 />
@@ -31,5 +25,11 @@ export const Spinner = ({ ...props }: SpinnerProps) => {
         );
     }
 
-    return <SpinnerIcon {...props} />;
+    return (
+        <SpinnerIcon
+            className={styles.icon}
+            color={props.color}
+            size={props.size}
+        />
+    );
 };

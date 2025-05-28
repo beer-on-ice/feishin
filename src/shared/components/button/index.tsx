@@ -6,9 +6,6 @@ import { useTimeout } from '@mantine/hooks';
 import React, { forwardRef, useCallback, useRef, useState } from 'react';
 import styled from 'styled-components';
 
-import { Spinner } from '/@/renderer/components/spinner';
-import { Tooltip } from '/@/renderer/components/tooltip';
-
 export interface ButtonProps extends MantineButtonProps {
     children: React.ReactNode;
     loading?: boolean;

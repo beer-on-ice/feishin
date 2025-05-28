@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { useSettingsStore } from '/@/renderer/store/settings.store';
 import { AppTheme } from '/@/shared/types/domain-types';
@@ -38,6 +38,37 @@ export const useTheme = () => {
     useEffect(() => {
         document.body.setAttribute('data-theme', appTheme);
     }, [appTheme]);
+
+    const themeVars = useMemo(() => {
+        return Object.entries(appTheme)
+            .map(([key, value]) => {
+                return [`--theme-${key}`, value];
+            })
+            .filter(Boolean) as [string, string][];
+    }, [appTheme]);
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-app-theme', appTheme);
+
+        if (themeVars.length > 0) {
+            let styleElement = document.getElementById('theme-variables');
+            if (!styleElement) {
+                styleElement = document.createElement('style');
+                styleElement.id = 'theme-variables';
+                document.head.appendChild(styleElement);
+            }
+
+            let cssText = ':root {\n';
+
+            for (const [key, value] of themeVars) {
+                cssText += `  ${key}: ${value};\n`;
+            }
+
+            cssText += '}';
+
+            styleElement.textContent = cssText;
+        }
+    }, [appTheme, themeVars]);
 
     return THEME_DATA.find((t) => t.value === appTheme)?.type || 'dark';
 };

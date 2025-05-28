@@ -1,5 +1,4 @@
 .root {
-    border-radius: var(--badge-radius);
     color: var(--badge-fg);
     background-color: var(--badge-bg);
 }
