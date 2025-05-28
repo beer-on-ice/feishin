@@ -102,12 +102,13 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                 wrap="nowrap"
             >
                 <Text
-                    className="sidebar-playlist-name"
+                    // className="sidebar-playlist-name"
                     component={Link}
                     overflow="hidden"
                     size="md"
                     style={{
-                        color: 'var(--sidebar-fg) !important',
+                        // color: 'var(--sidebar-fg) !important',
+                        color: 'white',
                         cursor: 'default',
                         width: '100%',
                     }}

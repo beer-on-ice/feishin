@@ -37,7 +37,10 @@ export const SongPath = ({ path }: SongPathProps) => {
                         )}
                         withinPortal
                     >
-                        <ActionIcon onClick={copy}>
+                        <ActionIcon
+                            onClick={copy}
+                            variant="transparent"
+                        >
                             {copied ? <RiCheckFill /> : <RiClipboardFill />}
                         </ActionIcon>
                     </Tooltip>
@@ -48,7 +51,7 @@ export const SongPath = ({ path }: SongPathProps) => {
                     label={t('page.itemDetail.openFile', { postProcess: 'sentenceCase' })}
                     withinPortal
                 >
-                    <ActionIcon>
+                    <ActionIcon variant="transparent">
                         <RiExternalLinkFill
                             onClick={() => {
                                 util.openItem(path).catch((error) => {

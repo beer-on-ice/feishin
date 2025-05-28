@@ -7,7 +7,7 @@ import { RiAddFill, RiArrowDownSLine, RiDiscLine, RiListUnordered } from 'react-
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Button, MotionStack, Tooltip } from '/@/renderer/components';
+import { Button, MotionStack, Text, Tooltip } from '/@/renderer/components';
 import { CreatePlaylistForm } from '/@/renderer/features/playlists';
 import { ActionBar } from '/@/renderer/features/sidebar/components/action-bar';
 import { SidebarIcon } from '/@/renderer/features/sidebar/components/sidebar-icon';
@@ -184,12 +184,12 @@ export const Sidebar = () => {
                                 px="1.5rem"
                             >
                                 <Group>
-                                    <Box
+                                    <Text
                                         fw="600"
-                                        style={{ fontSize: '1.2rem' }}
+                                        size="lg"
                                     >
                                         {t('page.sidebar.playlists', { postProcess: 'titleCase' })}
-                                    </Box>
+                                    </Text>
                                 </Group>
                                 <Group gap="sm">
                                     <Button

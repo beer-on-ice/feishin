@@ -132,6 +132,7 @@ export const CommandPalette = ({ modalProps }: CommandPaletteProps) => {
                                 setQuery('');
                                 searchInputRef.current?.focus();
                             }}
+                            variant="transparent"
                         >
                             <RiCloseFill />
                         </ActionIcon>

@@ -51,6 +51,7 @@ export const SearchInput = ({
                             ref.current.focus();
                             onChange?.({ target: { value: '' } } as ChangeEvent<HTMLInputElement>);
                         }}
+                        variant="transparent"
                     >
                         <RiCloseFill />
                     </ActionIcon>
@@ -58,13 +59,13 @@ export const SearchInput = ({
             }
             size="md"
             styles={{
-                icon: { svg: { fill: 'var(--titlebar-fg)' } },
                 input: {
                     backgroundColor: isOpened ? 'inherit' : 'transparent !important',
                     border: 'none !important',
                     cursor: isOpened ? 'text' : 'pointer',
                     padding: isOpened ? '10px' : 0,
                 },
+                section: { fill: 'var(--titlebar-fg)', pointerEvents: isOpened ? 'auto' : 'none' },
             }}
             width={isOpened ? openedWidth || 150 : initialWidth || 35}
         />
