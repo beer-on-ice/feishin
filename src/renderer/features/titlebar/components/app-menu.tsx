@@ -156,14 +156,14 @@ export const AppMenu = () => {
                 return (
                     <DropdownMenu.Item
                         $isActive={server.id === currentServer?.id}
+                        key={`server-${server.id}`}
                         leftSection={
                             isSessionExpired ? (
-                                <RiLockLine color="var(--danger-color)" />
+                                <RiLockLine color="var(--ui-danger-color)" />
                             ) : (
                                 <RiServerLine />
                             )
                         }
-                        key={`server-${server.id}`}
                         onClick={() => {
                             if (!isSessionExpired) return handleSetCurrentServer(server);
                             return handleCredentialsModal(server);

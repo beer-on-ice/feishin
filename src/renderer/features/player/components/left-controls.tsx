@@ -45,7 +45,7 @@ const Image = styled(motion.div)`
     width: 60px;
     height: 60px;
     cursor: pointer;
-    background-color: var(--placeholder-bg);
+    background-color: var(--ui-placeholder-bg);
     filter: drop-shadow(0 5px 6px rgb(0 0 0 / 50%));
 
     ${fadeIn};
@@ -63,7 +63,7 @@ const Image = styled(motion.div)`
 const PlayerbarImage = styled.img`
     width: 100%;
     height: 100%;
-    object-fit: var(--image-fit);
+    object-fit: var(--ui-image-fit);
 `;
 
 const LineItem = styled.div<{ $secondary?: boolean }>`
@@ -72,12 +72,12 @@ const LineItem = styled.div<{ $secondary?: boolean }>`
     max-width: 20vw;
     overflow: hidden;
     line-height: 1.3;
-    color: ${(props) => props.$secondary && 'var(--main-fg-secondary)'};
+    color: ${(props) => props.$secondary && 'var(--ui-main-fg-secondary)'};
     text-overflow: ellipsis;
     white-space: nowrap;
 
     a {
-        color: ${(props) => props.$secondary && 'var(--text-secondary)'};
+        color: ${(props) => props.$secondary && 'var(--ui-text-secondary)'};
     }
 `;
 
@@ -166,12 +166,12 @@ export const LeftControls = () => {
                                     ) : (
                                         <Center
                                             style={{
-                                                background: 'var(--placeholder-bg)',
+                                                background: 'var(--ui-placeholder-bg)',
                                                 height: '100%',
                                             }}
                                         >
                                             <RiDiscLine
-                                                color="var(--placeholder-fg)"
+                                                color="var(--ui-placeholder-fg)"
                                                 size={50}
                                             />
                                         </Center>

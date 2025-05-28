@@ -101,7 +101,7 @@ const BottomControls = styled(ControlsRow)`
 
 const FavoriteWrapper = styled.span<{ isFavorite: boolean }>`
     svg {
-        fill: ${(props) => props.isFavorite && 'var(--primary-color)'};
+        fill: ${(props) => props.isFavorite && 'var(--ui-primary-color)'};
     }
 `;
 

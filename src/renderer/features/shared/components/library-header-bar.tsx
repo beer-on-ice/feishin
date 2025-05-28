@@ -58,7 +58,7 @@ const PlayButton = ({ onClick }: PlayButtonProps) => {
 const Badge = styled(Paper)`
     padding: 0.3rem 1rem;
     font-weight: 600;
-    color: var(--main-fg);
+    color: var(--ui-main-fg);
     border-radius: 0.3rem;
 `;
 

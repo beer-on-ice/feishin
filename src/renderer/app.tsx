@@ -69,7 +69,7 @@ export const App = () => {
     useEffect(() => {
         if (type === FontType.SYSTEM && system) {
             const root = document.documentElement;
-            root.style.setProperty('--content-font-family', 'dynamic-font');
+            root.style.setProperty('--ui-content-font-family', 'dynamic-font');
 
             if (!textStyleRef.current) {
                 textStyleRef.current = document.createElement('style');
@@ -83,7 +83,7 @@ export const App = () => {
             }`;
         } else if (type === FontType.CUSTOM && custom) {
             const root = document.documentElement;
-            root.style.setProperty('--content-font-family', 'dynamic-font');
+            root.style.setProperty('--ui-content-font-family', 'dynamic-font');
 
             if (!textStyleRef.current) {
                 textStyleRef.current = document.createElement('style');
@@ -97,7 +97,7 @@ export const App = () => {
             }`;
         } else {
             const root = document.documentElement;
-            root.style.setProperty('--content-font-family', builtIn);
+            root.style.setProperty('--ui-content-font-family', builtIn);
         }
     }, [builtIn, custom, system, type]);
 
@@ -246,11 +246,11 @@ export const App = () => {
                 components: {
                     Modal: {
                         styles: {
-                            body: { background: 'var(--modal-bg)', padding: '1rem !important' },
+                            body: { background: 'var(--ui-modal-bg)', padding: '1rem !important' },
                             close: { marginRight: '0.5rem' },
                             content: { borderRadius: '5px' },
                             header: {
-                                background: 'var(--modal-header-bg)',
+                                background: 'var(--ui-modal-header-bg)',
                                 paddingBottom: '1rem',
                             },
                             title: { fontSize: 'medium', fontWeight: 500 },
@@ -258,19 +258,8 @@ export const App = () => {
                     },
                 },
                 defaultRadius: 'xs',
-                dir: 'ltr',
                 focusRing: 'auto',
-                focusRingStyles: {
-                    inputStyles: () => ({
-                        border: '1px solid var(--primary-color)',
-                    }),
-                    resetStyles: () => ({ outline: 'none' }),
-                    styles: () => ({
-                        outline: '1px solid var(--primary-color)',
-                        outlineOffset: '-1px',
-                    }),
-                },
-                fontFamily: 'var(--content-font-family)',
+                fontFamily: 'var(--ui-content-font-family)',
                 fontSizes: {
                     lg: '1.1rem',
                     md: '1rem',
@@ -279,8 +268,8 @@ export const App = () => {
                     xs: '0.8rem',
                 },
                 headings: {
-                    fontFamily: 'var(--content-font-family)',
-                    fontWeight: 700,
+                    fontFamily: 'var(--ui-content-font-family)',
+                    fontWeight: '700',
                 },
                 other: {},
                 spacing: {
@@ -292,8 +281,6 @@ export const App = () => {
                 },
             }}
             withCssVariables={false}
-            withGlobalStyles
-            withNormalizeCSS
         >
             <Notifications
                 containerWidth="300px"

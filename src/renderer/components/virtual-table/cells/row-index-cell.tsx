@@ -12,7 +12,7 @@ import { CellContainer } from '/@/renderer/components/virtual-table/cells/generi
 //             >
 //                 <g>
 //                     <rect
-//                         fill="var(--primary-color)"
+//                         fill="var(--ui-primary-color)"
 //                         height="80"
 //                         id="bar-1"
 //                         width="12"
@@ -31,7 +31,7 @@ import { CellContainer } from '/@/renderer/components/virtual-table/cells/generi
 //                         />
 //                     </rect>
 //                     <rect
-//                         fill="var(--primary-color)"
+//                         fill="var(--ui-primary-color)"
 //                         height="80"
 //                         id="bar-2"
 //                         width="12"
@@ -50,7 +50,7 @@ import { CellContainer } from '/@/renderer/components/virtual-table/cells/generi
 //                         />
 //                     </rect>
 //                     <rect
-//                         fill="var(--primary-color)"
+//                         fill="var(--ui-primary-color)"
 //                         height="80"
 //                         id="bar-3"
 //                         width="12"
@@ -69,7 +69,7 @@ import { CellContainer } from '/@/renderer/components/virtual-table/cells/generi
 //                         />
 //                     </rect>
 //                     <rect
-//                         fill="var(--primary-color)"
+//                         fill="var(--ui-primary-color)"
 //                         height="80"
 //                         id="bar-4"
 //                         width="12"
@@ -101,28 +101,28 @@ const StaticSvg = () => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <rect
-                    fill="var(--primary-color)"
+                    fill="var(--ui-primary-color)"
                     height="20"
                     width="12"
                     x="100"
                     y="130"
                 />
                 <rect
-                    fill="var(--primary-color)"
+                    fill="var(--ui-primary-color)"
                     height="60"
                     width="12"
                     x="115"
                     y="130"
                 />
                 <rect
-                    fill="var(--primary-color)"
+                    fill="var(--ui-primary-color)"
                     height="80"
                     width="12"
                     x="130"
                     y="130"
                 />
                 <rect
-                    fill="var(--primary-color)"
+                    fill="var(--ui-primary-color)"
                     height="45"
                     width="12"
                     x="145"

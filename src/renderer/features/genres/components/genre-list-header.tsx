@@ -41,7 +41,7 @@ export const GenreListHeader = ({ gridRef, itemCount, tableRef }: GenreListHeade
             gap={0}
             ref={cq.ref}
         >
-            <PageHeader backgroundColor="var(--titlebar-bg)">
+            <PageHeader backgroundColor="var(--ui-titlebar-bg)">
                 <Flex
                     justify="space-between"
                     w="100%"

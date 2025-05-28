@@ -16,7 +16,7 @@ export const DrawerPlayQueue = () => {
             h="100%"
         >
             <Box
-                bg="var(--main-bg)"
+                bg="var(--ui-main-bg)"
                 style={{ borderRadius: '10px' }}
             >
                 <PlayQueueListControls
@@ -25,7 +25,7 @@ export const DrawerPlayQueue = () => {
                 />
             </Box>
             <Flex
-                bg="var(--main-bg)"
+                bg="var(--ui-main-bg)"
                 h="100%"
                 mb="0.6rem"
             >

@@ -37,7 +37,7 @@ const MainContentContainer = styled.div<{
             props.$rightExpanded && props.$rightSidebarWidth};
 
     gap: 0;
-    background: var(--main-bg);
+    background: var(--ui-main-bg);
 `;
 
 export const MainContent = ({ shell }: { shell?: boolean }) => {

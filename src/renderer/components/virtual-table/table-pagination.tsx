@@ -80,7 +80,7 @@ export const TablePagination = ({
             layout
             p="1rem"
             ref={containerQuery.ref}
-            style={{ borderTop: '1px solid var(--generic-border-color)' }}
+            style={{ borderTop: '1px solid var(--ui-generic-border-color)' }}
         >
             <Text
                 $secondary

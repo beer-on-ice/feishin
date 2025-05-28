@@ -36,7 +36,7 @@ export const useFastAverageColor = (args: {
                 });
         } else if (srcLoaded) {
             idRef.current = id;
-            return setColor('var(--placeholder-bg)');
+            return setColor('var(--ui-placeholder-bg)');
         }
 
         return () => {

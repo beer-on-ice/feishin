@@ -292,7 +292,7 @@ export const GenreListHeaderFilters = ({
                                     style={{
                                         svg: {
                                             fill: isFolderFilterApplied
-                                                ? 'var(--primary-color) !important'
+                                                ? 'var(--ui-primary-color) !important'
                                                 : undefined,
                                         },
                                     }}

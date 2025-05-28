@@ -151,14 +151,14 @@ export const QueryBuilder = ({
                                 <DropdownMenu.Divider />
                                 <DropdownMenu.Item
                                     $danger
-                                    leftSection={<RiRestartLine color="var(--danger-color)" />}
+                                    leftSection={<RiRestartLine color="var(--ui-danger-color)" />}
                                     onClick={onResetFilters}
                                 >
                                     Reset to default
                                 </DropdownMenu.Item>
                                 <DropdownMenu.Item
                                     $danger
-                                    leftSection={<RiDeleteBinFill color="var(--danger-color)" />}
+                                    leftSection={<RiDeleteBinFill color="var(--ui-danger-color)" />}
                                     onClick={onClearFilters}
                                 >
                                     Clear filters

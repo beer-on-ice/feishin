@@ -6,16 +6,16 @@ import styled from 'styled-components';
 
 const StyledPagination = styled(MantinePagination)<PaginationProps>`
     & .mantine-Pagination-item {
-        color: var(--btn-default-fg);
-        background-color: var(--btn-default-bg);
+        color: var(--ui-btn-default-fg);
+        background-color: var(--ui-btn-default-bg);
         border: none;
         transition:
             background 0.2s ease-in-out,
             color 0.2s ease-in-out;
 
         &[data-active] {
-            color: var(--btn-primary-fg);
-            background-color: var(--btn-primary-bg);
+            color: var(--ui-btn-primary-fg);
+            background-color: var(--ui-btn-primary-bg);
         }
 
         &[data-dots] {
@@ -24,12 +24,12 @@ const StyledPagination = styled(MantinePagination)<PaginationProps>`
         }
 
         &:hover {
-            color: var(--btn-default-fg-hover);
-            background-color: var(--btn-default-bg-hover);
+            color: var(--ui-btn-default-fg-hover);
+            background-color: var(--ui-btn-default-bg-hover);
 
             &[data-active] {
-                color: var(--btn-primary-fg-hover);
-                background-color: var(--btn-primary-bg-hover);
+                color: var(--ui-btn-primary-fg-hover);
+                background-color: var(--ui-btn-primary-bg-hover);
             }
 
             &[data-dots] {

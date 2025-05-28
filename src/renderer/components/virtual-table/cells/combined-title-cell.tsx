@@ -58,7 +58,7 @@ const MetadataWrapper = styled.div`
 
 const StyledImage = styled(SimpleImg)`
     img {
-        object-fit: var(--image-fit);
+        object-fit: var(--ui-image-fit);
     }
 `;
 
@@ -102,7 +102,7 @@ export const CombinedTitleCell = ({
                     <StyledImage
                         alt="cover"
                         height={(node.rowHeight || 40) - 10}
-                        placeholder={value.imagePlaceholderUrl || 'var(--placeholder-bg)'}
+                        placeholder={value.imagePlaceholderUrl || 'var(--ui-placeholder-bg)'}
                         src={value.imageUrl}
                         style={{}}
                         width={(node.rowHeight || 40) - 10}
@@ -110,14 +110,14 @@ export const CombinedTitleCell = ({
                 ) : (
                     <Center
                         style={{
-                            background: 'var(--placeholder-bg)',
-                            borderRadius: 'var(--card-default-radius)',
+                            background: 'var(--ui-placeholder-bg)',
+                            borderRadius: 'var(--ui-card-default-radius)',
                             height: `${(node.rowHeight || 40) - 10}px`,
                             width: `${(node.rowHeight || 40) - 10}px`,
                         }}
                     >
                         <RiAlbumFill
-                            color="var(--placeholder-fg)"
+                            color="var(--ui-placeholder-fg)"
                             size={35}
                         />
                     </Center>

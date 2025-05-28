@@ -9,8 +9,8 @@ import { useSidebarStore } from '/@/renderer/store';
 const SidebarContainer = styled.aside`
     position: relative;
     grid-area: sidebar;
-    background: var(--sidebar-bg);
-    border-right: var(--sidebar-border);
+    background: var(--ui-sidebar-bg);
+    border-right: var(--ui-sidebar-border);
 `;
 
 interface LeftSidebarProps {

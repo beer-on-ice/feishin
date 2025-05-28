@@ -524,7 +524,7 @@ export const SongListHeaderFilters = ({
                                     style={{
                                         svg: {
                                             fill: isFolderFilterApplied
-                                                ? 'var(--primary-color) !important'
+                                                ? 'var(--ui-primary-color) !important'
                                                 : undefined,
                                         },
                                     }}
@@ -554,7 +554,9 @@ export const SongListHeaderFilters = ({
                     size="compact-md"
                     style={{
                         svg: {
-                            fill: isFilterApplied ? 'var(--primary-color) !important' : undefined,
+                            fill: isFilterApplied
+                                ? 'var(--ui-primary-color) !important'
+                                : undefined,
                         },
                     }}
                     tooltip={{ label: t('common.filters', { postProcess: 'titleCase' }) }}

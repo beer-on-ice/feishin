@@ -7,11 +7,12 @@ import { generatePath } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Badge, Text, TextTitle } from '/@/renderer/components';
+import { Text, TextTitle } from '/@/renderer/components';
 import { useFastAverageColor } from '/@/renderer/hooks';
 import { AppRoute } from '/@/renderer/router/routes';
 import { useFullScreenPlayerStore, usePlayerData, usePlayerStore } from '/@/renderer/store';
 import { useSettingsStore } from '/@/renderer/store/settings.store';
+import { Badge } from '/@/shared/components/badge/badge';
 import { PlayerData, QueueSong } from '/@/shared/types/domain-types';
 
 const Image = styled(motion.img)<any>`
@@ -101,14 +102,14 @@ const ImageWithPlaceholder = ({
         return (
             <Center
                 style={{
-                    background: 'var(--placeholder-bg)',
-                    borderRadius: 'var(--card-default-radius)',
+                    background: 'var(--ui-placeholder-bg)',
+                    borderRadius: 'var(--ui-card-default-radius)',
                     height: '100%',
                     width: '100%',
                 }}
             >
                 <RiAlbumFill
-                    color="var(--placeholder-fg)"
+                    color="var(--ui-placeholder-fg)"
                     size="25%"
                 />
             </Center>
@@ -216,7 +217,7 @@ export const FullScreenPlayerImage = () => {
                             exit="closed"
                             initial="closed"
                             key={imageKey}
-                            placeholder="var(--placeholder-bg)"
+                            placeholder="var(--ui-placeholder-bg)"
                             src={imageState.topImage || ''}
                             useAspectRatio={useImageAspectRatio}
                             variants={imageVariants}
@@ -232,7 +233,7 @@ export const FullScreenPlayerImage = () => {
                             exit="closed"
                             initial="closed"
                             key={imageKey}
-                            placeholder="var(--placeholder-bg)"
+                            placeholder="var(--ui-placeholder-bg)"
                             src={imageState.bottomImage || ''}
                             useAspectRatio={useImageAspectRatio}
                             variants={imageVariants}
@@ -251,7 +252,7 @@ export const FullScreenPlayerImage = () => {
                     order={1}
                     overflow="hidden"
                     style={{
-                        textShadow: 'var(--fullscreen-player-text-shadow)',
+                        textShadow: 'var(--ui-fullscreen-player-text-shadow)',
                     }}
                     w="100%"
                 >
@@ -265,7 +266,7 @@ export const FullScreenPlayerImage = () => {
                     order={3}
                     overflow="hidden"
                     style={{
-                        textShadow: 'var(--fullscreen-player-text-shadow)',
+                        textShadow: 'var(--ui-fullscreen-player-text-shadow)',
                     }}
                     to={generatePath(AppRoute.LIBRARY_ALBUMS_DETAIL, {
                         albumId: currentSong?.albumId || '',
@@ -279,7 +280,7 @@ export const FullScreenPlayerImage = () => {
                     key="fs-artists"
                     order={3}
                     style={{
-                        textShadow: 'var(--fullscreen-player-text-shadow)',
+                        textShadow: 'var(--ui-fullscreen-player-text-shadow)',
                     }}
                 >
                     {currentSong?.artists?.map((artist, index) => (
@@ -301,7 +302,7 @@ export const FullScreenPlayerImage = () => {
                                 component={Link}
                                 fw={600}
                                 style={{
-                                    textShadow: 'var(--fullscreen-player-text-shadow)',
+                                    textShadow: 'var(--ui-fullscreen-player-text-shadow)',
                                 }}
                                 to={generatePath(AppRoute.LIBRARY_ALBUM_ARTISTS_DETAIL, {
                                     albumArtistId: artist.id,

@@ -13,15 +13,15 @@ const Container = styled(Flex)<{ $active?: boolean; $disabled?: boolean }>`
     pointer-events: ${(props) => (props.$disabled ? 'none' : 'all')};
     cursor: ${(props) => (props.$disabled ? 'default' : 'pointer')};
     user-select: ${(props) => (props.$disabled ? 'none' : 'initial')};
-    border-right: var(--sidebar-border);
+    border-right: var(--ui-sidebar-border);
     opacity: ${(props) => props.$disabled && 0.6};
 
     svg {
-        fill: ${(props) => (props.$active ? 'var(--primary-color)' : 'var(--sidebar-fg)')};
+        fill: ${(props) => (props.$active ? 'var(--ui-primary-color)' : 'var(--ui-sidebar-fg)')};
     }
 
     &:focus-visible {
-        background-color: var(--sidebar-bg-hover);
+        background-color: var(--ui-sidebar-bg-hover);
         outline: none;
     }
 
@@ -29,14 +29,14 @@ const Container = styled(Flex)<{ $active?: boolean; $disabled?: boolean }>`
         !props.$disabled &&
         `
       &:hover {
-          background-color: var(--sidebar-bg-hover);
+          background-color: var(--ui-sidebar-bg-hover);
 
           div {
-            color: var(--main-fg) !important;
+            color: var(--ui-main-fg) !important;
           }
 
           svg {
-            fill: var(--primary-color);
+            fill: var(--ui-primary-color);
           }
         }
     `}
@@ -60,7 +60,7 @@ const ActiveTabIndicator = styled(motion.div)`
     height: 80%;
     margin-top: auto;
     margin-bottom: auto;
-    background: var(--primary-color);
+    background: var(--ui-primary-color);
 `;
 
 interface CollapsedSidebarItemProps {

@@ -16,7 +16,8 @@ const Row = styled.div<{ $secondary?: boolean }>`
     height: 22px;
     padding: 0 0.2rem;
     overflow: hidden;
-    color: ${({ $secondary }) => ($secondary ? 'var(--main-fg-secondary)' : 'var(--main-fg)')};
+    color: ${({ $secondary }) =>
+        $secondary ? 'var(--ui-main-fg-secondary)' : 'var(--ui-main-fg)'};
     text-overflow: ellipsis;
     white-space: nowrap;
     user-select: none;

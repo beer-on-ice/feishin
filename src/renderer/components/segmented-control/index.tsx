@@ -8,11 +8,11 @@ type SegmentedControlProps = MantineSegmentedControlProps;
 
 const StyledSegmentedControl = styled(MantineSegmentedControl)<MantineSegmentedControlProps>`
     & .mantine-SegmentedControl-label {
-        font-family: var(--content-font-family);
-        color: var(--input-fg);
+        font-family: var(--ui-content-font-family);
+        color: var(--ui-input-fg);
     }
 
-    background-color: var(--input-bg);
+    background-color: var(--ui-input-bg);
 
     & .mantine-SegmentedControl-disabled {
         opacity: 0.6;
@@ -23,8 +23,8 @@ const StyledSegmentedControl = styled(MantineSegmentedControl)<MantineSegmentedC
     }
 
     & .mantine-SegmentedControl-active {
-        color: var(--input-active-fg);
-        background-color: var(--input-active-bg);
+        color: var(--ui-input-active-fg);
+        background-color: var(--ui-input-active-bg);
     }
 `;
 

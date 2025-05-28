@@ -233,7 +233,7 @@ const HomeRoute = () => {
         <AnimatedPage>
             <NativeScrollArea
                 pageHeaderProps={{
-                    backgroundColor: 'var(--titlebar-bg)',
+                    backgroundColor: 'var(--ui-titlebar-bg)',
                     children: (
                         <LibraryHeaderBar>
                             <LibraryHeaderBar.Title>

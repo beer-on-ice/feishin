@@ -10,24 +10,24 @@ interface DatePickerProps extends MantineDatePickerProps {
 
 const StyledDatePicker = styled(MantineDatePicker)<DatePickerProps>`
     & .mantine-DatePicker-input {
-        color: var(--input-fg);
-        background: var(--input-bg);
+        color: var(--ui-input-fg);
+        background: var(--ui-input-bg);
 
         &::placeholder {
-            color: var(--input-placeholder-fg);
+            color: var(--ui-input-placeholder-fg);
         }
     }
 
     & .mantine-DatePicker-icon {
-        color: var(--input-placeholder-fg);
+        color: var(--ui-input-placeholder-fg);
     }
 
     & .mantine-DatePicker-required {
-        color: var(--secondary-color);
+        color: var(--ui-secondary-color);
     }
 
     & .mantine-DatePicker-label {
-        font-family: var(--label-font-family);
+        font-family: var(--ui-label-font-family);
     }
 
     & .mantine-DateRangePicker-disabled {

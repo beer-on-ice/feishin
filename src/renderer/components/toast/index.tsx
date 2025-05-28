@@ -15,12 +15,12 @@ interface NotificationProps extends MantineNotificationProps {
 const showToast = ({ type, ...props }: NotificationProps) => {
     const color =
         type === 'success'
-            ? 'var(--success-color)'
+            ? 'var(--ui-success-color)'
             : type === 'warning'
-              ? 'var(--warning-color)'
+              ? 'var(--ui-warning-color)'
               : type === 'error'
-                ? 'var(--danger-color)'
-                : 'var(--primary-color)';
+                ? 'var(--ui-danger-color)'
+                : 'var(--ui-primary-color)';
 
     const defaultTitle =
         type === 'success'
@@ -42,7 +42,7 @@ const showToast = ({ type, ...props }: NotificationProps) => {
                 },
             },
             description: {
-                color: 'var(--toast-description-fg)',
+                color: 'var(--ui-toast-description-fg)',
                 fontSize: '1rem',
             },
             loader: {
@@ -50,12 +50,12 @@ const showToast = ({ type, ...props }: NotificationProps) => {
             },
             root: {
                 '&::before': { backgroundColor: color },
-                background: 'var(--toast-bg)',
-                border: '2px solid var(--generic-border-color)',
+                background: 'var(--ui-toast-bg)',
+                border: '2px solid var(--ui-generic-border-color)',
                 bottom: '90px',
             },
             title: {
-                color: 'var(--toast-title-fg)',
+                color: 'var(--ui-toast-title-fg)',
                 fontSize: '1.3rem',
             },
         }),

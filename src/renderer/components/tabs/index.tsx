@@ -15,7 +15,7 @@ const StyledTabs = styled(MantineTabs)`
         padding: 0.5rem 1rem;
         font-size: 1rem;
         font-weight: 600;
-        background-color: var(--main-bg);
+        background-color: var(--ui-main-bg);
     }
 
     & .mantine-Tabs-panel {
@@ -24,12 +24,12 @@ const StyledTabs = styled(MantineTabs)`
 
     & .mantine-Tabs-tab {
         padding: 1rem;
-        color: var(--btn-subtle-fg);
+        color: var(--ui-btn-subtle-fg);
         border-radius: 0;
 
         &:hover {
-            color: var(--btn-subtle-fg-hover);
-            background: var(--btn-subtle-bg-hover);
+            color: var(--ui-btn-subtle-fg-hover);
+            background: var(--ui-btn-subtle-bg-hover);
         }
 
         transition:
@@ -38,13 +38,13 @@ const StyledTabs = styled(MantineTabs)`
     }
 
     button[data-active] {
-        color: var(--btn-subtle-fg);
+        color: var(--ui-btn-subtle-fg);
         background: none;
-        border-color: var(--primary-color);
+        border-color: var(--ui-primary-color);
 
         &:hover {
             background: none;
-            border-color: var(--primary-color);
+            border-color: var(--ui-primary-color);
         }
     }
 `;

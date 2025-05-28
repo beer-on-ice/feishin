@@ -25,14 +25,14 @@ const StyledMenu = styled(MantineMenu)<MenuProps>``;
 
 const StyledMenuLabel = styled(MantineMenu.Label)<MenuLabelProps>`
     padding: 0.5rem;
-    font-family: var(--content-font-family);
+    font-family: var(--ui-content-font-family);
 `;
 
 const StyledMenuItem = styled(MantineMenu.Item)<MenuItemProps>`
     position: relative;
-    padding: var(--dropdown-menu-item-padding);
-    font-family: var(--content-font-family);
-    font-size: var(--dropdown-menu-item-font-size);
+    padding: var(--ui-dropdown-menu-item-padding);
+    font-family: var(--ui-content-font-family);
+    font-size: var(--ui-dropdown-menu-item-font-size);
 
     cursor: default;
 
@@ -41,13 +41,14 @@ const StyledMenuItem = styled(MantineMenu.Item)<MenuItemProps>`
     }
 
     &:hover {
-        background-color: var(--dropdown-menu-bg-hover);
+        background-color: var(--ui-dropdown-menu-bg-hover);
     }
 
     & .mantine-Menu-itemLabel {
         margin-right: 2rem;
         margin-left: 1rem;
-        color: ${(props) => (props.$danger ? 'var(--danger-color)' : 'var(--dropdown-menu-fg)')};
+        color: ${(props) =>
+            props.$danger ? 'var(--ui-danger-color)' : 'var(--ui-dropdown-menu-fg)'};
     }
 
     & .mantine-Menu-itemRightSection {
@@ -58,19 +59,19 @@ const StyledMenuItem = styled(MantineMenu.Item)<MenuItemProps>`
 const StyledMenuDropdown = styled(MantineMenu.Dropdown)`
     padding: 0;
     margin: 0;
-    background: var(--dropdown-menu-bg);
+    background: var(--ui-dropdown-menu-bg);
     filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
-    border: var(--dropdown-menu-border);
-    border-radius: var(--dropdown-menu-border-radius);
+    border: var(--ui-dropdown-menu-border);
+    border-radius: var(--ui-dropdown-menu-border-radius);
 
     /* *:first-child {
-    border-top-left-radius: var(--dropdown-menu-border-radius);
-    border-top-right-radius: var(--dropdown-menu-border-radius);
+    border-top-left-radius: var(--ui-dropdown-menu-border-radius);
+    border-top-right-radius: var(--ui-dropdown-menu-border-radius);
   }
 
   *:last-child {
-    border-bottom-right-radius: var(--dropdown-menu-border-radius);
-    border-bottom-left-radius: var(--dropdown-menu-border-radius);
+    border-bottom-right-radius: var(--ui-dropdown-menu-border-radius);
+    border-bottom-left-radius: var(--ui-dropdown-menu-border-radius);
   } */
 `;
 

@@ -5,12 +5,12 @@ export const PlayerbarSlider = ({ ...props }: SliderProps) => {
         <Slider
             styles={{
                 bar: {
-                    backgroundColor: 'var(--playerbar-slider-track-progress-bg)',
+                    backgroundColor: 'var(--ui-playerbar-slider-track-progress-bg)',
                     transition: 'background-color 0.2s ease',
                 },
                 label: {
-                    backgroundColor: 'var(--tooltip-bg)',
-                    color: 'var(--tooltip-fg)',
+                    backgroundColor: 'var(--ui-tooltip-bg)',
+                    color: 'var(--ui-tooltip-fg)',
                     fontSize: '1.1rem',
                     fontWeight: 600,
                     padding: '0 1rem',
@@ -18,7 +18,7 @@ export const PlayerbarSlider = ({ ...props }: SliderProps) => {
                 root: {
                     '&:hover': {
                         '& .mantine-Slider-bar': {
-                            backgroundColor: 'var(--primary-color)',
+                            backgroundColor: 'var(--ui-primary-color)',
                         },
                         '& .mantine-Slider-thumb': {
                             opacity: 1,
@@ -26,8 +26,8 @@ export const PlayerbarSlider = ({ ...props }: SliderProps) => {
                     },
                 },
                 thumb: {
-                    backgroundColor: 'var(--slider-thumb-bg)',
-                    borderColor: 'var(--primary-color)',
+                    backgroundColor: 'var(--ui-slider-thumb-bg)',
+                    borderColor: 'var(--ui-primary-color)',
                     borderWidth: rem(1),
                     height: '1rem',
                     opacity: 0,
@@ -35,7 +35,7 @@ export const PlayerbarSlider = ({ ...props }: SliderProps) => {
                 },
                 track: {
                     '&::before': {
-                        backgroundColor: 'var(--playerbar-slider-track-bg)',
+                        backgroundColor: 'var(--ui-playerbar-slider-track-bg)',
                         right: 'calc(0.1rem * -1)',
                     },
                 },

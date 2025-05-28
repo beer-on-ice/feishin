@@ -77,7 +77,7 @@ export const CollapsedSidebar = () => {
                         gap={0}
                         grow
                         style={{
-                            borderRight: 'var(--sidebar-border)',
+                            borderRight: 'var(--ui-sidebar-border)',
                         }}
                     >
                         <CollapsedSidebarButton
@@ -99,8 +99,8 @@ export const CollapsedSidebar = () => {
                         <CollapsedSidebarItem
                             activeIcon={<RiMenuFill size="25" />}
                             component={UnstyledButton}
-                            leftSection={<RiMenuFill size="25" />}
                             label={t('common.menu', { postProcess: 'titleCase' })}
+                            leftSection={<RiMenuFill size="25" />}
                         />
                     </DropdownMenu.Target>
                     <DropdownMenu.Dropdown>
@@ -117,14 +117,14 @@ export const CollapsedSidebar = () => {
                             />
                         }
                         component={NavLink}
+                        key={item.id}
+                        label={item.label}
                         leftSection={
                             <SidebarIcon
                                 route={item.route}
                                 size="25"
                             />
                         }
-                        key={item.id}
-                        label={item.label}
                         route={item.route}
                         to={item.route}
                     />

@@ -14,7 +14,7 @@ const TitlebarContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: var(--titlebar-fg);
+    color: var(--ui-titlebar-fg);
 
     button {
         -webkit-app-region: no-drag;

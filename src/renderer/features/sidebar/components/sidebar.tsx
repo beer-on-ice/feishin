@@ -65,8 +65,8 @@ const ImageContainer = styled(motion.div)<{ height: string }>`
 const SidebarImage = styled.img`
     width: 100%;
     height: 100%;
-    object-fit: var(--image-fit);
-    background: var(--placeholder-bg);
+    object-fit: var(--ui-image-fit);
+    background: var(--ui-placeholder-bg);
 `;
 
 export const Sidebar = () => {
@@ -255,12 +255,12 @@ export const Sidebar = () => {
                                 ) : (
                                     <Center
                                         style={{
-                                            background: 'var(--placeholder-bg)',
+                                            background: 'var(--ui-placeholder-bg)',
                                             height: '100%',
                                         }}
                                     >
                                         <RiDiscLine
-                                            color="var(--placeholder-fg)"
+                                            color="var(--ui-placeholder-fg)"
                                             size={50}
                                         />
                                     </Center>

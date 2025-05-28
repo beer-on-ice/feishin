@@ -65,7 +65,7 @@ const ActionRequiredRoute = () => {
                                     wrap="nowrap"
                                 >
                                     <RiCheckFill
-                                        color="var(--success-color)"
+                                        color="var(--ui-success-color)"
                                         size={30}
                                     />
                                     <Text size="xl">No issues found</Text>

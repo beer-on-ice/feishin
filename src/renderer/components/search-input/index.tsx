@@ -46,6 +46,7 @@ export const SearchInput = ({
             rightSection={
                 isOpened ? (
                     <ActionIcon
+                        color="var(--ui-button-fg)"
                         onClick={() => {
                             ref.current.value = '';
                             ref.current.focus();
@@ -65,7 +66,10 @@ export const SearchInput = ({
                     cursor: isOpened ? 'text' : 'pointer',
                     padding: isOpened ? '10px' : 0,
                 },
-                section: { fill: 'var(--titlebar-fg)', pointerEvents: isOpened ? 'auto' : 'none' },
+                section: {
+                    fill: 'var(--ui-titlebar-fg)',
+                    pointerEvents: isOpened ? 'auto' : 'none',
+                },
             }}
             width={isOpened ? openedWidth || 150 : initialWidth || 35}
         />

@@ -245,7 +245,7 @@ const DummyAlbumDetailRoute = () => {
                     <Center>
                         <Group mr={5}>
                             <RiErrorWarningLine
-                                color="var(--danger-color)"
+                                color="var(--ui-danger-color)"
                                 size={30}
                             />
                         </Group>

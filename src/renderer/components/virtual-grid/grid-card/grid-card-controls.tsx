@@ -82,7 +82,7 @@ const FavoriteBanner = styled.div`
     height: 80px;
     pointer-events: none;
     content: '';
-    background-color: var(--primary-color);
+    background-color: var(--ui-primary-color);
     box-shadow: 0 0 10px 8px rgb(0 0 0 / 80%);
     transform: rotate(-45deg);
 `;
@@ -104,7 +104,7 @@ const BottomControls = styled(ControlsRow)`
 
 const FavoriteWrapper = styled.span<{ isFavorite: boolean }>`
     svg {
-        fill: ${(props) => props.isFavorite && 'var(--primary-color)'};
+        fill: ${(props) => props.isFavorite && 'var(--ui-primary-color)'};
     }
 `;
 

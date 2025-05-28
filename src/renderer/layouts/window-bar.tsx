@@ -22,8 +22,8 @@ const WindowsContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    color: var(--window-bar-fg);
-    background-color: var(--window-bar-bg);
+    color: var(--ui-window-bar-fg);
+    background-color: var(--ui-window-bar-bg);
     -webkit-app-region: drag;
 `;
 
@@ -49,7 +49,8 @@ const WindowsButton = styled.div<{ $exit?: boolean }>`
     }
 
     &:hover {
-        background: ${({ $exit }) => ($exit ? 'var(--danger-color)' : 'rgba(125, 125, 125, 30%)')};
+        background: ${({ $exit }) =>
+            $exit ? 'var(--ui-danger-color)' : 'rgba(125, 125, 125, 30%)'};
     }
 `;
 
@@ -123,8 +124,8 @@ const MacOsContainer = styled.div`
     justify-content: center;
     width: 100vw;
     -webkit-app-region: drag;
-    color: var(--window-bar-fg);
-    background-color: var(--window-bar-bg);
+    color: var(--ui-window-bar-fg);
+    background-color: var(--ui-window-bar-bg);
 `;
 
 const MacOsButtonGroup = styled.div`

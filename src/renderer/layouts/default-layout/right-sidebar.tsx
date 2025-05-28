@@ -13,8 +13,8 @@ const RightSidebarContainer = styled(motion.aside)`
     position: relative;
     grid-area: right-sidebar;
     height: 100%;
-    background: var(--sidebar-bg);
-    border-left: var(--sidebar-border);
+    background: var(--ui-sidebar-bg);
+    border-left: var(--ui-sidebar-border);
 
     .current-song-cell:not(.current-playlist-song-cell) svg {
         display: none;
@@ -40,8 +40,8 @@ const queueSidebarVariants: Variants = {
 };
 
 const QueueDrawer = styled(motion.div)`
-    background: var(--main-bg);
-    border: 3px solid var(--generic-border-color);
+    background: var(--ui-main-bg);
+    border: 3px solid var(--ui-generic-border-color);
     border-radius: 10px;
 `;
 

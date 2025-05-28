@@ -35,13 +35,13 @@ interface ScrollAreaProps extends MantineScrollAreaProps {
 
 const StyledScrollArea = styled(MantineScrollArea)`
     & .mantine-ScrollArea-thumb {
-        background: var(--scrollbar-thumb-bg);
+        background: var(--ui-scrollbar-thumb-bg);
         border-radius: 0;
     }
 
     & .mantine-ScrollArea-scrollbar {
         padding: 0;
-        background: var(--scrollbar-track-bg);
+        background: var(--ui-scrollbar-track-bg);
     }
 
     & .mantine-ScrollArea-viewport > div {

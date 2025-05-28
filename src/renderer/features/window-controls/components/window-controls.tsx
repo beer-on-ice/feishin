@@ -31,7 +31,8 @@ export const WindowsButton = styled.div<{ $exit?: boolean }>`
     }
 
     &:hover {
-        background: ${({ $exit }) => ($exit ? 'var(--danger-color)' : 'rgba(125, 125, 125, 30%)')};
+        background: ${({ $exit }) =>
+            $exit ? 'var(--ui-danger-color)' : 'rgba(125, 125, 125, 30%)'};
     }
 `;
 

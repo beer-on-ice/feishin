@@ -18,29 +18,29 @@ const ContextMenuContainer = styled(motion.div)<Omit<ContextMenuProps, 'children
     z-index: 1000;
     min-width: ${({ minWidth }) => minWidth}px;
     max-width: ${({ maxWidth }) => maxWidth}px;
-    background: var(--dropdown-menu-bg);
-    border-radius: var(--dropdown-menu-border-radius);
+    background: var(--ui-dropdown-menu-bg);
+    border-radius: var(--ui-dropdown-menu-border-radius);
     box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 40%);
 
     button:first-child {
-        border-top-left-radius: var(--dropdown-menu-border-radius);
-        border-top-right-radius: var(--dropdown-menu-border-radius);
+        border-top-left-radius: var(--ui-dropdown-menu-border-radius);
+        border-top-right-radius: var(--ui-dropdown-menu-border-radius);
     }
 
     button:last-child {
-        border-bottom-right-radius: var(--dropdown-menu-border-radius);
-        border-bottom-left-radius: var(--dropdown-menu-border-radius);
+        border-bottom-right-radius: var(--ui-dropdown-menu-border-radius);
+        border-bottom-left-radius: var(--ui-dropdown-menu-border-radius);
     }
 `;
 
 export const StyledContextMenuButton = styled(UnstyledButton)`
-    padding: var(--dropdown-menu-item-padding);
-    font-family: var(--content-font-family);
+    padding: var(--ui-dropdown-menu-item-padding);
+    font-family: var(--ui-content-font-family);
     font-weight: 500;
-    color: var(--dropdown-menu-fg);
+    color: var(--ui-dropdown-menu-fg);
     text-align: left;
     cursor: default;
-    background: var(--dropdown-menu-bg);
+    background: var(--ui-dropdown-menu-bg);
     border: none;
 
     & .mantine-Button-inner {
@@ -48,7 +48,7 @@ export const StyledContextMenuButton = styled(UnstyledButton)`
     }
 
     &:hover {
-        background: var(--dropdown-menu-bg-hover);
+        background: var(--ui-dropdown-menu-bg-hover);
     }
 
     &:disabled {

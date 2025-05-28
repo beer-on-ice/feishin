@@ -21,7 +21,7 @@ export const SidebarPlayQueue = () => {
         <VirtualGridContainer>
             {isWeb && (
                 <Stack mr={isWeb ? '130px' : undefined}>
-                    <PageHeader backgroundColor="var(--titlebar-bg)" />
+                    <PageHeader backgroundColor="var(--ui-titlebar-bg)" />
                 </Stack>
             )}
             <Paper

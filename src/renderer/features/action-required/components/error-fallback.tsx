@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import { Button, Text } from '/@/renderer/components';
 
 const Container = styled(Box)`
-    background: var(--main-bg);
+    background: var(--ui-main-bg);
 `;
 
 export const ErrorFallback = ({ resetErrorBoundary }: FallbackProps) => {
@@ -20,7 +20,7 @@ export const ErrorFallback = ({ resetErrorBoundary }: FallbackProps) => {
                 <Stack style={{ maxWidth: '50%' }}>
                     <Group gap="xs">
                         <RiErrorWarningLine
-                            color="var(--danger-color)"
+                            color="var(--ui-danger-color)"
                             size={30}
                         />
                         <Text size="lg">Something went wrong</Text>

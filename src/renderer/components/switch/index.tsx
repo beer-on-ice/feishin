@@ -9,18 +9,18 @@ const StyledSwitch = styled(MantineSwitch)`
     display: flex;
 
     & .mantine-Switch-track {
-        background-color: var(--switch-track-bg);
+        background-color: var(--ui-switch-track-bg);
         border: none;
     }
 
     & .mantine-Switch-input {
         &:checked + .mantine-Switch-track {
-            background-color: var(--switch-track-enabled-bg);
+            background-color: var(--ui-switch-track-enabled-bg);
         }
     }
 
     & .mantine-Switch-thumb {
-        background-color: var(--switch-thumb-bg);
+        background-color: var(--ui-switch-thumb-bg);
     }
 `;
 

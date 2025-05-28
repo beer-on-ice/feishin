@@ -1,5 +1,5 @@
 .lyric-line {
-    color: var(--main-fg);
+    color: var(--ui-main-fg);
     font-weight: 400;
 
     font-size: 2.5vmax;
@@ -16,7 +16,9 @@
         opacity: 0.8;
     }
 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition:
+        opacity 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
 }
 
 .lyric-line.active {

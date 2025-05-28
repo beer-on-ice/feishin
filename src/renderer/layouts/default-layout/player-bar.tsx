@@ -10,14 +10,14 @@ interface PlayerbarContainerProps {
 const PlayerbarContainer = styled.footer<PlayerbarContainerProps>`
     z-index: 200;
     grid-area: player;
-    background: var(--playerbar-bg);
+    background: var(--ui-playerbar-bg);
     transition: background 0.5s;
 
     ${(props) =>
         props.$drawerEffect &&
         `
         &:hover {
-            background: var(--playerbar-bg-active);
+            background: var(--ui-playerbar-bg-active);
         }
     `}
 `;

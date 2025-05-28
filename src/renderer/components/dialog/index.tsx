@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledDialog = styled(MantineDialog)`
     &.mantine-Dialog-root {
-        background-color: var(--modal-bg);
+        background-color: var(--ui-modal-bg);
         box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 40%);
     }
 `;

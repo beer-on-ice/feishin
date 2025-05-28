@@ -8,25 +8,25 @@ type SliderProps = MantineSliderProps;
 const StyledSlider = styled(MantineSlider)`
     & .mantine-Slider-track {
         height: 0.5rem;
-        background-color: var(--slider-track-bg);
+        background-color: var(--ui-slider-track-bg);
     }
 
     & .mantine-Slider-bar {
-        background-color: var(--primary-color);
+        background-color: var(--ui-primary-color);
     }
 
     & .mantine-Slider-thumb {
         width: 1rem;
         height: 1rem;
-        background: var(--slider-thumb-bg);
+        background: var(--ui-slider-thumb-bg);
         border: none;
     }
 
     & .mantine-Slider-label {
         padding: 0 1rem;
         font-size: 1em;
-        color: var(--tooltip-fg);
-        background: var(--tooltip-bg);
+        color: var(--ui-tooltip-fg);
+        background: var(--ui-tooltip-bg);
     }
 `;
 
