@@ -1,0 +1,17 @@
+.root {
+    border-radius: var(--badge-radius);
+    color: var(--badge-fg);
+    background-color: var(--badge-bg);
+}
+
+.root[data-variant='default'] {
+    background-color: var(--badge-bg-default);
+}
+
+.root[data-variant='filled'] {
+    background-color: var(--primary-color);
+}
+
+.root[data-variant='outline'] {
+    background-color: transparent;
+}

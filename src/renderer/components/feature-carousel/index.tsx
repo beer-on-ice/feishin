@@ -9,12 +9,12 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import { generatePath, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Badge } from '/@/renderer/components/badge';
 import { Button } from '/@/renderer/components/button';
 import { TextTitle } from '/@/renderer/components/text-title';
 import { usePlayQueueAdd } from '/@/renderer/features/player/hooks/use-playqueue-add';
 import { AppRoute } from '/@/renderer/router/routes';
 import { usePlayButtonBehavior } from '/@/renderer/store';
+import { Badge } from '/@/shared/components/badge/badge';
 import { Album, LibraryItem } from '/@/shared/types/domain-types';
 import { Play } from '/@/shared/types/types';
 
@@ -211,7 +211,10 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                                         <Badge size="lg">{currentItem?.releaseYear}</Badge>
                                         {currentItem?.songCount !== null &&
                                             currentItem?.songCount !== undefined && (
-                                                <Badge size="lg">
+                                                <Badge
+                                                    size="lg"
+                                                    variant="default"
+                                                >
                                                     {t('entity.trackWithCount', {
                                                         count: currentItem?.songCount || 0,
                                                     })}

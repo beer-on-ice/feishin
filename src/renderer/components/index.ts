@@ -1,6 +1,4 @@
-export * from './accordion';
 export * from './audio-player';
-export * from './badge';
 export * from './button';
 export * from './card';
 export * from './checkbox';
