@@ -159,7 +159,7 @@ export const AppMenu = () => {
                         key={`server-${server.id}`}
                         leftSection={
                             isSessionExpired ? (
-                                <RiLockLine color="var(--ui-danger-color)" />
+                                <RiLockLine color="var(--theme-danger-color)" />
                             ) : (
                                 <RiServerLine />
                             )

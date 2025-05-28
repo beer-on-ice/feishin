@@ -45,7 +45,7 @@ const ActiveTabIndicator = styled(motion.div)`
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--ui-main-fg);
+    background: var(--theme-main-fg);
 `;
 
 const HeaderItemWrapper = styled.div`
@@ -63,7 +63,7 @@ const GridContainer = styled.div<TransparentGridContainerProps>`
     grid-template-columns: 1fr;
     padding: 1rem;
     /* stylelint-disable-next-line color-function-notation */
-    background: rgb(var(--ui-main-bg-transparent), ${({ opacity }) => opacity}%);
+    background: rgb(var(--theme-main-bg-transparent), ${({ opacity }) => opacity}%);
     border-radius: 5px;
 `;
 
@@ -129,8 +129,8 @@ export const FullScreenPlayerQueue = () => {
                             style={{
                                 alignItems: 'center',
                                 color: item.active
-                                    ? 'var(--ui-main-fg) !important'
-                                    : 'var(--ui-main-fg-secondary) !important',
+                                    ? 'var(--theme-main-fg) !important'
+                                    : 'var(--theme-main-fg-secondary) !important',
                                 letterSpacing: '1px',
                             }}
                             uppercase

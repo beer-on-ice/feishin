@@ -20,14 +20,15 @@ interface TextTitleProps extends MantineTextTitleDivProps {
 
 const StyledTextTitle = styled(MantineHeader)<TextTitleProps>`
     overflow: ${(props) => props.overflow};
-    color: ${(props) => (props.$secondary ? 'var(--ui-main-fg-secondary)' : 'var(--ui-main-fg)')};
+    color: ${(props) =>
+        props.$secondary ? 'var(--theme-main-fg-secondary)' : 'var(--theme-main-fg)'};
     cursor: ${(props) => props.$link && 'cursor'};
     user-select: ${(props) => (props.$noSelect ? 'none' : 'auto')};
     transition: color 0.2s ease-in-out;
     ${(props) => props.overflow === 'hidden' && !props.lineClamp && textEllipsis}
 
     &:hover {
-        color: ${(props) => props.$link && 'var(--ui-main-fg)'};
+        color: ${(props) => props.$link && 'var(--theme-main-fg)'};
         text-decoration: ${(props) => (props.$link ? 'underline' : 'none')};
     }
 `;

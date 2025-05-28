@@ -13,10 +13,10 @@ const StyledPopover = styled(MantinePopover)``;
 
 const StyledDropdown = styled(MantinePopover.Dropdown)<PopoverDropdownProps>`
     padding: 0.5rem;
-    font-family: var(--ui-content-font-family);
+    font-family: var(--global-content-font-family);
     font-size: 0.9em;
-    background-color: var(--ui-dropdown-menu-bg);
-    border: var(--ui-dropdown-menu-border);
+    background-color: var(--theme-dropdown-menu-bg);
+    border: var(--theme-dropdown-menu-border);
 `;
 
 export const Popover = ({ children, ...props }: PopoverProps) => {

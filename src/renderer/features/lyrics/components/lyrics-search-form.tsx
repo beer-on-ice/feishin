@@ -26,8 +26,8 @@ const SearchItem = styled.button`
 
     &:hover,
     &:focus-visible {
-        color: var(--ui-btn-default-fg-hover);
-        background: var(--ui-btn-default-bg-hover);
+        color: var(--theme-btn-default-fg-hover);
+        background: var(--theme-btn-default-bg-hover);
     }
 `;
 

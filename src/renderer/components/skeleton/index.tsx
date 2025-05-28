@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledSkeleton = styled(MantineSkeleton)`
     &::after {
-        background: var(--ui-placeholder-bg);
+        background: var(--theme-placeholder-bg);
     }
 `;
 

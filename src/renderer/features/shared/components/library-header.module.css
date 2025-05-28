@@ -112,7 +112,7 @@
 }
 
 .image {
-    object-fit: var(--ui-image-fit);
+    object-fit: var(--theme-image-fit);
     border-radius: 5px;
 }
 
@@ -134,7 +134,7 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    background: var(--ui-bg-header-overlay);
+    background: var(--global-bg-header-overlay);
 }
 
 .opaque-overlay {
@@ -144,7 +144,7 @@
 .title {
     display: -webkit-box;
     overflow: hidden;
-    color: var(--ui-main-fg);
+    color: var(--theme-main-fg);
     font-size: 2rem;
     line-height: 1.2;
     line-clamp: 2;

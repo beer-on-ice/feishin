@@ -71,7 +71,7 @@ export const SongListHeader = ({
             gap={0}
             ref={cq.ref}
         >
-            <PageHeader backgroundColor="var(--ui-titlebar-bg)">
+            <PageHeader backgroundColor="var(--theme-titlebar-bg)">
                 <Flex
                     justify="space-between"
                     w="100%"

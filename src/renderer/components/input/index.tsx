@@ -56,29 +56,29 @@ interface TextInputProps extends MantineTextInputProps {
 
 const StyledTextInput = styled(MantineTextInput)<TextInputProps>`
     & .mantine-TextInput-wrapper {
-        border-color: var(--ui-primary-color);
+        border-color: var(--theme-primary-color);
     }
 
     & .mantine-TextInput-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
 
         &::placeholder {
-            color: var(--ui-input-placeholder-fg);
+            color: var(--theme-input-placeholder-fg);
         }
     }
 
     & .mantine-Input-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-TextInput-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-TextInput-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-TextInput-disabled {
@@ -94,43 +94,43 @@ const StyledTextInput = styled(MantineTextInput)<TextInputProps>`
 
 const StyledNumberInput = styled(MantineNumberInput)<NumberInputProps>`
     & .mantine-NumberInput-wrapper {
-        border-color: var(--ui-primary-color);
+        border-color: var(--theme-primary-color);
     }
 
     & .mantine-NumberInput-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
 
         &::placeholder {
-            color: var(--ui-input-placeholder-fg);
+            color: var(--theme-input-placeholder-fg);
         }
     }
 
     & .mantine-NumberInput-controlUp {
         svg {
-            color: var(--ui-btn-default-fg);
-            fill: var(--ui-btn-default-fg);
+            color: var(--theme-btn-default-fg);
+            fill: var(--theme-btn-default-fg);
         }
     }
 
     & .mantine-NumberInput-controlDown {
         svg {
-            color: var(--ui-btn-default-fg);
-            fill: var(--ui-btn-default-fg);
+            color: var(--theme-btn-default-fg);
+            fill: var(--theme-btn-default-fg);
         }
     }
 
     & .mantine-Input-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-NumberInput-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-NumberInput-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-NumberInput-disabled {
@@ -146,25 +146,25 @@ const StyledNumberInput = styled(MantineNumberInput)<NumberInputProps>`
 
 const StyledPasswordInput = styled(MantinePasswordInput)<PasswordInputProps>`
     & .mantine-PasswordInput-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
 
         &::placeholder {
-            color: var(--ui-input-placeholder-fg);
+            color: var(--theme-input-placeholder-fg);
         }
     }
 
     & .mantine-PasswordInput-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-PasswordInput-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-PasswordInput-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-PasswordInput-disabled {
@@ -180,25 +180,25 @@ const StyledPasswordInput = styled(MantinePasswordInput)<PasswordInputProps>`
 
 const StyledFileInput = styled(MantineFileInput)<FileInputProps>`
     & .mantine-FileInput-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
 
         &::placeholder {
-            color: var(--ui-input-placeholder-fg);
+            color: var(--theme-input-placeholder-fg);
         }
     }
 
     & .mantine-FileInput-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-FileInput-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-FileInput-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-FileInput-disabled {
@@ -214,25 +214,25 @@ const StyledFileInput = styled(MantineFileInput)<FileInputProps>`
 
 const StyledJsonInput = styled(MantineJsonInput)<JsonInputProps>`
     & .mantine-JsonInput-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
 
         &::placeholder {
-            color: var(--ui-input-placeholder-fg);
+            color: var(--theme-input-placeholder-fg);
         }
     }
 
     & .mantine-JsonInput-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-JsonInput-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-JsonInput-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-JsonInput-disabled {
@@ -248,21 +248,21 @@ const StyledJsonInput = styled(MantineJsonInput)<JsonInputProps>`
 
 const StyledTextarea = styled(MantineTextarea)<TextareaProps>`
     & .mantine-Textarea-input {
-        color: var(--ui-input-fg);
-        background: var(--ui-input-bg);
+        color: var(--theme-input-fg);
+        background: var(--theme-input-bg);
     }
 
     & .mantine-Textarea-icon {
-        color: var(--ui-input-placeholder-fg);
+        color: var(--theme-input-placeholder-fg);
     }
 
     & .mantine-Textarea-required {
-        color: var(--ui-secondary-color);
+        color: var(--theme-secondary-color);
     }
 
     & .mantine-Textarea-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-Textarea-disabled {
@@ -330,7 +330,7 @@ export const FileInput = forwardRef<HTMLButtonElement, FileInputProps>(
                 style={{ maxWidth, width }}
                 styles={{
                     placeholder: {
-                        color: 'var(--ui-input-placeholder-fg)',
+                        color: 'var(--theme-input-placeholder-fg)',
                     },
                 }}
             >

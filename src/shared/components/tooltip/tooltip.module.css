@@ -1,7 +1,7 @@
 .tooltip {
-    background: var(--ui-tooltip-bg);
+    background: var(--theme-tooltip-bg);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
-    color: var(--ui-tooltip-fg);
+    color: var(--theme-tooltip-fg);
     font-size: 1.1rem;
     font-weight: 550;
     max-width: 250px;

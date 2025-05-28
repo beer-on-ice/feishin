@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const StyledRating = styled(MantineRating)`
     & .mantine-Rating-symbolBody {
         svg {
-            stroke: var(--ui-main-fg-secondary);
+            stroke: var(--theme-main-fg-secondary);
         }
     }
 `;

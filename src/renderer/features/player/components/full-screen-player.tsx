@@ -65,11 +65,11 @@ const BackgroundImageOverlay = styled.div<BackgroundImageOverlayProps>`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: var(--ui-bg-header-overlay);
+    background: var(--global-bg-header-overlay);
     backdrop-filter: blur(${({ $blur }) => $blur}rem);
 `;
 
-const mainBackground = 'var(--ui-main-bg)';
+const mainBackground = 'var(--theme-main-bg)';
 
 const Controls = () => {
     const { t } = useTranslation();
@@ -106,7 +106,7 @@ const Controls = () => {
             p="1rem"
             pos="absolute"
             style={{
-                background: `rgb(var(--ui-main-bg-transparent), ${opacity}%)`,
+                background: `rgb(var(--theme-main-bg-transparent), ${opacity}%)`,
                 left: 0,
                 top: 0,
             }}

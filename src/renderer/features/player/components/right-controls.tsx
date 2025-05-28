@@ -268,7 +268,7 @@ export const RightControls = () => {
                     icon={
                         currentSong?.userFavorite ? (
                             <RiHeartFill
-                                color="var(--ui-primary-color)"
+                                color="var(--theme-primary-color)"
                                 size="1.1rem"
                             />
                         ) : (
@@ -280,7 +280,7 @@ export const RightControls = () => {
                         svg: {
                             fill: !currentSong?.userFavorite
                                 ? undefined
-                                : 'var(--ui-primary-color) !important',
+                                : 'var(--theme-primary-color) !important',
                         },
                     }}
                     tooltip={{

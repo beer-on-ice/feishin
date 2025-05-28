@@ -13,11 +13,11 @@ interface ListItemProps extends FlexProps {
 
 const StyledItem = styled(Flex)`
     width: 100%;
-    font-family: var(--ui-content-font-family);
+    font-family: var(--global-content-font-family);
     font-weight: 600;
 
     &:focus-visible {
-        border: 1px solid var(--ui-primary-color);
+        border: 1px solid var(--theme-primary-color);
     }
 `;
 
@@ -25,12 +25,12 @@ const ItemStyle = css`
     display: flex;
     width: 100%;
     padding: 0.5rem 1rem;
-    color: var(--ui-sidebar-fg);
+    color: var(--theme-sidebar-fg);
     border: 1px transparent solid;
     transition: color 0.2s ease-in-out;
 
     &:hover {
-        color: var(--ui-sidebar-fg-hover);
+        color: var(--theme-sidebar-fg-hover);
     }
 `;
 
@@ -39,7 +39,7 @@ const _ItemLink = styled(StyledItem)<LinkProps & { disabled?: boolean }>`
     opacity: ${(props) => props.disabled && 0.6};
 
     &:focus-visible {
-        border: 1px solid var(--ui-primary-color);
+        border: 1px solid var(--theme-primary-color);
     }
 
     ${ItemStyle}

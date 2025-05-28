@@ -48,8 +48,8 @@ const ImageContainerStyles = css`
     align-items: center;
     aspect-ratio: 1/1;
     overflow: hidden;
-    background: var(--ui-card-default-bg);
-    border-radius: var(--ui-card-poster-radius);
+    background: var(--theme-card-default-bg);
+    border-radius: var(--theme-card-poster-radius);
 
     &::before {
         position: absolute;
@@ -93,7 +93,7 @@ const Image = styled(SimpleImg)`
 
     img {
         height: 100%;
-        object-fit: var(--ui-image-fit);
+        object-fit: var(--theme-image-fit);
     }
 `;
 
@@ -147,20 +147,22 @@ export const PosterCard = ({
                     {data?.imageUrl ? (
                         <Image
                             importance="auto"
-                            placeholder={data?.imagePlaceholderUrl || 'var(--ui-card-default-bg)'}
+                            placeholder={
+                                data?.imagePlaceholderUrl || 'var(--theme-card-default-bg)'
+                            }
                             src={data?.imageUrl}
                         />
                     ) : (
                         <Center
                             style={{
-                                background: 'var(--ui-placeholder-bg)',
-                                borderRadius: 'var(--ui-card-default-radius)',
+                                background: 'var(--theme-placeholder-bg)',
+                                borderRadius: 'var(--theme-card-default-radius)',
                                 height: '100%',
                                 width: '100%',
                             }}
                         >
                             <Placeholder
-                                color="var(--ui-placeholder-fg)"
+                                color="var(--theme-placeholder-fg)"
                                 size={35}
                             />
                         </Center>

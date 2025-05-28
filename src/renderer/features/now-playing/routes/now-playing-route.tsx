@@ -17,7 +17,7 @@ const NowPlayingRoute = () => {
         <AnimatedPage>
             <VirtualGridContainer>
                 <NowPlayingHeader />
-                <Paper style={{ borderTop: '1px solid var(--ui-generic-border-color)' }}>
+                <Paper style={{ borderTop: '1px solid var(--theme-generic-border-color)' }}>
                     <PlayQueueListControls
                         tableRef={queueRef}
                         type="nowPlaying"

@@ -17,10 +17,10 @@ html {
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    color: var(--ui-content-text-color);
-    background: var(--ui-content-bg);
-    font-family: var(--ui-content-font-family);
-    font-size: var(--ui-root-font-size);
+    color: var(--theme-content-text-color);
+    background: var(--theme-content-bg);
+    font-family: var(--global-content-font-family);
+    font-size: var(--theme-root-font-size);
 }
 
 @media only screen and (max-width: 639px) {
@@ -215,4 +215,98 @@ button {
     src: url('https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2')
         format('truetype');
     unicode-range: U+3000-9FFF, U+ff??; /* Japanese glyphs */
+}
+
+:root {
+    --global-background-noise: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=');
+    --global-bg-header-overlay:
+        linear-gradient(transparent 0%, rgba(0, 0, 0, 75%) 100%), var(--global-background-noise);
+    --global-bg-subheader-overlay:
+        linear-gradient(180deg, rgba(0, 0, 0, 5%) 0%, var(--theme-main-bg) 100%),
+        var(--global-background-noise);
+    --global-fullscreen-player-text-shadow: black 0px 0px 10px;
+    // --global-current-song-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIxMDAgMTMwIDU3IDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxyZWN0IHg9IjEwMCIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iMjAiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxMDZweCAxNDBweDsiLz4KICA8cmVjdCB4PSIxMTUiIHk9IjEzMCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjYwIiBzdHlsZT0iZmlsbDogcmdiKDIxNiwgMjE2LCAyMTYpOyBzdHJva2U6IHJnYigwLCAwLCAwKTsgdHJhbnNmb3JtLW9yaWdpbjogMTIxcHggMTYwcHg7Ii8+CiAgPHJlY3QgeD0iMTMwIiB5PSIxMzAiIHdpZHRoPSIxMiIgaGVpZ2h0PSI4MCIgc3R5bGU9ImZpbGw6IHJnYigyMTYsIDIxNiwgMjE2KTsgc3Ryb2tlOiByZ2IoMCwgMCwgMCk7IHRyYW5zZm9ybS1vcmlnaW46IDEzNnB4IDE3MHB4OyIvPgogIDxyZWN0IHg9IjE0NSIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iNDUiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxNTFweCAxNTIuNXB4OyIvPgo8L3N2Zz4=');
+    // --global-current-song-image-animated: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIxMDAgMTMwIDU3IDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxyZWN0IHg9IjEwMCIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iODAiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxMDZweCAxNzBweDsiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iaGVpZ2h0IiB2YWx1ZXM9IjgwOzE1OzgwIiBiZWdpbj0iMC4xcyIgZHVyPSIwLjk1cyIga2V5VGltZXM9IjA7IDAuNDczNjg7IDEiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjQyIDAgMC41OCAxOyAwLjQyIDAgMC41OCAxIi8+CiAgPC9yZWN0PgogIDxyZWN0IHg9IjExNSIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iODAiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxMjFweCAxNzBweDsiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iaGVpZ2h0IiB2YWx1ZXM9IjI1OzgwOzI1IiBiZWdpbj0iMC4xcyIgZHVyPSIwLjk1cyIga2V5VGltZXM9IjA7IDAuNDQ0NDQ7IDEiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjQ1IDAgMC41NSAxOyAwLjQ1IDAgMC41NSAxIi8+CiAgPC9yZWN0PgogIDxyZWN0IHg9IjEzMCIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iODAiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxMzZweCAxNzBweDsiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iaGVpZ2h0IiB2YWx1ZXM9IjgwOzEwOzgwIiBiZWdpbj0iMC4xcyIgZHVyPSIwLjg1cyIga2V5VGltZXM9IjA7IDAuNDIxMDU7IDEiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjY1IDAgMC4zNSAxOyAwLjY1IDAgMC4zNSAxIi8+CiAgPC9yZWN0PgogIDxyZWN0IHg9IjE0NSIgeT0iMTMwIiB3aWR0aD0iMTIiIGhlaWdodD0iODAiIHN0eWxlPSJmaWxsOiByZ2IoMjE2LCAyMTYsIDIxNik7IHN0cm9rZTogcmdiKDAsIDAsIDApOyB0cmFuc2Zvcm0tb3JpZ2luOiAxNTFweCAxNzBweDsiPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iaGVpZ2h0IiB2YWx1ZXM9IjMwOzgwOzMwIiBiZWdpbj0iMC4xcyIgZHVyPSIxLjA1cyIga2V5VGltZXM9IjA7IDAuMzE1Nzk7IDEiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBjYWxjTW9kZT0ic3BsaW5lIiBrZXlTcGxpbmVzPSIwLjQyIDAgMC41OCAxOyAwLjQyIDAgMC41OCAxIi8+CiAgPC9yZWN0Pgo8L3N2Zz4=');
+
+    .ag-theme-alpine-dark {
+        --ag-font-family: var(--global-content-font-family);
+        --ag-borders: var(--theme-table-border);
+        --ag-border-color: var(--theme-table-border-color);
+        --ag-header-background-color: var(--theme-table-header-bg);
+        --ag-header-foreground-color: var(--theme-table-header-fg);
+        --ag-background-color: var(--theme-table-bg);
+        --ag-odd-row-background-color: var(--theme-table-alt-bg);
+        --ag-foreground-color: var(--theme-table-fg);
+        --ag-row-hover-color: var(--theme-table-row-hover-bg);
+        --ag-selected-row-background-color: var(--theme-table-row-selected-bg);
+        --ag-cell-horizontal-padding: 0.5rem;
+    }
+
+    .ag-header {
+        border-bottom: 2px solid var(--theme-table-border-color);
+    }
+
+    .ag-ltr .ag-header-cell-resize {
+        right: 0;
+    }
+
+    .ag-header:hover .ag-header-cell-resize {
+        position: absolute;
+        top: 25%;
+        width: 0.2em;
+        height: 50%;
+        border: 1px var(--theme-table-border-color) solid;
+    }
+
+    .ag-header-cell-label {
+        font-weight: 500;
+        font-family: var(--global-content-font-family);
+        text-transform: uppercase;
+    }
+
+    .ag-cell-rating,
+    .ag-cell-favorite {
+        display: none;
+    }
+
+    .ag-cell-transparent {
+        opacity: 0;
+    }
+
+    .ag-cell-rating.visible {
+        display: block;
+    }
+
+    .ag-cell-favorite.visible {
+        display: block;
+    }
+
+    .ag-row-hover {
+        .ag-cell-transparent {
+            opacity: 1;
+        }
+
+        .ag-cell-rating,
+        .ag-cell-favorite {
+            display: block;
+        }
+    }
+
+    .ag-cell-focus {
+        border: 1px var(--theme-table-border-color) solid !important;
+    }
+
+    .current-song {
+        background: var(--theme-table-row-hover-bg);
+        box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+
+        .current-song-child {
+            color: var(--theme-primary-color) !important;
+            font-weight: 800;
+        }
+    }
+
+    .current-song > .row-index.playing .current-song-index {
+        display: none;
+    }
 }

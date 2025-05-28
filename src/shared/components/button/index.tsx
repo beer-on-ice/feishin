@@ -22,41 +22,41 @@ interface StyledButtonProps extends ButtonProps {
 }
 
 const StyledButton = styled(MantineButton)<StyledButtonProps>`
-    color: ${(props) => `var(--ui-btn-${props.variant}-fg)`};
-    background: ${(props) => `var(--ui-btn-${props.variant}-bg)`};
-    border: ${(props) => `var(--ui-btn-${props.variant}-border)`};
-    border-radius: ${(props) => `var(--ui-btn-${props.variant}-radius)`};
+    color: ${(props) => `var(--theme-btn-${props.variant}-fg)`};
+    background: ${(props) => `var(--theme-btn-${props.variant}-bg)`};
+    border: ${(props) => `var(--theme-btn-${props.variant}-border)`};
+    border-radius: ${(props) => `var(--theme-btn-${props.variant}-radius)`};
     transition:
         background 0.2s ease-in-out,
         color 0.2s ease-in-out,
         border 0.2s ease-in-out;
 
     svg {
-        fill: ${(props) => `var(--ui-btn-${props.variant}-fg)`};
+        fill: ${(props) => `var(--theme-btn-${props.variant}-fg)`};
         transition: fill 0.2s ease-in-out;
     }
 
     &:disabled {
-        color: ${(props) => `var(--ui-btn-${props.variant}-fg)`};
-        background: ${(props) => `var(--ui-btn-${props.variant}-bg)`};
+        color: ${(props) => `var(--theme-btn-${props.variant}-fg)`};
+        background: ${(props) => `var(--theme-btn-${props.variant}-bg)`};
 
         opacity: 0.6;
     }
 
     &:not([data-disabled])&:hover {
-        color: ${(props) => `var(--ui-btn-${props.variant}-fg) !important`};
-        background: ${(props) => `var(--ui-btn-${props.variant}-bg)`};
+        color: ${(props) => `var(--theme-btn-${props.variant}-fg) !important`};
+        background: ${(props) => `var(--theme-btn-${props.variant}-bg)`};
         filter: brightness(85%);
-        border: ${(props) => `var(--ui-btn-${props.variant}-border-hover)`};
+        border: ${(props) => `var(--theme-btn-${props.variant}-border-hover)`};
 
         svg {
-            fill: ${(props) => `var(--ui-btn-${props.variant}-fg-hover)`};
+            fill: ${(props) => `var(--theme-btn-${props.variant}-fg-hover)`};
         }
     }
 
     &:not([data-disabled])&:focus-visible {
-        color: ${(props) => `var(--ui-btn-${props.variant}-fg-hover)`};
-        background: ${(props) => `var(--ui-btn-${props.variant}-bg)`};
+        color: ${(props) => `var(--theme-btn-${props.variant}-fg-hover)`};
+        background: ${(props) => `var(--theme-btn-${props.variant}-bg)`};
         filter: brightness(85%);
     }
 
@@ -171,7 +171,7 @@ export const TimeoutButton = ({ timeoutProps, ...props }: HoldButtonProps) => {
     return (
         <Button
             onClick={startTimeout}
-            style={{ color: 'var(--ui-danger-color)' }}
+            style={{ color: 'var(--theme-danger-color)' }}
             {...props}
         >
             {isRunning ? 'Cancel' : props.children}

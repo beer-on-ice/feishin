@@ -24,7 +24,7 @@ const RouteErrorBoundary = () => {
     };
 
     return (
-        <Box bg="var(--ui-main-bg)">
+        <Box bg="var(--theme-main-bg)">
             <Center style={{ height: '100vh' }}>
                 <Stack style={{ maxWidth: '50%' }}>
                     <Group>
@@ -36,7 +36,7 @@ const RouteErrorBoundary = () => {
                             <RiArrowLeftSLine size={20} />
                         </Button>
                         <RiErrorWarningLine
-                            color="var(--ui-danger-color)"
+                            color="var(--theme-danger-color)"
                             size={30}
                         />
                         <Text size="lg">Something went wrong</Text>

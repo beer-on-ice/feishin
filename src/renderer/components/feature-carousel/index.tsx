@@ -24,7 +24,7 @@ const Carousel = styled(motion.div)`
     min-height: 250px;
     padding: 2rem;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--ui-main-bg), rgb(25 26 28 / 60%));
+    background: linear-gradient(180deg, var(--theme-main-bg), rgb(25 26 28 / 60%));
     border-radius: 1rem;
 `;
 
@@ -64,7 +64,7 @@ const BackgroundImage = styled.img`
     width: 150%;
     height: 150%;
     user-select: none;
-    object-fit: var(--ui-image-fit);
+    object-fit: var(--theme-image-fit);
     object-position: 0 30%;
     filter: blur(24px);
 `;
@@ -76,7 +76,7 @@ const BackgroundImageOverlay = styled.div`
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgb(25 26 28 / 30%), var(--ui-main-bg));
+    background: linear-gradient(180deg, rgb(25 26 28 / 30%), var(--theme-main-bg));
 `;
 
 const Wrapper = styled(Link)`
@@ -165,7 +165,7 @@ export const FeatureCarousel = ({ data }: FeatureCarouselProps) => {
                             <ImageColumn>
                                 <Image
                                     height={225}
-                                    placeholder="var(--ui-card-default-bg)"
+                                    placeholder="var(--theme-card-default-bg)"
                                     radius="md"
                                     src={data[itemIndex]?.imageUrl}
                                     style={{ objectFit: 'cover' }}

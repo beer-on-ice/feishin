@@ -69,7 +69,7 @@ export const App = () => {
     useEffect(() => {
         if (type === FontType.SYSTEM && system) {
             const root = document.documentElement;
-            root.style.setProperty('--ui-content-font-family', 'dynamic-font');
+            root.style.setProperty('--global-content-font-family', 'dynamic-font');
 
             if (!textStyleRef.current) {
                 textStyleRef.current = document.createElement('style');
@@ -83,7 +83,7 @@ export const App = () => {
             }`;
         } else if (type === FontType.CUSTOM && custom) {
             const root = document.documentElement;
-            root.style.setProperty('--ui-content-font-family', 'dynamic-font');
+            root.style.setProperty('--global-content-font-family', 'dynamic-font');
 
             if (!textStyleRef.current) {
                 textStyleRef.current = document.createElement('style');
@@ -97,7 +97,7 @@ export const App = () => {
             }`;
         } else {
             const root = document.documentElement;
-            root.style.setProperty('--ui-content-font-family', builtIn);
+            root.style.setProperty('--global-content-font-family', builtIn);
         }
     }, [builtIn, custom, system, type]);
 
@@ -244,11 +244,14 @@ export const App = () => {
                 components: {
                     Modal: {
                         styles: {
-                            body: { background: 'var(--ui-modal-bg)', padding: '1rem !important' },
+                            body: {
+                                background: 'var(--theme-modal-bg)',
+                                padding: '1rem !important',
+                            },
                             close: { marginRight: '0.5rem' },
                             content: { borderRadius: '5px' },
                             header: {
-                                background: 'var(--ui-modal-header-bg)',
+                                background: 'var(--theme-modal-header-bg)',
                                 paddingBottom: '1rem',
                             },
                             title: { fontSize: 'medium', fontWeight: 500 },
@@ -257,7 +260,7 @@ export const App = () => {
                 },
                 defaultRadius: 'xs',
                 focusRing: 'auto',
-                fontFamily: 'var(--ui-content-font-family)',
+                fontFamily: 'var(--global-content-font-family)',
                 fontSizes: {
                     lg: '1.1rem',
                     md: '1rem',
@@ -266,7 +269,7 @@ export const App = () => {
                     xs: '0.8rem',
                 },
                 headings: {
-                    fontFamily: 'var(--ui-content-font-family)',
+                    fontFamily: 'var(--global-content-font-family)',
                     fontWeight: '700',
                 },
                 other: {},

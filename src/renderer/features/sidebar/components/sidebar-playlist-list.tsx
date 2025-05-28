@@ -96,7 +96,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                             display: 'flex',
                         },
                         '.sidebar-playlist-name': {
-                            color: 'var(--ui-sidebar-fg-hover) !important',
+                            color: 'var(--theme-sidebar-fg-hover) !important',
                         },
                     },
                 }}
@@ -108,7 +108,7 @@ const PlaylistRow = ({ data, index, style }: ListChildComponentProps) => {
                     overflow="hidden"
                     size="md"
                     style={{
-                        // color: 'var(--ui-sidebar-fg) !important',
+                        // color: 'var(--theme-sidebar-fg) !important',
                         color: 'white',
                         cursor: 'default',
                         width: '100%',

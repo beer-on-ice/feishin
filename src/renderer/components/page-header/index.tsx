@@ -15,7 +15,7 @@ const Container = styled(motion(Flex))<{
     z-index: 190;
     width: 100%;
     height: ${(props) => props.$height || '65px'};
-    background: var(--ui-titlebar-bg);
+    background: var(--theme-titlebar-bg);
 `;
 
 const Header = styled(motion.div)<{
@@ -47,7 +47,7 @@ const BackgroundImage = styled.div<{ $background: string }>`
     z-index: 1;
     width: 100%;
     height: 100%;
-    background: ${(props) => props.$background || 'var(--ui-titlebar-bg)'};
+    background: ${(props) => props.$background || 'var(--theme-titlebar-bg)'};
 `;
 
 const BackgroundImageOverlay = styled.div<{ theme: 'dark' | 'light' }>`
@@ -132,7 +132,9 @@ export const PageHeader = ({
                 </Header>
                 {backgroundColor && (
                     <>
-                        <BackgroundImage $background={backgroundColor || 'var(--ui-titlebar-bg)'} />
+                        <BackgroundImage
+                            $background={backgroundColor || 'var(--theme-titlebar-bg)'}
+                        />
                         <BackgroundImageOverlay theme={theme as 'dark' | 'light'} />
                     </>
                 )}

@@ -9,7 +9,7 @@ import { Text } from '/@/renderer/components';
 import { Button } from '/@/shared/components/button';
 
 const Container = styled(Box)`
-    background: var(--ui-main-bg);
+    background: var(--theme-main-bg);
 `;
 
 export const ErrorFallback = ({ resetErrorBoundary }: FallbackProps) => {
@@ -21,7 +21,7 @@ export const ErrorFallback = ({ resetErrorBoundary }: FallbackProps) => {
                 <Stack style={{ maxWidth: '50%' }}>
                     <Group gap="xs">
                         <RiErrorWarningLine
-                            color="var(--ui-danger-color)"
+                            color="var(--theme-danger-color)"
                             size={30}
                         />
                         <Text size="lg">Something went wrong</Text>

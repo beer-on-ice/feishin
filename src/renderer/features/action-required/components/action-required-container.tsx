@@ -13,7 +13,7 @@ export const ActionRequiredContainer = ({ children, title }: ActionRequiredConta
     <Stack style={{ cursor: 'default', maxWidth: '700px' }}>
         <Group>
             <RiAlertFill
-                color="var(--ui-warning-color)"
+                color="var(--theme-warning-color)"
                 size={30}
             />
             <Text

@@ -11,7 +11,7 @@ const TitlebarContainer = styled.header`
     right: 0;
     z-index: 5000;
     height: 65px;
-    background: var(--ui-titlebar-controls-bg);
+    background: var(--theme-titlebar-controls-bg);
     -webkit-app-region: drag;
 `;
 

@@ -32,23 +32,23 @@ const MotionWrapper = styled(motion.div)<MotionWrapperProps>`
 
 const ButtonMainVariant = css`
     padding: 0.5rem;
-    background: var(--ui-playerbar-btn-main-bg);
+    background: var(--theme-playerbar-btn-main-bg);
     border-radius: 50%;
 
     svg {
         display: flex;
-        fill: var(--ui-playerbar-btn-main-fg);
+        fill: var(--theme-playerbar-btn-main-fg);
     }
 
     &:focus-visible {
-        background: var(--ui-playerbar-btn-main-bg-hover);
+        background: var(--theme-playerbar-btn-main-bg-hover);
     }
 
     &:hover {
-        background: var(--ui-playerbar-btn-main-bg-hover);
+        background: var(--theme-playerbar-btn-main-bg-hover);
 
         svg {
-            fill: var(--ui-playerbar-btn-main-fg-hover);
+            fill: var(--theme-playerbar-btn-main-fg-hover);
         }
     }
 `;
@@ -66,8 +66,8 @@ const ButtonTertiaryVariant = css`
 
     &:focus-visible {
         svg {
-            fill: var(--ui-playerbar-btn-fg-hover);
-            stroke: var(--ui-playerbar-btn-fg-hover);
+            fill: var(--theme-playerbar-btn-fg-hover);
+            stroke: var(--theme-playerbar-btn-fg-hover);
         }
     }
 `;
@@ -82,15 +82,15 @@ const StyledPlayerButton = styled(UnstyledButton)<StyledPlayerButtonProps>`
     padding: 0.5rem;
     overflow: visible;
     cursor: default;
-    background: var(--ui-playerbar-btn-bg-hover);
+    background: var(--theme-playerbar-btn-bg-hover);
 
     button {
         display: flex;
     }
 
     &:focus-visible {
-        background: var(--ui-playerbar-btn-bg-hover);
-        outline: 1px var(--ui-primary-color) solid;
+        background: var(--theme-playerbar-btn-bg-hover);
+        outline: 1px var(--theme-primary-color) solid;
     }
 
     &:disabled {
@@ -100,17 +100,17 @@ const StyledPlayerButton = styled(UnstyledButton)<StyledPlayerButtonProps>`
     svg {
         display: flex;
         fill: ${({ $isActive }) =>
-            $isActive ? 'var(--ui-primary-color)' : 'var(--ui-playerbar-btn-fg)'};
-        stroke: var(--ui-playerbar-btn-fg);
+            $isActive ? 'var(--theme-primary-color)' : 'var(--theme-playerbar-btn-fg)'};
+        stroke: var(--theme-playerbar-btn-fg);
     }
 
     &:hover {
-        color: var(--ui-playerbar-btn-fg-hover);
-        background: var(--ui-playerbar-btn-bg-hover);
+        color: var(--theme-playerbar-btn-fg-hover);
+        background: var(--theme-playerbar-btn-bg-hover);
 
         svg {
             fill: ${({ $isActive }) =>
-                $isActive ? 'var(--ui-primary-color)' : 'var(--ui-playerbar-btn-fg-hover)'};
+                $isActive ? 'var(--theme-primary-color)' : 'var(--theme-playerbar-btn-fg-hover)'};
         }
     }
 

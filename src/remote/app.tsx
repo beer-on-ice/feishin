@@ -30,13 +30,13 @@ export const App = () => {
                     Modal: {
                         styles: {
                             body: {
-                                background: 'var(--ui-modal-bg)',
+                                background: 'var(--theme-modal-bg)',
                                 height: '100vh',
                             },
                             close: { marginRight: '0.5rem' },
                             content: { borderRadius: '5px' },
                             header: {
-                                background: 'var(--ui-modal-header-bg)',
+                                background: 'var(--theme-modal-header-bg)',
                                 paddingBottom: '1rem',
                             },
                             title: { fontSize: 'medium', fontWeight: 500 },
@@ -48,15 +48,15 @@ export const App = () => {
                 focusRing: 'auto',
                 focusRingStyles: {
                     inputStyles: () => ({
-                        border: '1px solid var(--ui-primary-color)',
+                        border: '1px solid var(--theme-primary-color)',
                     }),
                     resetStyles: () => ({ outline: 'none' }),
                     styles: () => ({
-                        outline: '1px solid var(--ui-primary-color)',
+                        outline: '1px solid var(--theme-primary-color)',
                         outlineOffset: '-1px',
                     }),
                 },
-                fontFamily: 'var(--ui-content-font-family)',
+                fontFamily: 'var(--global-content-font-family)',
                 fontSizes: {
                     lg: '1.1rem',
                     md: '1rem',
@@ -65,7 +65,7 @@ export const App = () => {
                     xs: '0.8rem',
                 },
                 headings: {
-                    fontFamily: 'var(--ui-content-font-family)',
+                    fontFamily: 'var(--global-content-font-family)',
                     fontWeight: '700',
                 },
                 other: {},

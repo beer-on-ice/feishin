@@ -6,7 +6,7 @@ export const NowPlayingHeader = () => {
     // const theme = useTheme();
 
     return (
-        <PageHeader backgroundColor="var(--ui-titlebar-bg)">
+        <PageHeader backgroundColor="var(--theme-titlebar-bg)">
             <LibraryHeaderBar>
                 <LibraryHeaderBar.Title>Queue</LibraryHeaderBar.Title>
             </LibraryHeaderBar>

@@ -54,8 +54,8 @@ export const FavoriteCell = ({ data, node, value }: ICellRendererParams) => {
                 style={{
                     svg: {
                         fill: !value
-                            ? 'var(--ui-main-fg-secondary) !important'
-                            : 'var(--ui-primary-color) !important',
+                            ? 'var(--theme-main-fg-secondary) !important'
+                            : 'var(--theme-primary-color) !important',
                     },
                 }}
                 variant="subtle"

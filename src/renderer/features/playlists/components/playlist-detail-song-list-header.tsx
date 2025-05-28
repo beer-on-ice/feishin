@@ -48,7 +48,7 @@ export const PlaylistDetailSongListHeader = ({
 
     return (
         <Stack gap={0}>
-            <PageHeader backgroundColor="var(--ui-titlebar-bg)">
+            <PageHeader backgroundColor="var(--theme-titlebar-bg)">
                 <LibraryHeaderBar>
                     <LibraryHeaderBar.PlayButton onClick={() => handlePlay(playButtonBehavior)} />
                     <LibraryHeaderBar.Title>{detailQuery?.data?.name}</LibraryHeaderBar.Title>

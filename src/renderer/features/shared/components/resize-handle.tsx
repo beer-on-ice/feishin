@@ -28,6 +28,6 @@ export const ResizeHandle = styled.div<{
         width: 1px;
         height: 100%;
         content: '';
-        background-color: var(--ui-sidebar-handle-bg);
+        background-color: var(--theme-sidebar-handle-bg);
     }
 `;

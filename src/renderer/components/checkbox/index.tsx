@@ -4,15 +4,15 @@ import styled from 'styled-components';
 
 const StyledCheckbox = styled(MantineCheckbox)`
     & .mantine-Checkbox-input {
-        background-color: var(--ui-input-bg);
+        background-color: var(--theme-input-bg);
 
         &:checked {
-            background-color: var(--ui-primary-color);
-            border-color: var(--ui-primary-color);
+            background-color: var(--theme-primary-color);
+            border-color: var(--theme-primary-color);
         }
 
         &:hover:not(:checked) {
-            background-color: var(--ui-primary-color);
+            background-color: var(--theme-primary-color);
             opacity: 0.5;
         }
 

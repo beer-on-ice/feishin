@@ -25,7 +25,7 @@ export const HeaderWrapper = styled.div<{ $position: Options['position'] }>`
               ? 'center'
               : 'flex-start'};
     width: 100%;
-    font-family: var(--ui-content-font-family);
+    font-family: var(--global-content-font-family);
     text-transform: uppercase;
 `;
 
@@ -34,7 +34,7 @@ const HeaderText = styled(_Text)<{ $position: Options['position'] }>`
     height: 100%;
     font-weight: 500;
     line-height: inherit;
-    color: var(--ui-ag-header-foreground-color);
+    color: var(--theme-ag-header-foreground-color);
     text-align: ${(props) =>
         props.$position === 'right'
             ? 'flex-end'
@@ -47,31 +47,31 @@ const HeaderText = styled(_Text)<{ $position: Options['position'] }>`
 const headerPresets = {
     actions: (
         <RiMoreFill
-            color="var(--ui-ag-header-foreground-color)"
+            color="var(--theme-ag-header-foreground-color)"
             size="1em"
         />
     ),
     duration: (
         <FiClock
-            color="var(--ui-ag-header-foreground-color)"
+            color="var(--theme-ag-header-foreground-color)"
             size="1em"
         />
     ),
     rowIndex: (
         <AiOutlineNumber
-            color="var(--ui-ag-header-foreground-color)"
+            color="var(--theme-ag-header-foreground-color)"
             size="1em"
         />
     ),
     userFavorite: (
         <RiHeartLine
-            color="var(--ui-ag-header-foreground-color)"
+            color="var(--theme-ag-header-foreground-color)"
             size="1em"
         />
     ),
     userRating: (
         <RiStarLine
-            color="var(--ui-ag-header-foreground-color)"
+            color="var(--theme-ag-header-foreground-color)"
             size="1em"
         />
     ),

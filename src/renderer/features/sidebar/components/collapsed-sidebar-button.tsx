@@ -14,11 +14,12 @@ const Container = styled(Flex)<{ $active?: boolean; $disabled?: boolean }>`
     opacity: ${(props) => props.$disabled && 0.6};
 
     svg {
-        fill: ${(props) => (props.$active ? 'var(--ui-primary-color)' : 'var(--ui-sidebar-fg)')};
+        fill: ${(props) =>
+            props.$active ? 'var(--theme-primary-color)' : 'var(--theme-sidebar-fg)'};
     }
 
     &:focus-visible {
-        background-color: var(--ui-sidebar-bg-hover);
+        background-color: var(--theme-sidebar-bg-hover);
         outline: none;
     }
 
@@ -26,14 +27,14 @@ const Container = styled(Flex)<{ $active?: boolean; $disabled?: boolean }>`
         !props.$disabled &&
         `
       &:hover {
-          background-color: var(--ui-sidebar-bg-hover);
+          background-color: var(--theme-sidebar-bg-hover);
 
           div {
-            color: var(--ui-main-fg) !important;
+            color: var(--theme-main-fg) !important;
           }
 
           svg {
-            fill: var(--ui-primary-color);
+            fill: var(--theme-primary-color);
           }
         }
     `}

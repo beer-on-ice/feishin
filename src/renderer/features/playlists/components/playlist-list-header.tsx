@@ -59,7 +59,7 @@ export const PlaylistListHeader = ({ gridRef, itemCount, tableRef }: PlaylistLis
             gap={0}
             ref={cq.ref}
         >
-            <PageHeader backgroundColor="var(--ui-titlebar-bg)">
+            <PageHeader backgroundColor="var(--theme-titlebar-bg)">
                 <Flex
                     align="center"
                     justify="space-between"

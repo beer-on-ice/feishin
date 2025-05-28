@@ -46,7 +46,7 @@ export const SearchInput = ({
             rightSection={
                 isOpened ? (
                     <ActionIcon
-                        color="var(--ui-button-fg)"
+                        color="var(--theme-button-fg)"
                         onClick={() => {
                             ref.current.value = '';
                             ref.current.focus();
@@ -67,7 +67,7 @@ export const SearchInput = ({
                     padding: isOpened ? '10px' : 0,
                 },
                 section: {
-                    fill: 'var(--ui-titlebar-fg)',
+                    fill: 'var(--theme-titlebar-fg)',
                     pointerEvents: isOpened ? 'auto' : 'none',
                 },
             }}

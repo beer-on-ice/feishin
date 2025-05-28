@@ -17,14 +17,14 @@ const CardWrapper = styled.div<{
 }>`
     padding: 1rem;
     cursor: ${({ link }) => link && 'pointer'};
-    background: var(--ui-card-default-bg);
-    border-radius: var(--ui-card-default-radius);
+    background: var(--theme-card-default-bg);
+    border-radius: var(--theme-card-default-radius);
     transition:
         border 0.2s ease-in-out,
         background 0.2s ease-in-out;
 
     &:hover {
-        background: var(--ui-card-default-bg-hover);
+        background: var(--theme-card-default-bg-hover);
     }
 
     &:hover div {
@@ -49,14 +49,14 @@ const StyledCard = styled.div`
     width: 100%;
     height: 100%;
     padding: 0;
-    border-radius: var(--ui-card-default-radius);
+    border-radius: var(--theme-card-default-radius);
 `;
 
 const ImageSection = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    border-radius: var(--ui-card-default-radius);
+    border-radius: var(--theme-card-default-radius);
 
     &::before {
         position: absolute;
@@ -74,7 +74,7 @@ const ImageSection = styled.div`
 `;
 
 const Image = styled(SimpleImg)`
-    border-radius: var(--ui-card-default-radius);
+    border-radius: var(--theme-card-default-radius);
     box-shadow: 2px 2px 10px 2px rgb(0 0 0 / 20%);
 `;
 
@@ -99,7 +99,7 @@ const Row = styled.div<{ $secondary?: boolean }>`
     padding: 0 0.2rem;
     overflow: hidden;
     color: ${({ $secondary }) =>
-        $secondary ? 'var(--ui-main-fg-secondary)' : 'var(--ui-main-fg)'};
+        $secondary ? 'var(--theme-main-fg-secondary)' : 'var(--theme-main-fg)'};
     text-overflow: ellipsis;
     white-space: nowrap;
     user-select: none;
@@ -156,7 +156,7 @@ export const AlbumCard = ({
                                 height={size}
                                 imgStyle={{ objectFit: 'cover' }}
                                 placeholder={
-                                    data?.imagePlaceholderUrl || 'var(--ui-card-default-bg)'
+                                    data?.imagePlaceholderUrl || 'var(--theme-card-default-bg)'
                                 }
                                 src={data?.imageUrl}
                                 width={size}
@@ -164,14 +164,14 @@ export const AlbumCard = ({
                         ) : (
                             <Center
                                 style={{
-                                    background: 'var(--ui-placeholder-bg)',
-                                    borderRadius: 'var(--ui-card-default-radius)',
+                                    background: 'var(--theme-placeholder-bg)',
+                                    borderRadius: 'var(--theme-card-default-radius)',
                                     height: `${size}px`,
                                     width: `${size}px`,
                                 }}
                             >
                                 <RiAlbumFill
-                                    color="var(--ui-placeholder-fg)"
+                                    color="var(--theme-placeholder-fg)"
                                     size={35}
                                 />
                             </Center>

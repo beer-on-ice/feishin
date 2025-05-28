@@ -525,7 +525,7 @@ export const SongListHeaderFilters = ({
                                     style={{
                                         svg: {
                                             fill: isFolderFilterApplied
-                                                ? 'var(--ui-primary-color) !important'
+                                                ? 'var(--theme-primary-color) !important'
                                                 : undefined,
                                         },
                                     }}
@@ -556,7 +556,7 @@ export const SongListHeaderFilters = ({
                     style={{
                         svg: {
                             fill: isFilterApplied
-                                ? 'var(--ui-primary-color) !important'
+                                ? 'var(--theme-primary-color) !important'
                                 : undefined,
                         },
                     }}

@@ -1,12 +1,12 @@
 .image-placeholder {
     width: 100%;
     height: 100%;
-    background-color: var(--ui-placeholder-bg);
-    border-radius: var(--ui-card-default-radius);
+    background-color: var(--theme-placeholder-bg);
+    border-radius: var(--theme-card-default-radius);
 
     svg {
         width: 35px;
         height: 35px;
-        color: var(--ui-placeholder-fg);
+        color: var(--theme-placeholder-fg);
     }
 }

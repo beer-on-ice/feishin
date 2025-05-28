@@ -111,7 +111,7 @@ export const LibraryHeader = forwardRef(
                             alt="cover"
                             className={styles.image}
                             onError={onImageError}
-                            // placeholder={imagePlaceholderUrl || 'var(--ui-placeholder-bg)'}
+                            // placeholder={imagePlaceholderUrl || 'var(--theme-placeholder-bg)'}
                             src={imageUrl}
                             style={{ height: '' }}
                         />

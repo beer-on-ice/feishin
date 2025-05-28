@@ -18,7 +18,7 @@ const InvalidRoute = () => {
                         wrap="nowrap"
                     >
                         <RiQuestionLine
-                            color="var(--ui-warning-color)"
+                            color="var(--theme-warning-color)"
                             size={30}
                         />
                         <Text size="xl">Page not found</Text>

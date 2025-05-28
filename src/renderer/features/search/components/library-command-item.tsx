@@ -48,7 +48,7 @@ const MetadataWrapper = styled.div`
 `;
 
 const StyledImage = styled.img<{ placeholder?: string }>`
-    object-fit: var(--ui-image-fit);
+    object-fit: var(--theme-image-fit);
     border-radius: 4px;
 `;
 
@@ -120,7 +120,7 @@ export const LibraryCommandItem = ({
                         <StyledImage
                             alt="cover"
                             height={40}
-                            placeholder="var(--ui-placeholder-bg)"
+                            placeholder="var(--theme-placeholder-bg)"
                             src={imageUrl}
                             style={{}}
                             width={40}
@@ -128,14 +128,14 @@ export const LibraryCommandItem = ({
                     ) : (
                         <Center
                             style={{
-                                background: 'var(--ui-placeholder-bg)',
-                                borderRadius: 'var(--ui-card-default-radius)',
+                                background: 'var(--theme-placeholder-bg)',
+                                borderRadius: 'var(--theme-card-default-radius)',
                                 height: `${40}px`,
                                 width: `${40}px`,
                             }}
                         >
                             <Placeholder
-                                color="var(--ui-placeholder-fg)"
+                                color="var(--theme-placeholder-fg)"
                                 size={35}
                             />
                         </Center>

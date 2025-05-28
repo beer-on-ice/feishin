@@ -23,13 +23,14 @@ interface TextProps extends MantineTextDivProps {
 const StyledText = styled(MantineText)<TextProps>`
     overflow: ${(props) => props.overflow};
     font-family: ${(props) => props.font};
-    color: ${(props) => (props.$secondary ? 'var(--ui-main-fg-secondary)' : 'var(--ui-main-fg)')};
+    color: ${(props) =>
+        props.$secondary ? 'var(--theme-main-fg-secondary)' : 'var(--theme-main-fg)'};
     cursor: ${(props) => props.$link && 'cursor'};
     user-select: ${(props) => (props.$noSelect ? 'none' : 'auto')};
     ${(props) => props.overflow === 'hidden' && !props.lineClamp && textEllipsis}
 
     &:hover {
-        color: ${(props) => props.$link && 'var(--ui-main-fg)'};
+        color: ${(props) => props.$link && 'var(--theme-main-fg)'};
         text-decoration: ${(props) => (props.$link ? 'underline' : 'none')};
     }
 `;

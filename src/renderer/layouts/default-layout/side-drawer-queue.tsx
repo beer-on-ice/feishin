@@ -23,8 +23,8 @@ const QueueDrawerArea = styled(motion.div)`
 `;
 
 const QueueDrawer = styled(motion.div)`
-    background: var(--ui-main-bg);
-    border: 3px solid var(--ui-generic-border-color);
+    background: var(--theme-main-bg);
+    border: 3px solid var(--theme-generic-border-color);
     border-radius: 10px;
 `;
 

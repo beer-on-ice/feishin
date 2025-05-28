@@ -18,17 +18,17 @@ export interface SelectProps extends MantineSelectProps {
 
 const StyledSelect = styled(MantineSelect)`
     & [data-selected='true'] {
-        background: var(--ui-input-bg);
+        background: var(--theme-input-bg);
     }
 
     & [data-disabled='true'] {
-        background: var(--ui-input-bg);
+        background: var(--theme-input-bg);
         opacity: 0.6;
     }
 
     & .mantine-Select-label {
         margin-bottom: 0.5rem;
-        font-family: var(--ui-label-font-family);
+        font-family: var(--theme-label-font-family);
     }
 
     & .mantine-Select-itemsWrapper {
@@ -44,28 +44,28 @@ export const Select = ({ maxWidth, width, ...props }: SelectProps) => {
             style={{ maxWidth, width }}
             styles={{
                 dropdown: {
-                    background: 'var(--ui-dropdown-menu-bg)',
+                    background: 'var(--theme-dropdown-menu-bg)',
                     filter: 'drop-shadow(0 0 5px rgb(0, 0, 0, 20%))',
                 },
                 input: {
-                    background: 'var(--ui-input-bg)',
-                    color: 'var(--ui-input-fg)',
+                    background: 'var(--theme-input-bg)',
+                    color: 'var(--theme-input-fg)',
                 },
                 item: {
                     '&:hover': {
-                        background: 'var(--ui-dropdown-menu-bg-hover)',
+                        background: 'var(--theme-dropdown-menu-bg-hover)',
                     },
                     '&[data-hovered]': {
-                        background: 'var(--ui-dropdown-menu-bg-hover)',
+                        background: 'var(--theme-dropdown-menu-bg-hover)',
                     },
                     '&[data-selected="true"]': {
                         '&:hover': {
-                            background: 'var(--ui-dropdown-menu-bg-hover)',
+                            background: 'var(--theme-dropdown-menu-bg-hover)',
                         },
                         background: 'none',
-                        color: 'var(--ui-primary-color)',
+                        color: 'var(--theme-primary-color)',
                     },
-                    color: 'var(--ui-dropdown-menu-fg)',
+                    color: 'var(--theme-dropdown-menu-fg)',
                     padding: '.3rem',
                 },
             }}
@@ -78,11 +78,11 @@ export const Select = ({ maxWidth, width, ...props }: SelectProps) => {
 
 const StyledMultiSelect = styled(MantineMultiSelect)`
     & [data-selected='true'] {
-        background: var(--ui-input-select-bg);
+        background: var(--theme-input-select-bg);
     }
 
     & [data-disabled='true'] {
-        background: var(--ui-input-bg);
+        background: var(--theme-input-bg);
         opacity: 0.6;
     }
 
@@ -99,28 +99,28 @@ export const MultiSelect = ({ maxWidth, width, ...props }: MultiSelectProps) => 
             style={{ maxWidth, width }}
             styles={{
                 dropdown: {
-                    background: 'var(--ui-dropdown-menu-bg)',
+                    background: 'var(--theme-dropdown-menu-bg)',
                     filter: 'drop-shadow(0 0 5px rgb(0, 0, 0, 20%))',
                 },
                 input: {
-                    background: 'var(--ui-input-bg)',
-                    color: 'var(--ui-input-fg)',
+                    background: 'var(--theme-input-bg)',
+                    color: 'var(--theme-input-fg)',
                 },
                 item: {
                     '&:hover': {
-                        background: 'var(--ui-dropdown-menu-bg-hover)',
+                        background: 'var(--theme-dropdown-menu-bg-hover)',
                     },
                     '&[data-hovered]': {
-                        background: 'var(--ui-dropdown-menu-bg-hover)',
+                        background: 'var(--theme-dropdown-menu-bg-hover)',
                     },
                     '&[data-selected="true"]': {
                         '&:hover': {
-                            background: 'var(--ui-dropdown-menu-bg-hover)',
+                            background: 'var(--theme-dropdown-menu-bg-hover)',
                         },
                         background: 'none',
-                        color: 'var(--ui-primary-color)',
+                        color: 'var(--theme-primary-color)',
                     },
-                    color: 'var(--ui-dropdown-menu-fg)',
+                    color: 'var(--theme-dropdown-menu-fg)',
                     padding: '.5rem .1rem',
                 },
                 value: {

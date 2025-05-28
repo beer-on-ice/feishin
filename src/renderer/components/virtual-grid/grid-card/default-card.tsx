@@ -48,12 +48,12 @@ const DefaultCardContainer = styled.div<{ $isHidden?: boolean; $itemGap: number 
     overflow: hidden;
     pointer-events: auto;
     cursor: pointer;
-    background: var(--ui-card-default-bg);
-    border-radius: var(--ui-card-default-radius);
+    background: var(--theme-card-default-bg);
+    border-radius: var(--theme-card-default-radius);
     opacity: ${({ $isHidden }) => ($isHidden ? 0 : 1)};
 
     &:hover {
-        background: var(--ui-card-default-bg-hover);
+        background: var(--theme-card-default-bg-hover);
     }
 `;
 
@@ -87,8 +87,8 @@ const ImageContainer = styled.div<{ $isFavorite?: boolean }>`
     height: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    background: var(--ui-placeholder-bg);
-    border-radius: var(--ui-card-default-radius);
+    background: var(--theme-placeholder-bg);
+    border-radius: var(--theme-card-default-radius);
 
     &::before {
         position: absolute;
@@ -112,7 +112,7 @@ const ImageContainer = styled.div<{ $isFavorite?: boolean }>`
     left: -50px;
     width: 80px;
     height: 80px;
-    background-color: var(--ui-primary-color);
+    background-color: var(--theme-primary-color);
     box-shadow: 0 0 10px 8px rgba(0, 0, 0, 80%);
     transform: rotate(-45deg);
     content: '';
@@ -130,7 +130,7 @@ const Image = styled(SimpleImg)`
 
     img {
         height: 100%;
-        object-fit: var(--ui-image-fit);
+        object-fit: var(--theme-image-fit);
     }
 `;
 
@@ -190,21 +190,21 @@ export const DefaultCard = ({
                             <Image
                                 importance="auto"
                                 placeholder={
-                                    data?.imagePlaceholderUrl || 'var(--ui-placeholder-bg)'
+                                    data?.imagePlaceholderUrl || 'var(--theme-placeholder-bg)'
                                 }
                                 src={data?.imageUrl}
                             />
                         ) : (
                             <Center
                                 style={{
-                                    background: 'var(--ui-placeholder-bg)',
-                                    borderRadius: 'var(--ui-card-default-radius)',
+                                    background: 'var(--theme-placeholder-bg)',
+                                    borderRadius: 'var(--theme-card-default-radius)',
                                     height: '100%',
                                     width: '100%',
                                 }}
                             >
                                 <Placeholder
-                                    color="var(--ui-placeholder-fg)"
+                                    color="var(--theme-placeholder-fg)"
                                     size={35}
                                 />
                             </Center>
