@@ -40,7 +40,7 @@ export const SearchInput = ({
         <TextInput
             ref={mergedRef}
             {...props}
-            icon={showIcon && <RiSearchLine />}
+            leftSection={showIcon && <RiSearchLine />}
             onChange={onChange}
             onKeyDown={handleEscape}
             rightSection={

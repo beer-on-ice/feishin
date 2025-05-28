@@ -99,7 +99,7 @@ export const CollapsedSidebar = () => {
                         <CollapsedSidebarItem
                             activeIcon={<RiMenuFill size="25" />}
                             component={UnstyledButton}
-                            icon={<RiMenuFill size="25" />}
+                            leftSection={<RiMenuFill size="25" />}
                             label={t('common.menu', { postProcess: 'titleCase' })}
                         />
                     </DropdownMenu.Target>
@@ -117,7 +117,7 @@ export const CollapsedSidebar = () => {
                             />
                         }
                         component={NavLink}
-                        icon={
+                        leftSection={
                             <SidebarIcon
                                 route={item.route}
                                 size="25"

@@ -523,26 +523,26 @@ export const PlaylistDetailSongListHeaderFilters = ({
                     </DropdownMenu.Target>
                     <DropdownMenu.Dropdown>
                         <DropdownMenu.Item
-                            icon={<RiPlayFill />}
+                            leftSection={<RiPlayFill />}
                             onClick={() => handlePlay(Play.NOW)}
                         >
                             {t('player.play', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Item
-                            icon={<RiAddBoxFill />}
+                            leftSection={<RiAddBoxFill />}
                             onClick={() => handlePlay(Play.LAST)}
                         >
                             {t('player.addLast', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Item
-                            icon={<RiAddCircleFill />}
+                            leftSection={<RiAddCircleFill />}
                             onClick={() => handlePlay(Play.NEXT)}
                         >
                             {t('player.addNext', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Divider />
                         <DropdownMenu.Item
-                            icon={<RiEditFill />}
+                            leftSection={<RiEditFill />}
                             onClick={() =>
                                 openUpdatePlaylistModal({
                                     playlist: detailQuery.data!,
@@ -553,14 +553,14 @@ export const PlaylistDetailSongListHeaderFilters = ({
                             {t('action.editPlaylist', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Item
-                            icon={<RiDeleteBinFill />}
+                            leftSection={<RiDeleteBinFill />}
                             onClick={openDeletePlaylistModal}
                         >
                             {t('action.deletePlaylist', { postProcess: 'sentenceCase' })}
                         </DropdownMenu.Item>
                         <DropdownMenu.Divider />
                         <DropdownMenu.Item
-                            icon={<RiRefreshLine />}
+                            leftSection={<RiRefreshLine />}
                             onClick={handleRefresh}
                         >
                             {t('action.refresh', { postProcess: 'sentenceCase' })}

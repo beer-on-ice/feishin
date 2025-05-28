@@ -123,7 +123,7 @@ export const CommandPalette = ({ modalProps }: CommandPaletteProps) => {
             >
                 <TextInput
                     data-autofocus
-                    icon={<RiSearchLine />}
+                    leftSection={<RiSearchLine />}
                     onChange={(e) => setQuery(e.currentTarget.value)}
                     ref={searchInputRef}
                     rightSection={

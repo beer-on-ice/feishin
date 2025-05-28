@@ -132,7 +132,7 @@ export const QueryBuilder = ({
                     </DropdownMenu.Target>
                     <DropdownMenu.Dropdown>
                         <DropdownMenu.Item
-                            icon={<RiAddFill />}
+                            leftSection={<RiAddFill />}
                             onClick={handleAddRuleGroup}
                         >
                             Add rule group
@@ -140,7 +140,7 @@ export const QueryBuilder = ({
 
                         {level > 0 && (
                             <DropdownMenu.Item
-                                icon={<RiDeleteBinFill />}
+                                leftSection={<RiDeleteBinFill />}
                                 onClick={handleDeleteRuleGroup}
                             >
                                 Remove rule group
@@ -151,14 +151,14 @@ export const QueryBuilder = ({
                                 <DropdownMenu.Divider />
                                 <DropdownMenu.Item
                                     $danger
-                                    icon={<RiRestartLine color="var(--danger-color)" />}
+                                    leftSection={<RiRestartLine color="var(--danger-color)" />}
                                     onClick={onResetFilters}
                                 >
                                     Reset to default
                                 </DropdownMenu.Item>
                                 <DropdownMenu.Item
                                     $danger
-                                    icon={<RiDeleteBinFill color="var(--danger-color)" />}
+                                    leftSection={<RiDeleteBinFill color="var(--danger-color)" />}
                                     onClick={onClearFilters}
                                 >
                                     Clear filters

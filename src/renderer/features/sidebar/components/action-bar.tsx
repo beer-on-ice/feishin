@@ -37,7 +37,7 @@ export const ActionBar = () => {
                 >
                     <Grid.Col span={6}>
                         <TextInput
-                            icon={<RiSearchLine />}
+                            leftSection={<RiSearchLine />}
                             onClick={open}
                             onKeyDown={(e) => {
                                 if (e.key === 'Enter' || e.key === ' ') {

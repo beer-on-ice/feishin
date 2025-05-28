@@ -259,7 +259,7 @@ export const HotkeyManagerSettings = () => {
                             value={BINDINGS_MAP[binding as keyof typeof BINDINGS_MAP]}
                         />
                         <TextInput
-                            icon={<RiKeyboardBoxLine />}
+                            leftSection={<RiKeyboardBoxLine />}
                             id={`hotkey-${binding}`}
                             onBlur={() => setSelected(null)}
                             onChange={() => {}}

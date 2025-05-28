@@ -520,7 +520,7 @@ export const PlaylistQueryBuilder = forwardRef(
                                 <DropdownMenu.Dropdown>
                                     <DropdownMenu.Item
                                         $danger
-                                        icon={<RiSaveLine color="var(--danger-color)" />}
+                                        leftSection={<RiSaveLine color="var(--danger-color)" />}
                                         onClick={handleSave}
                                     >
                                         {t('common.saveAndReplace', { postProcess: 'titleCase' })}

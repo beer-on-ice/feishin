@@ -88,7 +88,7 @@ export const ServerList = () => {
                                 key={server.id}
                                 value={server.name}
                             >
-                                <Accordion.Control icon={<RiServerFill size={15} />}>
+                                <Accordion.Control leftSection={<RiServerFill size={15} />}>
                                     <Group justify="space-between">
                                         <Text fw={server.id === currentServer?.id ? 800 : 400}>
                                             {titleCase(server?.type)} - {server?.name}
