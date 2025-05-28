@@ -2,13 +2,14 @@ import { Divider, Stack } from '@mantine/core';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Checkbox } from '/@/renderer/components';
+import { Checkbox } from '/@/renderer/components';
 import {
     CONFIGURABLE_CONTEXT_MENU_ITEMS,
     CONTEXT_MENU_ITEM_MAPPING,
 } from '/@/renderer/features/context-menu';
 import { SettingsOptions } from '/@/renderer/features/settings/components/settings-option';
 import { useSettingsStore, useSettingsStoreActions } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 
 export const ContextMenuSettings = () => {
     const disabledItems = useSettingsStore((state) => state.general.disabledContextMenu);

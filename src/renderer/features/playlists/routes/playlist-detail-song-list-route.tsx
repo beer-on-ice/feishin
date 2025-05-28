@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { generatePath, useNavigate, useParams } from 'react-router';
 
-import { Button, Paper, Text, toast } from '/@/renderer/components';
+import { Paper, Text, toast } from '/@/renderer/components';
 import { PlaylistDetailSongListContent } from '/@/renderer/features/playlists/components/playlist-detail-song-list-content';
 import { PlaylistDetailSongListHeader } from '/@/renderer/features/playlists/components/playlist-detail-song-list-header';
 import { PlaylistQueryBuilder } from '/@/renderer/features/playlists/components/playlist-query-builder';
@@ -19,6 +19,7 @@ import { usePlaylistSongList } from '/@/renderer/features/playlists/queries/play
 import { AnimatedPage } from '/@/renderer/features/shared';
 import { AppRoute } from '/@/renderer/router/routes';
 import { useCurrentServer, usePlaylistDetailStore } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import {
     PlaylistSongListQuery,
     ServerType,

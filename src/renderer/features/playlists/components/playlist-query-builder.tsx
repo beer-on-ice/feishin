@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 import { RiMore2Fill, RiSaveLine } from 'react-icons/ri';
 
 import {
-    Button,
     DropdownMenu,
     MotionFlex,
     NumberInput,
@@ -33,6 +32,7 @@ import {
     NDSongQueryPlaylistOperators,
     NDSongQueryStringOperators,
 } from '/@/shared/api/navidrome.types';
+import { Button } from '/@/shared/components/button';
 import { PlaylistListSort, SongListSort, SortOrder } from '/@/shared/types/domain-types';
 import { QueryBuilderGroup, QueryBuilderRule } from '/@/shared/types/types';
 

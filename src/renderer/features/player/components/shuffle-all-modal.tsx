@@ -1,4 +1,4 @@
-import { Divider, Group, SelectItem, Stack } from '@mantine/core';
+import { Divider, Group, Stack } from '@mantine/core';
 import { closeAllModals, openModal } from '@mantine/modals';
 import { QueryClient } from '@tanstack/react-query';
 import merge from 'lodash/merge';
@@ -11,8 +11,9 @@ import { immer } from 'zustand/middleware/immer';
 import i18n from '/@/i18n/i18n';
 import { api } from '/@/renderer/api';
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { Button, Checkbox, NumberInput, Select } from '/@/renderer/components';
+import { Checkbox, NumberInput, Select } from '/@/renderer/components';
 import { useAuthStore } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import {
     GenreListResponse,
     GenreListSort,
@@ -58,7 +59,7 @@ const useShuffleAllStore = create<ShuffleAllSlice>()(
     ),
 );
 
-const PLAYED_DATA: SelectItem[] = [
+const PLAYED_DATA: { label: string; value: Played }[] = [
     { label: 'all tracks', value: Played.All },
     { label: 'only unplayed tracks', value: Played.Never },
     { label: 'only played tracks', value: Played.Played },

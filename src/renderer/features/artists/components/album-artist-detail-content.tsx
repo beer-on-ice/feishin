@@ -9,7 +9,7 @@ import { generatePath, useParams } from 'react-router';
 import { createSearchParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Button, Spoiler, TextTitle } from '/@/renderer/components';
+import { Spoiler, TextTitle } from '/@/renderer/components';
 import { MemoizedSwiperGridCarousel } from '/@/renderer/components/grid-carousel';
 import { getColumnDefs, VirtualTable } from '/@/renderer/components/virtual-table';
 import { useAlbumList } from '/@/renderer/features/albums/queries/album-list-query';
@@ -32,6 +32,7 @@ import { AppRoute } from '/@/renderer/router/routes';
 import { ArtistItem, useCurrentServer } from '/@/renderer/store';
 import { useGeneralSettings, usePlayButtonBehavior } from '/@/renderer/store/settings.store';
 import { sanitize } from '/@/renderer/utils/sanitize';
+import { Button } from '/@/shared/components/button';
 import {
     Album,
     AlbumArtist,

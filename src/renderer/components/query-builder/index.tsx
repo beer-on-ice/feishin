@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { RiAddFill, RiAddLine, RiDeleteBinFill, RiMore2Line, RiRestartLine } from 'react-icons/ri';
 
 import i18n from '/@/i18n/i18n';
-import { Button } from '/@/renderer/components/button';
+import { Button } from '/@/shared/components/button';
 import { DropdownMenu } from '/@/renderer/components/dropdown-menu';
 import { QueryBuilderOption } from '/@/renderer/components/query-builder/query-builder-option';
 import { Select } from '/@/renderer/components/select';

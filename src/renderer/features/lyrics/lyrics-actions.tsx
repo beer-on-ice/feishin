@@ -1,9 +1,9 @@
-import { Box, Center, Group, Select, SelectItem } from '@mantine/core';
+import { Box, Center, Group, Select } from '@mantine/core';
 import isElectron from 'is-electron';
 import { useTranslation } from 'react-i18next';
 import { RiAddFill, RiSubtractFill } from 'react-icons/ri';
 
-import { Button, NumberInput, Tooltip } from '/@/renderer/components';
+import { NumberInput } from '/@/renderer/components';
 import { openLyricSearchModal } from '/@/renderer/features/lyrics/components/lyrics-search-form';
 import {
     useCurrentSong,
@@ -11,11 +11,13 @@ import {
     useSettingsStore,
     useSettingsStoreActions,
 } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 import { LyricsOverride } from '/@/shared/types/domain-types';
 
 interface LyricsActionsProps {
     index: number;
-    languages: SelectItem[];
+    languages: { label: string; value: string }[];
 
     onRemoveLyric: () => void;
     onResetLyric: () => void;

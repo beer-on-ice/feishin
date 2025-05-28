@@ -2,10 +2,11 @@ import { Group, Stack } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Switch, TextInput, toast } from '/@/renderer/components';
+import { Switch, TextInput, toast } from '/@/renderer/components';
 import { useCreatePlaylist } from '/@/renderer/features/playlists/mutations/create-playlist-mutation';
 import { useCurrentServer } from '/@/renderer/store';
 import { hasFeature } from '/@/shared/api/utils';
+import { Button } from '/@/shared/components/button';
 import {
     CreatePlaylistBody,
     CreatePlaylistResponse,

@@ -3,11 +3,12 @@ import { closeAllModals, openModal } from '@mantine/modals';
 import { useTranslation } from 'react-i18next';
 import { RiSettings2Fill } from 'react-icons/ri';
 
-import { Button, ConfirmModal, PageHeader, SearchInput } from '/@/renderer/components';
+import { ConfirmModal, PageHeader, SearchInput } from '/@/renderer/components';
 import { useSettingSearchContext } from '/@/renderer/features/settings/context/search-context';
 import { LibraryHeaderBar } from '/@/renderer/features/shared';
 import { useContainerQuery } from '/@/renderer/hooks';
 import { useSettingsStoreActions } from '/@/renderer/store/settings.store';
+import { Button } from '/@/shared/components/button';
 
 export type SettingsHeaderProps = {
     setSearch: (search: string) => void;

@@ -4,15 +4,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiCloseLine, RiRestartLine } from 'react-icons/ri';
 
-import {
-    Button,
-    FileInput,
-    NumberInput,
-    Select,
-    Switch,
-    Text,
-    Textarea,
-} from '/@/renderer/components';
+import { FileInput, NumberInput, Select, Switch, Text, Textarea } from '/@/renderer/components';
 import {
     SettingOption,
     SettingsSection,
@@ -24,6 +16,7 @@ import {
     useSettingsStore,
     useSettingsStoreActions,
 } from '/@/renderer/store/settings.store';
+import { Button } from '/@/shared/components/button';
 import { PlaybackType } from '/@/shared/types/types';
 
 const localSettings = isElectron() ? window.api.localSettings : null;

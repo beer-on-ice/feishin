@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { Button, Popover, Spoiler } from '/@/renderer/components';
+import { Popover, Spoiler } from '/@/renderer/components';
 import { MemoizedSwiperGridCarousel } from '/@/renderer/components/grid-carousel';
 import {
     getColumnDefs,
@@ -47,6 +47,7 @@ import {
     useTableSettings,
 } from '/@/renderer/store/settings.store';
 import { replaceURLWithHTMLLinks } from '/@/renderer/utils/linkify';
+import { Button } from '/@/shared/components/button';
 import {
     AlbumListQuery,
     AlbumListSort,

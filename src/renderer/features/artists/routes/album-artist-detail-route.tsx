@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useParams } from 'react-router';
 
-import { NativeScrollArea, Spinner } from '/@/renderer/components';
+import { NativeScrollArea } from '/@/renderer/components';
 import { AlbumArtistDetailContent } from '/@/renderer/features/artists/components/album-artist-detail-content';
 import { AlbumArtistDetailHeader } from '/@/renderer/features/artists/components/album-artist-detail-header';
 import { useAlbumArtistDetail } from '/@/renderer/features/artists/queries/album-artist-detail-query';
@@ -10,6 +10,7 @@ import { AnimatedPage, LibraryHeaderBar } from '/@/renderer/features/shared';
 import { useFastAverageColor } from '/@/renderer/hooks';
 import { useCurrentServer } from '/@/renderer/store';
 import { usePlayButtonBehavior } from '/@/renderer/store/settings.store';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 import { LibraryItem } from '/@/shared/types/domain-types';
 
 const AlbumArtistDetailRoute = () => {

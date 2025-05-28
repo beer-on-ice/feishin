@@ -11,7 +11,8 @@ import {
 } from 'react-icons/ri';
 import styled from 'styled-components';
 
-import { Button, Text } from '/@/renderer/components';
+import { Text } from '/@/renderer/components';
+import { Button } from '/@/shared/components/button';
 import { LibraryItem } from '/@/shared/types/domain-types';
 import { Play, PlayQueueAddOptions } from '/@/shared/types/types';
 

@@ -2,7 +2,7 @@ import { Group } from '@mantine/core';
 import { useState } from 'react';
 import { RiSubtractLine } from 'react-icons/ri';
 
-import { Button } from '/@/renderer/components/button';
+import { Button } from '/@/shared/components/button';
 import { NumberInput, TextInput } from '/@/renderer/components/input';
 import { Select } from '/@/renderer/components/select';
 import { QueryBuilderRule } from '/@/shared/types/types';

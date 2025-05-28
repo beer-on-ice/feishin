@@ -6,11 +6,12 @@ import { useTranslation } from 'react-i18next';
 import i18n from '/@/i18n/i18n';
 import { api } from '/@/renderer/api';
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { Button, Select, Switch, TextInput, toast } from '/@/renderer/components';
+import { Select, Switch, TextInput, toast } from '/@/renderer/components';
 import { useUpdatePlaylist } from '/@/renderer/features/playlists/mutations/update-playlist-mutation';
 import { queryClient } from '/@/renderer/lib/react-query';
 import { useCurrentServer } from '/@/renderer/store';
 import { hasFeature } from '/@/shared/api/utils';
+import { Button } from '/@/shared/components/button';
 import {
     PlaylistDetailResponse,
     ServerListItem,

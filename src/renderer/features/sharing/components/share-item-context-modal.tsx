@@ -4,9 +4,10 @@ import { useForm } from '@mantine/form';
 import { closeModal, ContextModalProps } from '@mantine/modals';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Switch, toast } from '/@/renderer/components';
+import { Switch, toast } from '/@/renderer/components';
 import { useShareItem } from '/@/renderer/features/sharing/mutations/share-item-mutation';
 import { useCurrentServer } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 
 // Bugged prop types in mantine v6
 const WrappedDateTimePicker = ({ ...props }: any) => {

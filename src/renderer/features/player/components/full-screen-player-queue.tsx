@@ -6,7 +6,6 @@ import { HiOutlineQueueList } from 'react-icons/hi2';
 import { RiFileMusicLine, RiFileTextLine } from 'react-icons/ri';
 import styled from 'styled-components';
 
-import { Button } from '/@/renderer/components';
 import { Lyrics } from '/@/renderer/features/lyrics/lyrics';
 import { PlayQueue } from '/@/renderer/features/now-playing';
 import { FullScreenSimilarSongs } from '/@/renderer/features/player/components/full-screen-similar-songs';
@@ -15,6 +14,7 @@ import {
     useFullScreenPlayerStore,
     useFullScreenPlayerStoreActions,
 } from '/@/renderer/store/full-screen-player.store';
+import { Button } from '/@/shared/components/button';
 import { PlaybackType } from '/@/shared/types/types';
 
 const Visualizer = lazy(() =>

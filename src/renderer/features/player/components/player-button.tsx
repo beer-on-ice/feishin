@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { ComponentPropsWithoutRef, forwardRef, ReactNode } from 'react';
 import styled, { css } from 'styled-components';
 
-import { Tooltip } from '/@/renderer/components';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 
 type MantineButtonProps = ComponentPropsWithoutRef<'button'> & UnstyledButtonProps;
 interface PlayerButtonProps extends MantineButtonProps {

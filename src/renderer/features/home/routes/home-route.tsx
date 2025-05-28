@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { RiRefreshLine } from 'react-icons/ri';
 
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { FeatureCarousel, NativeScrollArea, Spinner, TextTitle } from '/@/renderer/components';
+import { FeatureCarousel, NativeScrollArea, TextTitle } from '/@/renderer/components';
 import { MemoizedSwiperGridCarousel } from '/@/renderer/components/grid-carousel';
 import { useAlbumList } from '/@/renderer/features/albums';
 import { useRecentlyPlayed } from '/@/renderer/features/home/queries/recently-played-query';
@@ -18,6 +18,7 @@ import {
     useGeneralSettings,
     useWindowSettings,
 } from '/@/renderer/store';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 import {
     AlbumListSort,
     LibraryItem,

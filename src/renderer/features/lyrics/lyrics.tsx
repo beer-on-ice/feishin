@@ -7,7 +7,7 @@ import { RiInformationFill } from 'react-icons/ri';
 import styled from 'styled-components';
 
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { Spinner, TextTitle } from '/@/renderer/components';
+import { TextTitle } from '/@/renderer/components';
 import { ErrorFallback } from '/@/renderer/features/action-required';
 import { LyricsActions } from '/@/renderer/features/lyrics/lyrics-actions';
 import {
@@ -25,6 +25,7 @@ import {
 } from '/@/renderer/features/lyrics/unsynchronized-lyrics';
 import { queryClient } from '/@/renderer/lib/react-query';
 import { useCurrentSong, useLyricsSettings, usePlayerStore } from '/@/renderer/store';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 import { FullLyricsMetadata, LyricSource, LyricsOverride } from '/@/shared/types/domain-types';
 
 const ActionsContainer = styled.div`

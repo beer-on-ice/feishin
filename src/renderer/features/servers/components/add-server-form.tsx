@@ -8,8 +8,9 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { api } from '/@/renderer/api';
-import { Button, PasswordInput, SegmentedControl, TextInput, toast } from '/@/renderer/components';
+import { PasswordInput, SegmentedControl, TextInput, toast } from '/@/renderer/components';
 import { useAuthStoreActions } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import { AuthenticationResponse } from '/@/shared/types/domain-types';
 import { ServerType, toServerType } from '/@/shared/types/types';
 

@@ -7,15 +7,7 @@ import { RiArrowDownSLine, RiSettings3Line } from 'react-icons/ri';
 import { useLocation } from 'react-router';
 import styled from 'styled-components';
 
-import {
-    Button,
-    NumberInput,
-    Option,
-    Popover,
-    Select,
-    Slider,
-    Switch,
-} from '/@/renderer/components';
+import { NumberInput, Option, Popover, Select, Slider, Switch } from '/@/renderer/components';
 import { TableConfigDropdown } from '/@/renderer/components/virtual-table';
 import { FullScreenPlayerImage } from '/@/renderer/features/player/components/full-screen-player-image';
 import { FullScreenPlayerQueue } from '/@/renderer/features/player/components/full-screen-player-queue';
@@ -29,6 +21,7 @@ import {
     useSettingsStoreActions,
     useWindowSettings,
 } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import { Platform } from '/@/shared/types/types';
 
 const Container = styled(motion.div)`

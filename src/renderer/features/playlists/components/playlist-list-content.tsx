@@ -2,7 +2,7 @@ import type { AgGridReact as AgGridReactType } from '@ag-grid-community/react/li
 
 import { lazy, MutableRefObject, Suspense } from 'react';
 
-import { Spinner } from '/@/renderer/components';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 import { VirtualInfiniteGridRef } from '/@/renderer/components/virtual-grid';
 import { useListContext } from '/@/renderer/context/list-context';
 import { useListStoreByKey } from '/@/renderer/store/list.store';

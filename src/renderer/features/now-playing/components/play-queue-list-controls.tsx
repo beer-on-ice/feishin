@@ -14,13 +14,14 @@ import {
     RiShuffleLine,
 } from 'react-icons/ri';
 
-import { Button, Popover } from '/@/renderer/components';
+import { Popover } from '/@/renderer/components';
 import { TableConfigDropdown } from '/@/renderer/components/virtual-table';
 import { updateSong } from '/@/renderer/features/player/update-remote-song';
 import { usePlayerControls, useQueueControls } from '/@/renderer/store';
 import { usePlayerStore, useSetCurrentTime } from '/@/renderer/store/player.store';
 import { usePlaybackType } from '/@/renderer/store/settings.store';
 import { setQueue, setQueueNext } from '/@/renderer/utils/set-transcoded-queue-data';
+import { Button } from '/@/shared/components/button';
 import { Song } from '/@/shared/types/domain-types';
 import { PlaybackType, TableType } from '/@/shared/types/types';
 

@@ -2,7 +2,8 @@ import { ButtonProps } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
 import { RiSortAsc, RiSortDesc } from 'react-icons/ri';
 
-import { Button, Tooltip } from '/@/renderer/components';
+import { Button } from '/@/shared/components/button';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 import { SortOrder } from '/@/shared/types/domain-types';
 
 interface OrderToggleButtonProps {

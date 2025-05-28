@@ -1,5 +1,4 @@
 export * from './audio-player';
-export * from './button';
 export * from './card';
 export * from './checkbox';
 export * from './context-menu';
@@ -24,11 +23,9 @@ export * from './segmented-control';
 export * from './select';
 export * from './skeleton';
 export * from './slider';
-export * from './spinner';
 export * from './spoiler';
 export * from './switch';
 export * from './tabs';
 export * from './text';
 export * from './text-title';
 export * from './toast';
-export * from './tooltip';

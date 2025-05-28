@@ -4,7 +4,9 @@ import { useCallback } from 'react';
 import { RiExternalLinkLine } from 'react-icons/ri';
 
 import packageJson from '../../package.json';
-import { Button, Dialog, Text } from './components';
+import { Dialog, Text } from './components';
+
+import { Button } from '/@/shared/components/button';
 
 export function IsUpdatedDialog() {
     const { version } = packageJson;

@@ -3,7 +3,7 @@ import { useForm } from '@mantine/form';
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Switch, Text, TextInput, toast } from '/@/renderer/components';
+import { Switch, Text, TextInput, toast } from '/@/renderer/components';
 import {
     PlaylistQueryBuilder,
     PlaylistQueryBuilderRef,
@@ -12,6 +12,7 @@ import { useCreatePlaylist } from '/@/renderer/features/playlists/mutations/crea
 import { convertQueryGroupToNDQuery } from '/@/renderer/features/playlists/utils';
 import { useCurrentServer } from '/@/renderer/store';
 import { hasFeature } from '/@/shared/api/utils';
+import { Button } from '/@/shared/components/button';
 import { CreatePlaylistBody, ServerType, SongListSort } from '/@/shared/types/domain-types';
 import { ServerFeature } from '/@/shared/types/features-types';
 

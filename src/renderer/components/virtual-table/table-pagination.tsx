@@ -7,7 +7,7 @@ import { MutableRefObject } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiHashtag } from 'react-icons/ri';
 
-import { Button } from '/@/renderer/components/button';
+import { Button } from '/@/shared/components/button';
 import { NumberInput } from '/@/renderer/components/input';
 import { MotionFlex } from '/@/renderer/components/motion';
 import { Pagination } from '/@/renderer/components/pagination';

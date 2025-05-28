@@ -2,7 +2,8 @@ import { Group, Stack } from '@mantine/core';
 import React from 'react';
 import { RiInformationLine } from 'react-icons/ri';
 
-import { Text, Tooltip } from '/@/renderer/components';
+import { Text } from '/@/renderer/components';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 
 interface SettingsOptionProps {
     control: React.ReactNode;

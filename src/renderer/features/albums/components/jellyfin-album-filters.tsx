@@ -3,12 +3,13 @@ import debounce from 'lodash/debounce';
 import { ChangeEvent, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { NumberInput, SpinnerIcon, Switch, Text } from '/@/renderer/components';
+import { NumberInput, Switch, Text } from '/@/renderer/components';
 import { MultiSelectWithInvalidData } from '/@/renderer/components/select-with-invalid-data';
 import { useAlbumArtistList } from '/@/renderer/features/artists/queries/album-artist-list-query';
 import { useGenreList } from '/@/renderer/features/genres';
 import { useTagList } from '/@/renderer/features/tag/queries/use-tag-list';
 import { AlbumListFilter, useListFilterByKey, useListStoreActions } from '/@/renderer/store';
+import { SpinnerIcon } from '/@/shared/components/spinner/spinner';
 import {
     AlbumArtistListSort,
     AlbumListQuery,

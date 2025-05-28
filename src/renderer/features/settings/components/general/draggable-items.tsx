@@ -4,11 +4,11 @@ import isEqual from 'lodash/isEqual';
 import { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button } from '/@/renderer/components';
 import { DraggableItem } from '/@/renderer/features/settings/components/general/draggable-item';
 import { SettingsOptions } from '/@/renderer/features/settings/components/settings-option';
 import { useSettingSearchContext } from '/@/renderer/features/settings/context/search-context';
 import { SortableItem } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 
 export type DraggableItemsProps<K, T> = {
     description: string;

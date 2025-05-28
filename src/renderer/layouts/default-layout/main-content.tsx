@@ -3,7 +3,6 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { Outlet, useLocation } from 'react-router';
 import styled from 'styled-components';
 
-import { Spinner } from '/@/renderer/components';
 import { FullScreenOverlay } from '/@/renderer/layouts/default-layout/full-screen-overlay';
 import { LeftSidebar } from '/@/renderer/layouts/default-layout/left-sidebar';
 import { RightSidebar } from '/@/renderer/layouts/default-layout/right-sidebar';
@@ -11,6 +10,7 @@ import { AppRoute } from '/@/renderer/router/routes';
 import { useAppStoreActions, useSidebarStore } from '/@/renderer/store';
 import { useGeneralSettings } from '/@/renderer/store/settings.store';
 import { constrainRightSidebarWidth, constrainSidebarWidth } from '/@/renderer/utils';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 
 const SideDrawerQueue = lazy(() =>
     import('/@/renderer/layouts/default-layout/side-drawer-queue').then((module) => ({

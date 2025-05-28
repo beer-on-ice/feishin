@@ -4,7 +4,6 @@ import React, { MouseEvent, useState } from 'react';
 import { RiHeartFill, RiHeartLine, RiMoreFill, RiPlayFill } from 'react-icons/ri';
 import styled from 'styled-components';
 
-import { _Button } from '/@/renderer/components/button';
 import {
     ALBUM_CONTEXT_MENU_ITEMS,
     ARTIST_CONTEXT_MENU_ITEMS,
@@ -12,6 +11,7 @@ import {
 } from '/@/renderer/features/context-menu/context-menu-items';
 import { useHandleGridContextMenu } from '/@/renderer/features/context-menu/hooks/use-handle-context-menu';
 import { usePlayButtonBehavior } from '/@/renderer/store/settings.store';
+import { _Button } from '/@/shared/components/button';
 import { LibraryItem } from '/@/shared/types/domain-types';
 import { Play, PlayQueueAddOptions } from '/@/shared/types/types';
 

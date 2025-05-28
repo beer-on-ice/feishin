@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { RiCheckFill, RiClipboardFill, RiExternalLinkFill } from 'react-icons/ri';
 import styled from 'styled-components';
 
-import { toast, Tooltip } from '/@/renderer/components';
+import { toast } from '/@/renderer/components';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 
 const util = isElectron() ? window.api.utils : null;
 

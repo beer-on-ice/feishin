@@ -4,10 +4,11 @@ import { RiArrowLeftSLine, RiArrowRightSLine, RiMenuFill, RiSearchLine } from 'r
 import { useNavigate } from 'react-router';
 import styled from 'styled-components';
 
-import { Button, DropdownMenu, TextInput } from '/@/renderer/components';
+import { DropdownMenu, TextInput } from '/@/renderer/components';
 import { AppMenu } from '/@/renderer/features/titlebar/components/app-menu';
 import { useContainerQuery } from '/@/renderer/hooks';
 import { useCommandPalette } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 
 const ActionsContainer = styled.div`
     display: flex;

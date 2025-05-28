@@ -22,7 +22,6 @@ import i18n from '/@/i18n/i18n';
 import { api } from '/@/renderer/api';
 import { queryKeys } from '/@/renderer/api/query-keys';
 import {
-    Button,
     ConfirmModal,
     DropdownMenu,
     MultiSelect,
@@ -48,6 +47,7 @@ import {
     useSetPlaylistStore,
     useSetPlaylistTablePagination,
 } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import {
     LibraryItem,
     PlaylistSongListQuery,

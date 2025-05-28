@@ -6,12 +6,13 @@ import { ChangeEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RiAddFill, RiServerFill } from 'react-icons/ri';
 
-import { Button, ContextModalVars, Switch, Text } from '/@/renderer/components';
+import { ContextModalVars, Switch, Text } from '/@/renderer/components';
 import { AddServerForm } from '/@/renderer/features/servers/components/add-server-form';
 import { ServerListItem } from '/@/renderer/features/servers/components/server-list-item';
 import { useCurrentServer, useServerList } from '/@/renderer/store';
 import { titleCase } from '/@/renderer/utils';
 import { Accordion } from '/@/shared/components/accordion/accordion';
+import { Button } from '/@/shared/components/button';
 
 const localSettings = isElectron() ? window.api.localSettings : null;
 

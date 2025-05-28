@@ -3,7 +3,7 @@ import type { AgGridReact as AgGridReactType } from '@ag-grid-community/react/li
 import { useRef } from 'react';
 import { useParams } from 'react-router';
 
-import { NativeScrollArea, Spinner } from '/@/renderer/components';
+import { NativeScrollArea } from '/@/renderer/components';
 import { AlbumDetailContent } from '/@/renderer/features/albums/components/album-detail-content';
 import { AlbumDetailHeader } from '/@/renderer/features/albums/components/album-detail-header';
 import { useAlbumDetail } from '/@/renderer/features/albums/queries/album-detail-query';
@@ -12,6 +12,7 @@ import { AnimatedPage, LibraryHeaderBar } from '/@/renderer/features/shared';
 import { useFastAverageColor } from '/@/renderer/hooks';
 import { useCurrentServer, useGeneralSettings } from '/@/renderer/store';
 import { usePlayButtonBehavior } from '/@/renderer/store/settings.store';
+import { Spinner } from '/@/shared/components/spinner/spinner';
 import { LibraryItem } from '/@/shared/types/domain-types';
 
 const AlbumDetailRoute = () => {

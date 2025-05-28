@@ -4,11 +4,12 @@ import isElectron from 'is-electron';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, ConfirmModal, toast } from '/@/renderer/components';
+import { ConfirmModal, toast } from '/@/renderer/components';
 import {
     SettingOption,
     SettingsSection,
 } from '/@/renderer/features/settings/components/settings-section';
+import { Button } from '/@/shared/components/button';
 
 const browser = isElectron() ? window.api.browser : null;
 

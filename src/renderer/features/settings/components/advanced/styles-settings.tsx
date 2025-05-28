@@ -3,10 +3,11 @@ import { closeAllModals, openModal } from '@mantine/modals';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, ConfirmModal, Switch, Text, Textarea } from '/@/renderer/components';
+import { ConfirmModal, Switch, Text, Textarea } from '/@/renderer/components';
 import { SettingsOptions } from '/@/renderer/features/settings/components/settings-option';
 import { useCssSettings, useSettingsStoreActions } from '/@/renderer/store';
 import { sanitizeCss } from '/@/renderer/utils/sanitize';
+import { Button } from '/@/shared/components/button';
 
 export const StylesSettings = () => {
     const [open, setOpen] = useState(false);

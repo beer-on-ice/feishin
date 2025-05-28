@@ -5,7 +5,8 @@ import { RiErrorWarningLine } from 'react-icons/ri';
 import { useRouteError } from 'react-router';
 import styled from 'styled-components';
 
-import { Button, Text } from '/@/renderer/components';
+import { Text } from '/@/renderer/components';
+import { Button } from '/@/shared/components/button';
 
 const Container = styled(Box)`
     background: var(--ui-main-bg);

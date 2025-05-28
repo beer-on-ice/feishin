@@ -10,7 +10,7 @@ interface SpinnerProps extends IconBaseProps {
     size?: number;
 }
 
-const SpinnerIcon = RiLoader5Fill;
+export const SpinnerIcon = RiLoader5Fill;
 
 export const Spinner = ({ ...props }: SpinnerProps) => {
     if (props.container) {

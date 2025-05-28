@@ -5,7 +5,7 @@ import { MutableRefObject } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 
-import { PageHeader, Paper, SpinnerIcon } from '/@/renderer/components';
+import { PageHeader, Paper } from '/@/renderer/components';
 import { usePlayQueueAdd } from '/@/renderer/features/player';
 import { PlaylistDetailSongListHeaderFilters } from '/@/renderer/features/playlists/components/playlist-detail-song-list-header-filters';
 import { usePlaylistDetail } from '/@/renderer/features/playlists/queries/playlist-detail-query';
@@ -13,6 +13,7 @@ import { LibraryHeaderBar } from '/@/renderer/features/shared';
 import { useCurrentServer } from '/@/renderer/store';
 import { usePlayButtonBehavior } from '/@/renderer/store/settings.store';
 import { Badge } from '/@/shared/components/badge/badge';
+import { SpinnerIcon } from '/@/shared/components/spinner/spinner';
 import { LibraryItem } from '/@/shared/types/domain-types';
 import { Play } from '/@/shared/types/types';
 

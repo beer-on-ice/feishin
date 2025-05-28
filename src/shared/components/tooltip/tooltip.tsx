@@ -11,6 +11,7 @@ interface TooltipProps {
     children: ReactNode;
     label: ReactNode;
     multiline?: boolean;
+    openDelay?: number;
     radius?: ComponentRadius;
     transitionDuration?: number;
     transitionType?: 'fade' | 'slide-down' | 'slide-left' | 'slide-right' | 'slide-up';
@@ -19,6 +20,7 @@ interface TooltipProps {
 
 export const Tooltip = ({
     children,
+    openDelay = 500,
     transitionDuration = 250,
     transitionType = 'fade',
     withinPortal = true,
@@ -30,6 +32,7 @@ export const Tooltip = ({
                 tooltip: styles.tooltip,
             }}
             multiline
+            openDelay={openDelay}
             transitionProps={{
                 duration: transitionDuration,
                 transition: transitionType,

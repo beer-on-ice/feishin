@@ -2,8 +2,9 @@ import { Box } from '@mantine/core';
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 
-import { Paper, PaperProps, SpinnerIcon, TextTitle } from '/@/renderer/components';
+import { Paper, PaperProps, TextTitle } from '/@/renderer/components';
 import { PlayButton as PlayBtn } from '/@/renderer/features/shared/components/play-button';
+import { SpinnerIcon } from '/@/shared/components/spinner/spinner';
 
 interface LibraryHeaderBarProps {
     children: ReactNode;

@@ -13,7 +13,7 @@ import { AppRoute } from '/@/renderer/router/routes';
 import { usePlayerStore } from '/@/renderer/store/player.store';
 import { mergeOverridingColumns } from '/@/renderer/store/utils';
 import { randomString } from '/@/renderer/utils';
-import { AppTheme } from '/@/shared/types/domain-types';
+import { AppTheme } from '/@/shared/themes/app-theme-types';
 import { LibraryItem, LyricSource } from '/@/shared/types/domain-types';
 import {
     CrossfadeStyle,

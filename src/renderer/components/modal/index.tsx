@@ -8,7 +8,7 @@ import {
 import { closeAllModals, ContextModalProps } from '@mantine/modals';
 import React, { ReactNode } from 'react';
 
-import { Button } from '/@/renderer/components/button';
+import { Button } from '/@/shared/components/button';
 
 export interface ModalProps extends Omit<MantineModalProps, 'onClose'> {
     children?: ReactNode;

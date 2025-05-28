@@ -3,7 +3,7 @@ import { t } from 'i18next';
 import isElectron from 'is-electron';
 import { useTranslation } from 'react-i18next';
 
-import { NumberInput, Select, Slider, Switch, Tooltip } from '/@/renderer/components';
+import { NumberInput, Select, Slider, Switch } from '/@/renderer/components';
 import { SettingsSection } from '/@/renderer/features/settings/components/settings-section';
 import {
     GenreTarget,
@@ -11,6 +11,7 @@ import {
     useGeneralSettings,
     useSettingsStoreActions,
 } from '/@/renderer/store/settings.store';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 import { Play } from '/@/shared/types/types';
 
 const localSettings = isElectron() ? window.api.localSettings : null;

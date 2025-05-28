@@ -1,4 +1,4 @@
-import { Box, Center, Divider, Group, Stack } from '@mantine/core';
+import { Center, Divider, Group, Stack } from '@mantine/core';
 import { closeAllModals, openModal } from '@mantine/modals';
 import { AnimatePresence, motion } from 'framer-motion';
 import { MouseEvent, useMemo } from 'react';
@@ -7,7 +7,7 @@ import { RiAddFill, RiArrowDownSLine, RiDiscLine, RiListUnordered } from 'react-
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Button, MotionStack, Text, Tooltip } from '/@/renderer/components';
+import { MotionStack, Text } from '/@/renderer/components';
 import { CreatePlaylistForm } from '/@/renderer/features/playlists';
 import { ActionBar } from '/@/renderer/features/sidebar/components/action-bar';
 import { SidebarIcon } from '/@/renderer/features/sidebar/components/sidebar-icon';
@@ -29,6 +29,8 @@ import {
     useWindowSettings,
 } from '/@/renderer/store/settings.store';
 import { fadeIn } from '/@/renderer/styles';
+import { Button } from '/@/shared/components/button';
+import { Tooltip } from '/@/shared/components/tooltip/tooltip';
 import { ServerType } from '/@/shared/types/domain-types';
 import { Platform } from '/@/shared/types/types';
 

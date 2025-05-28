@@ -7,10 +7,11 @@ import { RiDeleteBinLine, RiEditLine, RiKeyboardBoxLine } from 'react-icons/ri';
 import styled from 'styled-components';
 
 import i18n from '/@/i18n/i18n';
-import { Button, Checkbox, TextInput } from '/@/renderer/components';
+import { Checkbox, TextInput } from '/@/renderer/components';
 import { SettingsOptions } from '/@/renderer/features/settings/components/settings-option';
 import { useSettingSearchContext } from '/@/renderer/features/settings/context/search-context';
 import { BindingActions, useHotkeySettings, useSettingsStoreActions } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 
 const ipc = isElectron() ? window.api.ipc : null;
 
@@ -259,8 +260,8 @@ export const HotkeyManagerSettings = () => {
                             value={BINDINGS_MAP[binding as keyof typeof BINDINGS_MAP]}
                         />
                         <TextInput
-                            leftSection={<RiKeyboardBoxLine />}
                             id={`hotkey-${binding}`}
+                            leftSection={<RiKeyboardBoxLine />}
                             onBlur={() => setSelected(null)}
                             onChange={() => {}}
                             onKeyDownCapture={(e) => {

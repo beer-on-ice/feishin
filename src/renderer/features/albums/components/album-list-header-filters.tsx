@@ -18,7 +18,7 @@ import {
 
 import i18n from '/@/i18n/i18n';
 import { queryKeys } from '/@/renderer/api/query-keys';
-import { Button, DropdownMenu, MultiSelect, Slider, Switch, Text } from '/@/renderer/components';
+import { DropdownMenu, MultiSelect, Slider, Switch, Text } from '/@/renderer/components';
 import { VirtualInfiniteGridRef } from '/@/renderer/components/virtual-grid';
 import { ALBUM_TABLE_COLUMNS } from '/@/renderer/components/virtual-table';
 import { useListContext } from '/@/renderer/context/list-context';
@@ -34,6 +34,7 @@ import {
     useListStoreActions,
     useListStoreByKey,
 } from '/@/renderer/store';
+import { Button } from '/@/shared/components/button';
 import {
     AlbumListQuery,
     AlbumListSort,

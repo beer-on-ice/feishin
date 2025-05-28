@@ -18,7 +18,7 @@ import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperCore } from 'swiper/types';
 
-import { Button } from '/@/renderer/components/button';
+import { Button } from '/@/shared/components/button';
 import { PosterCard } from '/@/renderer/components/card/poster-card';
 import { TextTitle } from '/@/renderer/components/text-title';
 import { usePlayQueueAdd } from '/@/renderer/features/player';
