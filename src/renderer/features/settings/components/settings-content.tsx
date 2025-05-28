@@ -52,7 +52,7 @@ export const SettingsContent = () => {
         <TabContainer>
             <Tabs
                 keepMounted={false}
-                onTabChange={(e) => e && setSettings({ tab: e })}
+                onChange={(e) => e && setSettings({ tab: e })}
                 orientation="horizontal"
                 value={currentTab}
                 variant="default"
